@@ -1,27 +1,42 @@
 @keyframes fadeInDown {
-   0% {
-      opacity: 0;
-      transform: translateY(-20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateY(0);
-   }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -43,9 +58,19 @@ body {
   margin-bottom: 50px;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -55,20 +80,26 @@ img {
   vertical-align: middle;
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
   > ul,
   > ol {
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
-  font-family: 'MuseoSlab-700';
+  font-family: "MuseoSlab-700";
 }
 
 a {
@@ -126,18 +157,22 @@ pre {
 }
 
 header.company {
-  background: #34474c;
-  font-family: 'MuseoSlab-500';
-  line-height: 30px;
+  background: #3f585f;
+  line-height: 40px;
+  font-family: Lato, sans-serif;
+
+  .site-title {
+    font-family: "MuseoSlab-700";
+    text-transform: uppercase;
+    display: inline-block;
+  }
 
   a,
   a .fa {
-    color: #68af7e;
+    color: #f2efe0;
   }
 
   a {
-    text-transform: uppercase;
-    display: inline-block;
     margin-right: 35px;
     padding-top: 3px;
   }
@@ -161,7 +196,7 @@ header.main {
     color: #fff;
     padding: 6px 12px;
     font-size: 24px;
-    font-family: 'MuseoSlab-900';
+    font-family: "MuseoSlab-900";
   }
 }
 
@@ -196,7 +231,8 @@ header.main {
       margin-bottom: 20px;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
       font-family: $base-font-family;
     }
 
@@ -218,19 +254,20 @@ header.main {
 
 .sidenav {
   h2 {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+      $base-font-family;
     font-weight: 700;
     cursor: pointer;
   }
 
   ul {
     display: none;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    // -webkit-animation-name: fadeInDown;
+    // animation-name: fadeInDown;
+    // -webkit-animation-duration: 0.5s;
+    // animation-duration: 0.5s;
+    // -webkit-animation-fill-mode: both;
+    // animation-fill-mode: both;
   }
 
   .active ul {
@@ -284,7 +321,6 @@ header.main {
         line-height: 1.1;
         margin-bottom: 1.5em;
       }
-
     }
   }
 }
@@ -318,4 +354,3 @@ footer {
     margin: 0px 20px;
   }
 }
-

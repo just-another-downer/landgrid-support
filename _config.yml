@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: LOVELAND Support
+title: The Land Grid Support
 email: help@makeloveland.com
 description: > # this means to ignore newlines until "baseurl:"
   Help and support for the LOVELAND tools, including Site Control
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://support.sitecontrol.us" # the base hostname & protocol for your site
+url: "https://support.thelandgrid.com" # the base hostname & protocol for your site
 twitter_username: makeloveland
 facebook_username: makeloveland
 # github_username:  loveland
