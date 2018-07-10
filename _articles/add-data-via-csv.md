@@ -5,7 +5,7 @@ published: true
 intro: How to add data to your map by importing a CSV
 title: Add Data via CSV
 ---
-With Site Control you can import data from CSVs and Excel spreadsheets to visualize, query, and work with the data in a parcel map setting.
+With the Land Grid you can import data from CSVs and Excel spreadsheets to visualize, query, and work with the data in a parcel map setting.
 
 **NOTE:** Currently, we require data sources to contain a column with Parcel IDs so we can match data to properties we have online. More data-matching methods will be coming online soon.
 
