@@ -5,7 +5,7 @@ published: true
 intro: How to connect an external data source to your map
 title: Add Data via External Data Source
 ---
-Site Control supports several open data sources and is working to support ever more. Here is a list of platforms you can currently connect to Site Control maps:
+The Land Grid supports several open data sources and is working to support ever more. Here is a list of platforms you can currently connect to the Land Grid maps:
 
 [ESRI Open Data Portals](http://opendata.arcgis.com/)  
 [Socrata Open Data Portals](https://socrata.com/)   
@@ -27,10 +27,10 @@ Each data source has a slightly different process for connecting a dataset. You 
   10. Click "See Results on Your Map"
   11. Standby for importing to complete (alert box in upper right of screen will show progress)
 
-Below is an animation showing how to connect a map to a dataset stored in an ESRI Open Data Portal. In this example, a Site Control map called "Detroit Foreclosures" is connected to a dataset that was created by LOVELAND's local data partners, Data Driven Detroit, and hosted on their ESRI portal:
+Below is an animation showing how to connect a map to a dataset stored in an ESRI Open Data Portal. In this example, the Land Grid map called "Detroit Foreclosures" is connected to a dataset that was created by LOVELAND's local data partners, Data Driven Detroit, and hosted on their ESRI portal:
 
 ![pJQqbPxmub.gif]({{site.baseurl}}/img/pJQqbPxmub.gif)
 
-**NOTE:** Once you connect a data source, Site Control will begin to import data when you click "See The Results on Your Map". Larger datasets will take a while, and there is a max of 200,000 rows of data that you can add to a map.
+**NOTE:** Once you connect a data source, the Land Grid will begin to import data when you click "See The Results on Your Map". Larger datasets will take a while, and there is a max of 200,000 rows of data that you can add to a map.
 
 Once you return to your map, an alert box in the top right of your screen will show progress as data is added to your map. When data importing is complete, you'll see the boundaries that contain imported data shade in a new color to denote that there is now data within that boundary.
