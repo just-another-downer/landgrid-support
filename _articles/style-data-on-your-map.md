@@ -11,12 +11,12 @@ Styles rules are matched to parcels sequentially based on the top to bottom orde
 
 For example:
 
-Say I have a parcel with the address 555 Fake Street that has two data fields:
+Say you have a parcel with the address 555 Fake Street that has two data fields:
 
 Condition: Good  
 Occupancy: Vacant
 
-If I go to my Styles area and set Condition = Good to color parcels in Green, and then set another rule to color Occupancy = Vacant parcels in Red, then my 555 Fake Street parcel will ONLY color in Green -- it matches both rules, but the Condition rule is set first, so that's the color that will be applied.
+If you go to my Styles area and set Condition = Good to color parcels in Green, and then set another rule to color Occupancy = Vacant parcels in Red, then my 555 Fake Street parcel will ONLY color in Green -- it matches both rules, but the Condition rule is set first, so that's the color that will be applied.
 
 A legend at the bottom of the screen will explain your style rules, pulling information from your spreadsheet according to your Styles rules. If you plan to share your map (See "Share a Map"), you may want to check that your column headers and cell contents are easily comprehensible before importing the data.
 
