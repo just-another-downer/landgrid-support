@@ -6,9 +6,9 @@ intro: Where to keep track of your data activity in real time
 title: The Live Feed
 ---
 **About the Feed**  
-The Feed in a Site Control map keeps track of all the data activity in your account in real time. When you import data or survey properties, all the information will populate in your Feed, live.
+The Feed tab a Land Grid project keeps track of all the data activity in your account in real time. When you import data or survey properties, all the information will populate in your Feed, live.
 
-The Feed behaves like many other elements of Site Control -- if you drop down into a neighborhood, for example, the Feed will reflect only the activity for properties in that area.
+The Feed behaves like many other elements of the Land Grid -- if you drop down into a neighborhood, for example, the Feed will reflect only the activity for properties in that area.
 
 You can click any address in the Feed to see details of that property or survey.
 
