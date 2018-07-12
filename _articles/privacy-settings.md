@@ -1,5 +1,5 @@
 ---
-title: Privacy Settings
+title: Privacy Settings on the Land Grid
 category: Maps
 weight: 3
 intro: Your Site Control maps are private by default
