@@ -56,8 +56,8 @@ prose:
           options:
             - name: "Getting Started"
               value: "Getting Started"
-            - name: "Maps"
-              value: "Maps"
+            - name: "Projects"
+              value: "Projects"
             - name: "Your Account"
               value: "Your Account"
             - name: "Adding Data"
