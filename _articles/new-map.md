@@ -10,7 +10,7 @@ _Projects were formerly known as Maps._
 
 After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a project. Projects are places where most of the Land Grid magic happens: it’s where you can import data, make surveys, style information, view the maps you’re making, and generally start to make sense of the information you’re gathering. 
 
-**Note:** When using a free account, you only get one project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and do all the projects your heart desires.
+**Note:** When using a free account, you only get one project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and create all the projects your heart desires.
 
 ### Creating a Project
 
@@ -27,4 +27,3 @@ Once you specify a name and location for your project, you have several options:
 * Click “Import Data” to import your own data or to connect data from an open data portal.
 * Click “Browse Public Data” to explore Site Control datasets that have been made public by other users.
 
-![create new map]({{site.baseurl}}/img/687474703a2f2f672e7265636f726469742e636f2f4e6b58336c714e436e542e676966.gif)
