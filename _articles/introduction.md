@@ -1,17 +1,17 @@
 ---
-title: Introduction to the Land Grid - Paid Account
+title: Introduction to your landgrid.com account
 category: Getting Started
 weight: 2
-intro: Get started using the Land Grid to view and analyze property information.
+intro: Get started using landgrid.com to view and analyze property information.
 published: true
 ---
 
 
-### Welcome to the Land Grid!
+### Welcome to landgrid.com!
 
 **Overview**
 
-The Land Grid is your personal platform for working with property information. With the Land Grid, you can import property data, create multiple projects, build custom property surveys, invite collaborators, conduct customizable surveys in the field with your mobile device, and map your survey results as they come streaming into your account in real-time.
+landgrid.com is your personal platform for working with property information. With landgrid.com, you can import property data, create multiple projects, build custom property surveys, invite collaborators, conduct customizable surveys in the field with your mobile device, and map your survey results as they come streaming into your account in real-time.
 
 Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
 
@@ -23,13 +23,11 @@ Our maps are easy to style, share, and embed, so you can create beautiful intera
 If you are working with others, be sure to invite your team members to collaborate.
 
 **Need some inspiration?**
+Projects using our software include:
 
-Check out what other people have accomplished with Site Control at makeloveland.com/reports. 
-
-**Projects include:**
   *  Creating an inventory of every single property in the city of Cleveland
   * Collecting a years’ worth of data on every single structure fire in Detroit
   * Mapping lead contamination in water samples in Flint, MI
   * Evaluating tornado damage in Portland, MI
 
-If you want to make custom property maps and surveys but you don’t have the Land Grid Pro account yet, sign up today!
+If you want to make custom property maps and surveys but you don’t have a paid landgrid.com account yet, sign up today!
