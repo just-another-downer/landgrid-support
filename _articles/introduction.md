@@ -6,6 +6,7 @@ intro: Site Control is your personal platform for working with property informat
 published: true
 ---
 
+
 ### Welcome to the Land Grid!
 
 **Overview**
