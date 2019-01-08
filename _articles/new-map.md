@@ -18,7 +18,7 @@ While logged in to your Land Grid account, go to the top right of the page. Clic
 
 **To create a new project,** simply click the “New Project” button above the ‘Projects’ header.
 
-Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your map’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset ([makeloveland.com/us](https://makeloveland.com/us)).
+Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your map’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset.
 
 Once you have successfully created a project, you have several options, all located on the left hand sidebar:
 
