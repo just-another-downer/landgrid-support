@@ -9,7 +9,6 @@ published: true
 ### Welcome to the Land Grid!
 
 **Overview**
-
 The Land Grid is your personal platform for working with property information. With the Land Grid, you can import property data, create multiple projects, build custom property surveys, invite collaborators, conduct customizable surveys in the field with your mobile device, and map your survey results as they come streaming into your account in real-time.
 
 Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
