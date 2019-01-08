@@ -1,5 +1,5 @@
 ---
-title: Introduction to the Land Grid - Pro Account
+title: Introduction to the Land Grid - Paid Account
 category: Getting Started
 weight: 2
 intro: Site Control is your personal platform for working with property information
