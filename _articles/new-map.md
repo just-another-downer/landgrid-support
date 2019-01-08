@@ -2,23 +2,23 @@
 title: Create a New Project
 category: Getting Started
 weight: 3
-intro: Set up a new Project on the Land Grid
+intro: Set up a new Project on landgrid.com
 published: true
 ---
 
 _Projects were formerly known as Maps._
 
-After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a project. Projects are places where most of the Land Grid magic happens: it’s where you can import data, make surveys, style information, view the maps you’re creating, and generally start to make sense of the information you’re gathering. 
+After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a Project. Projects are places where most of the landgrid.com magic happens: it’s where you can import data, make surveys, style information, view the maps you’re creating, and generally start to make sense of the information you’re gathering. 
 
-**Note:** When using a free account, you only get one project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and create all the projects your heart desires.
+**Note:** When using a free account, you only get one Project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and create all the projects your heart desires.
 
 ### Creating a Project
 
-While logged in to your Land Grid account, go to the top right of the page. Click on your username, and you’ll see a dropdown menu. Click “My Profile”, which will bring you to your home page. This is where you’ll be able to view all the projects associated with your account.
+While logged in to your landgrid.com account, go to the top right of the page. Click on your username, and you’ll see a dropdown menu. Click “My Profile”, which will bring you to your home page. This is where you’ll be able to view all the Projects associated with your account.
 
 **To create a new project,** simply click the “New Project” button above the ‘Projects’ header.
 
-Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your map’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset.
+Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your Project’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset.
 
 Once you have successfully created a project, you have several options, all located on the left hand sidebar:
 
