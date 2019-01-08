@@ -2,7 +2,7 @@
 weight: 2
 category: Getting Started
 published: true
-title: Introduction to the Land Grid - Free Account
+title: Introduction to the Land Grid - Trial Account
 intro: >-
   A Trial Land Grid account lets you try out our property mapping software, for
   free.
