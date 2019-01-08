@@ -23,7 +23,8 @@ Our maps are easy to style, share, and embed, so you can create beautiful intera
 If you are working with others, be sure to invite your team members to collaborate.
 
 **Need some inspiration?**
-Check out what other people have accomplished with Site Control at makeloveland.com/reports. **Projects include:**
+Check out what other people have accomplished with Site Control at makeloveland.com/reports. 
+**Projects include:**
   *  Creating an inventory of every single property in the city of Cleveland
   * Collecting a years’ worth of data on every single structure fire in Detroit
   * Mapping lead contamination in water samples in Flint, MI
