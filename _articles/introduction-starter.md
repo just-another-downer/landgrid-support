@@ -21,7 +21,7 @@ Once you have data imported, Land Grid maps are easy to style so you can create 
 
 **Are you ready to get started?**
 
-..* The first thing you’ll want to do is create a project.
+  * The first thing you’ll want to do is create a project.
 ..* Then, you might want to import data or start a property survey.
 ..* Once you add data to your map, you can filter your data and style your map.
 
