@@ -9,7 +9,7 @@ intro: >-
 ---
 Introduction to the Land Grid – Free Account
 
-**### Welcome to the Land Grid!**
+**###Welcome to the Land Grid!**
 
 **Overview**
 
@@ -31,4 +31,3 @@ Check out what other people have accomplished with Site Control at makeloveland.
 •	Collecting a years’ worth of data on every single structure fire in Detroit
 •	Mapping lead contamination in Flint, MI
 •	Evaluating tornado damage in Portland, MI
-
