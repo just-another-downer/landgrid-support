@@ -4,8 +4,8 @@ category: Getting Started
 published: true
 title: Introduction to the Land Grid - Free Account
 intro: >-
-  Site Control Starter lets you create a map and explore our property mapping
-  software for free
+  A Trial Land Grid account lets you try out our property mapping software, for
+  free.
 ---
 
 
