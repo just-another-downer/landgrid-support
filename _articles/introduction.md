@@ -23,6 +23,7 @@ Our maps are easy to style, share, and embed, so you can create beautiful intera
 If you are working with others, be sure to invite your team members to collaborate.
 
 **Need some inspiration?**
+
 Check out what other people have accomplished with Site Control at makeloveland.com/reports. 
 
 **Projects include:**
