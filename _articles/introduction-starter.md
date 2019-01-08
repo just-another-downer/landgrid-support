@@ -7,7 +7,6 @@ intro: >-
   Site Control Starter lets you create a map and explore our property mapping
   software for free
 ---
-Introduction to the Land Grid – Free Account
 
 ### Welcome to the Land Grid!
 
