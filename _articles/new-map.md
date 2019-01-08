@@ -2,13 +2,13 @@
 title: Create a New Project
 category: Getting Started
 weight: 3
-intro: How to set up a new Site Control map
+intro: Set up a new Project on the Land Grid
 published: true
 ---
 
 _Projects were formerly known as Maps._
 
-After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a project. Projects are places where most of the Land Grid magic happens: it’s where you can import data, make surveys, style information, view the maps you’re making, and generally start to make sense of the information you’re gathering. 
+After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a project. Projects are places where most of the Land Grid magic happens: it’s where you can import data, make surveys, style information, view the maps you’re creating, and generally start to make sense of the information you’re gathering. 
 
 **Note:** When using a free account, you only get one project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and create all the projects your heart desires.
 
@@ -16,14 +16,15 @@ After you’ve made an account (congrats!), the next thing you’ll probably wan
 
 While logged in to your Land Grid account, go to the top right of the page. Click on your username, and you’ll see a dropdown menu. Click “My Profile”, which will bring you to your home page. This is where you’ll be able to view all the projects associated with your account.
 
-**To create a new project,** simply click the “New Project” button above the ‘Projects in this Account’ header.
+**To create a new project,** simply click the “New Project” button above the ‘Projects’ header.
 
 Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your map’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset ([makeloveland.com/us](https://makeloveland.com/us)).
 
-Once you specify a name and location for your project, you have several options:
+Once you have successfully created a project, you have several options, all located on the left hand sidebar:
 
-* Click “Go to My Project” to view the project you just created and to experiment with features like drawing a focus area.
-* Click “Create a Survey” to go directly to Site Control’s survey builder to create a custom survey.
-* Click “Import Data” to import your own data or to connect data from an open data portal.
-* Click “Browse Public Data” to explore Site Control datasets that have been made public by other users.
 
+  * Click “Survey”, then "Editor"; from here, you can add a survey to this project. Write your own questions, or use one of our prebuilt surveys!
+  * Click “Import” to import your own data from a spreadsheet, or to connect with data from an open data portal.
+  * Click “Filter” or "Styles" to start working with our base parcel data (after you import data, you can use these tools with those datasets as well).
+
+Interested in some of the above options, but need more help to get started? Each has its own section on this Support site!
