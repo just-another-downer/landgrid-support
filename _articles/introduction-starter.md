@@ -9,7 +9,7 @@ intro: >-
 ---
 Introduction to the Land Grid – Free Account
 
-###Welcome to the Land Grid!
+### Welcome to the Land Grid!
 
 **Overview**
 
