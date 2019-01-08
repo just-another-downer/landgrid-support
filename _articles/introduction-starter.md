@@ -26,8 +26,9 @@ Once you have data imported, Land Grid maps are easy to style so you can create 
 
 **Need some inspiration?**
 
-Check out what other people have accomplished with Site Control at makeloveland.com/reports. Projects include:
-•	Creating an inventory of every single property in the city of Cleveland
-•	Collecting a years’ worth of data on every single structure fire in Detroit
-•	Mapping lead contamination in Flint, MI
-•	Evaluating tornado damage in Portland, MI
+Check out what other people have accomplished with Site Control at makeloveland.com/reports. 
+Projects include:
+  *  Creating an inventory of every single property in the city of Cleveland
+  * Collecting a years’ worth of data on every single structure fire in Detroit
+  * Mapping lead contamination in Flint, MI
+  * Evaluating tornado damage in Portland, MI
