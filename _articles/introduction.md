@@ -23,6 +23,7 @@ Our maps are easy to style, share, and embed, so you can create beautiful intera
 If you are working with others, be sure to invite your team members to collaborate.
 
 **Need some inspiration?**
+
 Projects using our software include:
 
   *  Creating an inventory of every single property in the city of Cleveland
