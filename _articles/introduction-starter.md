@@ -20,9 +20,9 @@ Some of the guides on this support page do not apply to users with a free accoun
 Once you have data imported, Land Grid maps are easy to style so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our Filter function help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
 
 **Are you ready to get started?**
-•	The first thing you’ll want to do is create a project.
-•	Then, you might want to import data or start a property survey.
-•	Once you add data to your map, you can filter your data and style your map.
+..* The first thing you’ll want to do is create a project.
+..* Then, you might want to import data or start a property survey.
+..* Once you add data to your map, you can filter your data and style your map.
 
 **Need some inspiration?**
 
