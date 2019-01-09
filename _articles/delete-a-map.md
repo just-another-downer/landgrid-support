@@ -2,13 +2,17 @@
 weight: 6
 category: Maps
 published: true
-intro: How to delete a map you no longer want
+intro: Delete a Project you no longer want
 title: Delete a Project
 ---
-_This feature is only available with a Pro or Enterprise Land Grid accounts. [Click here to upgrade your account](https://landgrid.com/plans#p=level1)._
+_This feature is only available with Pro, Team, or Enterprise landgrid.com accounts._
 
-If things start to get crowded and you want to delete a project, you have two options.
+If things start to get crowded and you want to delete a Project, you have two options.
 
-In your list of maps under "Group Maps," use the "Shortcuts" drop down list to "Delete Map."
+**Option 1**
 
-Or open the project, open the Project panel from the left-hand menu, and select "Delete Project" from the "Save Project" dropdown menu.  
+On the left hand sidebar, click the gear icon, found underneath Overview. There is a white triangle in the "Save Project" button at the top of the drawer which pops out; click this, and select "Delete Project".
+
+**Option 2**
+
+From the "My Profile" page (click top right corner dropdown with username, then "My Profile") find the Project that you would like to delete. Click on the "Shortcuts" button on the same row as your projects' name, and select "Delete Project".
