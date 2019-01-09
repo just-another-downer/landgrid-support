@@ -2,11 +2,13 @@
 weight: 5
 category: Maps
 published: true
-intro: Take a screenshot of your map in order to print it
+intro: Printing your Project
 title: Print Your Maps
 ---
-At the moment, there is no direct way to print a map. The best way to capture a static picture of your map is to take a screenshot on your computer.
+_Note: the "Save Image" function is the first step in a larger attempt to provide users ways to print and export their maps. Stay tuned for a refined tool and other updates!_
 
-We are working on a new feature that will make printing maps  a breeze. Stay tuned for updates!
+On the toolbar in the upper left of the map, you'll see an icon of a camera with "Save Image" underneath. Click this button, and a .PNG image will download. 
 
-If you are looking for a way to share your map with others, you can [check out this article](https://support.landgrid.com/articles/share-a-map) to learn how.
+**Note: Currenly, only the map (parcels, color coding etc) itself is captured in the image.**
+
+PS If you are looking for a way to share your Project with others digitally, you can [check out this article](https://support.landgrid.com/articles/share-a-map) to learn how.
