@@ -2,7 +2,7 @@
 weight: 2
 category: Getting Started
 published: true
-title: Introduction to your landgrid.com Trial account
+title: Introduction to your landgrid.com trial account
 intro: >-
   A landgrid.com Trial account lets you try out our property mapping software,
   for free.
