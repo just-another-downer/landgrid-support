@@ -31,4 +31,4 @@ Projects using our software include:
   * Mapping lead contamination in water samples in Flint, MI
   * Evaluating tornado damage in Portland, MI
 
-If you want to make custom property maps and surveys but you don’t have a paid landgrid.com account yet, [sign up today](https://thelandgrid.com/plans)!
+If you want to make custom property maps and surveys but you don’t have a paid landgrid.com account yet, **[sign up today]**(https://thelandgrid.com/plans)!
