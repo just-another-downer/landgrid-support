@@ -12,6 +12,9 @@ The draw tool lets you draw your own "Focus Areas" and save them as shapes that 
 
 The Draw Tool itself is found on the toolbar on the top left of the map area. Clicking it brings up the Draw tools; click on the map to start drawing. Finish the shape by "closing it", ie clicking on the first point.
 
+![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)
+
+
 **Saving Focus Areas:**  
 When saving a Focus Area, you’ll be asked if you want to save the area to your project, or to landgrid.com. If you want the area to be private, choose "Add to this Project". If you’d like to contribute your area publicly to anyone using the Land Grid, click "Save Publicly".
 
