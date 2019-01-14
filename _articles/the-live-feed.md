@@ -2,7 +2,7 @@
 weight: 2
 category: Surveying
 published: true
-intro: Where to keep track of your data activity in real time
+intro: Track your data in real time
 title: The Live Feed
 ---
 **About the Feed**  
