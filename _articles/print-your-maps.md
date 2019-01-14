@@ -3,7 +3,7 @@ weight: 5
 category: Maps
 published: true
 intro: Printing your Project
-title: Print Project
+title: Print your map
 ---
 _Note: the "Save Image" function is the first step in a larger attempt to provide users ways to print and export their maps. Stay tuned for a refined tool and other updates!_
 
