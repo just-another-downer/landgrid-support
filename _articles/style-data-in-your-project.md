@@ -9,6 +9,9 @@ If you want to create a parcel map color coded based on data in your account (ei
 
 Styles rules are matched to parcels sequentially based on the top to bottom order in your Project's Styles area. That means if you create a set of Styles rules that includes two color codes, both of which match parcels on your Project, the parcels will be highlighted ONLY by the color rule you defined first. Any parcel with imported data not covered by a Styles rule will show up in the "default" color, which you can also designate.
 
+![]({{site.baseurl}}/img/Capture.PNG)![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)
+
+
 For example:
 
 Say you have a parcel with the address 555 Fake Street that has two data fields:
@@ -21,4 +24,3 @@ If you go to my Styles area and set Condition = Good to color parcels in Green, 
 A legend on the left hand sidebar (under "Overview") will explain your style rules, pulling information from your spreadsheet and the rules you set. If you plan to share your Project (See "Share Your Project"), you may want to check that your column headers and cell contents are easily comprehensible before importing the data.
 
 If you want to search your data in a way that will show all properties that match BOTH Condition = Good AND Occupancy = Vacant, then skip to Query to learn about searching multiple criteria on landgrid.com.
-
