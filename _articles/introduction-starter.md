@@ -13,7 +13,7 @@ intro: >-
 
 **Overview**
 
-If you’re reading this, you should have gained access to a free landgrid.com account (if you haven’t yet, go to the main page, enter your info and click “Create Account”). With a free landgrid.com account, your options are more limited than with a paid account – still, you can import property data, conduct a survey in the field with your mobile device, and map your survey results as they come streaming into your account in real-time. 
+If you’re reading this, you should have gained access to a free landgrid.com account (if you haven’t yet, go [here](https://thelandgrid.com/users/sign_in)). With a free landgrid.com account, your options are more limited than with a paid account – still, you can import property data, conduct a survey in the field with your mobile device, and map your survey results as they come streaming into your account in real-time. 
 
 Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of landgrid.com’s great features, upgrade your account now for just $10/month.
 
