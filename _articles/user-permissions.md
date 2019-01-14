@@ -9,6 +9,9 @@ _This feature is only available with a Team, Enterprise, or Unlimited landgrid.c
 
 If you are able to invite collaborators, you can also customize the permissions levels of those invited to your landgrid.com account. To change permissions, click on the dropdown menu of your group (top left of the page) and choose “Members”. This will bring you to a list of current group members and their permission levels. To change the permission level of a member, simply click their role (ie “Manager”). This will bring up a dropdown list from which you can choose. You can change permissions settings at any time.
 
+![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)
+
+
 Here are the definitions of the various permissions levels:
 
 **Manager:**
@@ -26,4 +29,3 @@ If you'd like to pass the payment reins to someone else in your account, you can
 **Note:** To remove a member from your group, follow the same procedure as outlined above and select “Remove from Group” from the dropdown list.
 
 **Note:** You can change permissions settings at any time.
-
