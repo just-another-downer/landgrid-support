@@ -7,7 +7,7 @@ title: Using the API
 ---
 #### Basics
 
-Thanks for your interest in our Parcel API! This tool is still in beta, so please direct feedback, bugs and questions to **team@makeloveland.com**. To begin with, all requests will be to the `https://sitecontrol.us` domain, with the paths described below per-request.
+Thanks for your interest in our Parcel API! This tool is still in beta, so please direct feedback, bugs and questions to **team@makeloveland.com**. To begin with, all requests will be to the `https://landgrid.com` domain, with the paths described below per-request.
 
 #### Authentication and tokens
 
@@ -15,7 +15,7 @@ All requests to the API must include a `token` parameter. If you have a Pro or h
 
 #### Place and Parcel Paths
 
-At Loveland we use place *pathnames* to specify administrative boundaries and uniquely describe a geographic region. This includes the country, state, county, and county subdivision. For example, `/us/mi/wayne/detroit` for Detroit or `/us/oh/hamilton` for Hamilton County, OH. If you're not sure what to use for your requests, browsing on [makeloveland.com](https://makeloveland.com/us) to the desired place and copying it out of the URL is a good bet.
+At Loveland we use place *pathnames* to specify administrative boundaries and uniquely describe a geographic region. This includes the country, state, county, and county subdivision. For example, `/us/mi/wayne/detroit` for Detroit or `/us/oh/hamilton` for Hamilton County, OH. If you're not sure what to use for your requests, browsing on [landgrid.com](https://landgrid.com/us) to the desired place and copying it out of the URL is a good bet.
 
 *Parcel paths* are similar, and include an integer ID at the end. For example, `/us/mi/wayne/detroit/555`. These uniquely identify a parcel in our database in a simple, human-readable format.
 
