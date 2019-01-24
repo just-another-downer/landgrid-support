@@ -12,7 +12,7 @@ Here are a few ways to share a landgrid.com Project!
 
 ### Option 1: Share by Changing Privacy Options
 
-Click the gear icon located on the left hand sidebar just under Overview. You'll see a drawer pop out with a "Sharing & Access" box, where you can change privacy and sharing settings. Click "Save Project" when you're done to make changes permanent. Sharing permissions can be changed at any time. 
+Click "Share", located on the left hand sidebar just under Save. You'll see a drawer pop out titled "Sharing & Access", where you can change sharing settings. Click "Save Sharing Settings" when you're done to make changes permanent. Sharing permissions can be changed at any time. 
 
 **Private: only my group can view and edit**  
 This setting means what it says: data, surveys, and anything else attached to this project are only viewable by you and, where applicable, by other landgrid.com members who you have invited to collaborate with in your group account. 
