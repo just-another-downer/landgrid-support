@@ -13,4 +13,4 @@ As with other elements of landgrid.com, List contains data based on the boundary
 **Exporting Data from the List**  
 You can export data from the List by clicking the "Download CSV" button. This, too, will extract data based on the boundaries you are currently viewing. So, if you click Download CSV while looking at a whole city, you'll download data for the entire city. If you click Download CSV from within in a neighborhood, you'll get data just for that neighborhood. Currently, landgrid.com accounts are allowed to download 50,000 records (ie 50,000 rows in List view) per day.
 
-Interested in downloading bulk data? Click HERE (link to plans & pricing).
+Interested in downloading bulk data? Click [HERE](https://landgrid.com/parcels).
