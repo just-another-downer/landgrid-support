@@ -12,5 +12,4 @@ The Feed behaves like many other landgrid.com elements - if you drop down into a
 
 You can click any address in the Feed to see details of that property or survey.
 
-If you have Quality Control enabled, you will also be able to approve of flag posts from the Feed.
-
+If you have Quality Control enabled, you will also be able to approve or flag posts from the Feed.
