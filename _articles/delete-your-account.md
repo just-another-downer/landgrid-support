@@ -16,7 +16,8 @@ To cancel your subscription and close your account, click on “Billing” which
 When you delete your account, you will temporarily lose access to it, but that does not mean that everything is gone permanently! You can reactivate your account any time you want. From your homepage, navigate to your billing page and enter new credit card information. Then click “Save and Use” to access all your old maps and data.
 
 
-**How To Delete Your Personal Account:**  
-To delete your account, click on “Edit Account” which is located in the dropdown menu in the top right by your account name. A prompt will pop-up which warns you that you are about to delete your account and asks you if you are really sure. To confirm, click “OK”.
+**How To Delete a Group:**  
+Click on “Edit Account” which is located in "My Profile" (found by navigating to the top right of the screen by your account name). A prompt will pop-up which warns you that you are about to delete your group and asks you if you are really sure. To confirm, click “OK”.
 
+![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)
 
