@@ -11,7 +11,7 @@ Thanks for your interest in our Parcel API! This tool is still in beta, so pleas
 
 #### Authentication and tokens
 
-All requests to the API must include a `token` parameter. If you have a Pro or higher subscription, you can find this in **Account Settings > Preferences** after logging into your Site Control account.
+All requests to the API must include a `token` parameter. If you have a Loveland data license, you can find this in **Account Settings > Preferences** after logging into your Site Control account.
 
 #### Place and Parcel Paths
 
