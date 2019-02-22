@@ -16,8 +16,8 @@ Navigate to the survey page in your landgrid.com trial account and add our basic
 
 **Step 2:**   
 If you haven't already, now's the time to download the LOVELAND App. The LOVELAND App is available for iOS and Android devices:    
-* **[Download for iOS](https://itunes.apple.com/TR/app/id905821280)**
-* **[Download for Android](https://play.google.com/store/apps/details?id=com.makeloveland.loveland&hl=en)**   
+* **[Download for iOS](https://itunes.apple.com/us/app/loveland-next/id1338927298)**
+* **[Download for Android](https://play.google.com/store/apps/details?id=com.loveland.pr)**   
     
 **Step 3:**   
 When you're ready to start surveying property, open up the LOVELAND App on your smartphone and login using your landgrid.com credentials.    
