@@ -21,8 +21,8 @@ When you're finished setting up your survey, **be sure to click "Save Survey"**
 
 **Step 3:**   
 If you haven't already, now's the time to download the LOVELAND Next App on your surveying device. A smart phone tablet, etc will work. The LOVELAND Next App is available for iOS and Android devices:    
-* **[Download for iOS](https://itunes.apple.com/TR/app/id905821280)**
-* **[Download for Android](https://play.google.com/store/apps/details?id=com.makeloveland.loveland&hl=en)**   
+* **[Download for iOS](https://itunes.apple.com/us/app/loveland-next/id1338927298)**
+* **[Download for Android](https://play.google.com/store/apps/details?id=com.loveland.pr)**   
     
 **Step 4:**   
 When you're ready to start surveying property, open up the LOVELAND App on your smartphone and log in using your landgrid.com credentials.    
