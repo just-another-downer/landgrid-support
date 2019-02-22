@@ -30,7 +30,7 @@ At Loveland we use place *pathnames* to specify administrative boundaries and un
 **Request parameters:**
 * `parcelnumb`: The assessor's parcel number to look up.
 * `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
-
+* `strict` (optional): Set `strict=1` to only return results in the `context`.
 
 ### By lat-long (reverse geocoding)
 
@@ -48,7 +48,7 @@ At Loveland we use place *pathnames* to specify administrative boundaries and un
 **Request parameters:**
 * `query`: The address to look up
 * `context` (optional): See notes on `context` parameter above
-
+* `strict` (optional): Set `strict=1` to only return results in the `context`.
 
 ## Parcel details
 
