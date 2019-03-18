@@ -2,7 +2,7 @@
 weight: 3
 category: Managing Data
 published: true
-intro: Census Data on landgrid.com
+intro: Census Data
 ---
 Census Data is available on landgrid.com by clicking the "Census" tab on the blue left hand sidebar.
 
