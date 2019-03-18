@@ -1,6 +1,6 @@
 ---
 weight: 4
-category: Your Account
+category: Getting Started
 published: true
 intro: Change basemaps in landgrid.com by using "Layers" dropdown
 ---
