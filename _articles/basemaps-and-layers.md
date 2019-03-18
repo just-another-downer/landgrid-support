@@ -8,4 +8,6 @@ Landgrid.com curates an ever-growing number of basemaps. To change your basemap,
 
 Click on a basemap to add it to your screen, and click it again to remove it.
 
+**Note** some basemap layers are only available to paid accounts of Pro and above.
+
 ![Layers_img.jpg]({{site.baseurl}}/img/Layers_img.jpg)
