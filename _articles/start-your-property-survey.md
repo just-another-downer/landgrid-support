@@ -41,10 +41,7 @@ To survey a property, tap the outline of the parcel you want to survey. The parc
       
 **Step 7:**     
 Answer your survey questions by tapping the appropriate option for the property you're surveying.    
-  
 
-  
-     
 **Step 8:**    
       
 When you've reached the end of your survey questions, you'll see two buttons: "Submit" or "Add Another Photo". If you'd like to add additional photos, tap "Add Another Photo" to keep taking pictures. When you're ready to send your survey and its data and photography to the Land Grid, tap "Submit".   
