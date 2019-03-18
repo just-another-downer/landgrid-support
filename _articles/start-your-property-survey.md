@@ -14,6 +14,8 @@ Here's how to get started with your very own property survey:
 **Step 1:**   
 In your landgrid.com account, navigate to the project you'd like to save your survey in. Click on "Survey" and then "Editor" in the sidebar to start building your survey, or add questions from premade surveys.   
 
+![Create_Survey.jpg]({{site.baseurl}}/img/Create_Survey.jpg)
+
 
 **Step 2:**   
 When you're finished setting up your survey, **be sure to click "Save Survey"**
@@ -35,10 +37,13 @@ Tap the person icon at the top left of your screen. You'll see text saying "Your
 **Step 6:**    
 To survey a property, tap the outline of the parcel you want to survey. The parcel you've selected will highlight in red, and its address and Google Street View image will appear at the bottom of the device's screen. Tap this bottom bar to display more info about the property, if needed. When you're ready to survey, tap the red circle with the "+" icon on the bottom bar to begin.     
    
+![LL_Next_mapview_img.jpg]({{site.baseurl}}/img/LL_Next_mapview_img.jpg)
       
 **Step 7:**     
 Answer your survey questions by tapping the appropriate option for the property you're surveying.    
-    
+  
+![Screenshot_20190218-140326.png]({{site.baseurl}}/img/Screenshot_20190218-140326.png)
+  
      
 **Step 8:**    
       
