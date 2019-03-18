@@ -47,6 +47,6 @@ Answer your survey questions by tapping the appropriate option for the property 
 When you've reached the end of your survey questions, you'll see two buttons: "Submit" or "Add Another Photo". If you'd like to add additional photos, tap "Add Another Photo" to keep taking pictures. When you're ready to send your survey and its data and photography to the Land Grid, tap "Submit".   
       
 **Step 9:**    
-Back in your landgrid.com account, you can navigate in the Project to the region you were surveying and click any highlighted parcel (denoting properties you've surveyed) to see the imagery and data. Or, you can clik the "Feed" icon on the sidebar to see a chronological stream of all the information you've collected in the project.    
+Back in your landgrid.com account, you can navigate in the Project to the region you were surveying and click any highlighted parcel (denoting properties you've surveyed) to see the imagery and data. Or, you can clik the "Feed" icon on the sidebar to see a chronological stream of all the information you've collected in the project.
 
-**Note: if the survey project you're undertaking is large, you may want to enable "Quality Control" for the project where data will be accumulating. This gives you the option to approve or flag individual posts.**
+**Note: Once a property has an associated survey with it, a viewer on the desktop site is provided with a variety of quality control options. This gives you the option to approve or flag individual posts, if you're working on a large survey and verifying survey data as it comes in.**
