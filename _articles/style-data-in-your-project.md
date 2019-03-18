@@ -9,7 +9,7 @@ If you want to create a parcel map color coded based on data in your account (ei
 
 Styles rules are matched to parcels sequentially based on the top to bottom order in your Project's Styles area. That means if you create a set of Styles rules that includes two color codes, both of which match parcels on your Project, the parcels will be highlighted ONLY by the color rule you defined first. Any parcel with imported data not covered by a Styles rule will show up in the "default" color, which you can also designate.
 
-![]({{site.baseurl}}/img/Capture.PNG)![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)
+![Style_img.jpg]({{site.baseurl}}/img/Style_img.jpg)
 
 
 For example:
