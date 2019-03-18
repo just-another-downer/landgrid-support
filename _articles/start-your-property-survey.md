@@ -42,7 +42,7 @@ To survey a property, tap the outline of the parcel you want to survey. The parc
 **Step 7:**     
 Answer your survey questions by tapping the appropriate option for the property you're surveying.    
   
-![Screenshot_20190218-140326.png]({{site.baseurl}}/img/Screenshot_20190218-140326.png)
+
   
      
 **Step 8:**    
