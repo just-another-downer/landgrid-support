@@ -1,6 +1,6 @@
 ---
 weight: 3
-category: Managing Data
+category: Getting Started
 published: true
 intro: Census Data
 ---
