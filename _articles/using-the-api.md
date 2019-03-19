@@ -62,7 +62,7 @@ A single GeoJSON Feature for the requested parcel (rather than an array of resul
 
 ## Response Format
 
-All of these requests return a JSON response on success, an array of GeoJSON features representing the matched parcels. These include polygon geometries and `properties`. Here's an example response payload:
+All of these requests return a JSON response on success, an array of GeoJSON features representing the matched parcels. These include polygon geometries and `properties`. Our standard fields are documented in the [Loveland Parcel Schema](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) (some additional undocumented fields may be included in the `properties`). Here's an example response payload:
 
     {
       results: [
