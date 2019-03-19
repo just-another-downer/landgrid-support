@@ -22,24 +22,15 @@ At Loveland we use place *pathnames* to specify administrative boundaries and un
 
 ## Parcel search
 
-
-### By parcel number
-
-`GET /api/v1/search.json?parcelnumb=<pin>&token=<token>`
-
-**Request parameters:**
-* `parcelnumb`: The assessor's parcel number to look up.
-* `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
-* `strict` (optional): Set `strict=1` to only return results in the `context`.
-
 ### By lat-long (reverse geocoding)
 
 `GET /api/v1/search.json?lat=<y>&lon=<x>&token=<token>`
 
+We recommend using lat-long search for most lookups. Because parcels may span several addresses, using a third-party geocoder (eg [Mapbox Places](https://www.mapbox.com/search/)) to identify a point for an address and then searching for the parcel at that poing can be more accurate than straight address search. 
+
 **Request parameters:**
 * `lat`: Latitude (y-coord) in decimal degrees, WGS84 (EPSG 4326) projection.
 * `lon`: Longitude (x-coord), same.
-
 
 ### By address
 
@@ -48,6 +39,15 @@ At Loveland we use place *pathnames* to specify administrative boundaries and un
 **Request parameters:**
 * `query`: The address to look up
 * `context` (optional): See notes on `context` parameter above
+* `strict` (optional): Set `strict=1` to only return results in the `context`.
+
+### By parcel number
+
+`GET /api/v1/search.json?parcelnumb=<pin>&token=<token>`
+
+**Request parameters:**
+* `parcelnumb`: The assessor's parcel number to look up.
+* `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
 * `strict` (optional): Set `strict=1` to only return results in the `context`.
 
 ## Parcel details
