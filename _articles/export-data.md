@@ -19,4 +19,4 @@ Click “Export” in your project’s left hand sidebar and choose the format w
 **Looking for Bulk Parcel Data?**
 
 Interested in bulk exports of our parcel data? We offer downloads in a variety of formats and geographies.
-Learn more [here](https://thelandgrid.com/parcels)
+[Learn more about licensing Loveland's nationwide parcel maps here](https://thelandgrid.com/parcels).
