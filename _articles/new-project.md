@@ -5,12 +5,11 @@ weight: 3
 intro: Set up a new Project on landgrid.com
 published: true
 ---
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
 
 _Projects were formerly known as Maps._
 
 After you’ve made an account (congrats!), the next thing you’ll probably want to do is create a Project. Projects are places where most of the landgrid.com magic happens: it’s where you can import data, make surveys, style information, view the maps you’re creating, and generally start to make sense of the information you’re gathering. 
-
-**Note:** When using a free account, you only get one Project. If you just can’t live with only one (and who can?), upgrade to a Pro account for only $10 a month and create all the projects your heart desires.
 
 ### Creating a Project
 
