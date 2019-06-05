@@ -7,7 +7,7 @@ published: true
 ---
 
 
-### Welcome to the Landgrid Mapping Platform !
+### Welcome to the Landgrid Mapping Platform!
 
 **Overview**
 
