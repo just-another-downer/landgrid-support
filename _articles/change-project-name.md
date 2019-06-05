@@ -5,6 +5,7 @@ published: true
 intro: Change the name of your Project at any time
 title: Change Project Name
 ---
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
 
 You can change the name of your Project at any time.
 
