@@ -1,5 +1,5 @@
 ---
-title: Introduction to your landgrid.com account
+title: Introduction to your Landgrid Pro account
 category: Getting Started
 weight: 2
 intro: Get started using Landgrid Pro to view and analyze property information.
