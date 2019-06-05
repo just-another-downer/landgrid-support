@@ -5,7 +5,7 @@ weight: 1
 intro: Share Projects with your team or the whole world!
 published: true
 ---
-_This feature is only available to Pro, Team, and Enterprise landgrid.com accounts._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
 
 We want to give you control over what you share, and who you share it with. 
 Here are a few ways to share a landgrid.com Project!
