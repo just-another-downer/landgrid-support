@@ -5,7 +5,7 @@ published: true
 intro: Export data in a variety of formats
 title: Export Data
 ---
-_This feature is only available with a Pro, Team, or Enterprise landgrid.com account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
 
 **About Data Exporting**
 
