@@ -2,10 +2,10 @@
 weight: 2
 category: Getting Started
 published: true
-title: Introduction to your landgrid.com trial account
+title: Introduction to your Landgrid Free account
 intro: >-
-  A landgrid.com Trial account lets you try out our property mapping software,
-  for free.
+  A Landgrid Free account lets you try out our property mapping software, for
+  free.
 ---
 
 
@@ -13,21 +13,15 @@ intro: >-
 
 **Overview**
 
-If you’re reading this, you should have gained access to a free landgrid.com account (if you haven’t yet, go [here](https://thelandgrid.com/users/sign_in)). With a free landgrid.com account, your options are more limited than with a paid account – still, you can import property data, conduct a survey in the field with your mobile device, and map your survey results as they come streaming into your account in real-time. 
+If you’re reading this, you should have gained access to Landgrid Free account (if you haven’t yet, go [here](https://thelandgrid.com/users/sign_in)). With a Langrid Free account, your options are more limited than with a paid account – you can surf 143 million parcels uninterrupted, draw focus areas and bookmark up to 10 parcels.
 
-Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of landgrid.com’s great features, upgrade your account now for just $10/month.
+Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of Landgrid platform's great features, upgrade your account now for just $10/month.
 
-Once you have data imported, landgrid.com maps are easy to style so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our Filter function help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
-
-**Are you ready to get started?**
-  *  The first thing you’ll want to do is create a project.
-  * Then, you might want to import data or start a property survey.
-  * Once you add data to your map, you can filter your data and style your map.
-
-**Need some inspiration?**
-
-Projects using our software include:
-  *  Creating an inventory of every single property in the city of Cleveland
-  * Collecting a years’ worth of data on every single structure fire in Detroit
-  * Mapping lead contamination in Flint, MI
-  * Evaluating tornado damage in Portland, MI
+**Here’s all you can do with your free account:**
+ 
+* **Uninterrupted nationwide parcel viewer** - Look up parcels all over and get deeper insights into your neighborhood.
+* **Map Layers** - Switch and toggle between satellite and other base layers for an immersive parcel viewing experience.
+* **Draw Focus Area** - Create a custom boundary on the map by drawing a focus area.
+* **Bookmark Parcels** - Bookmark upto 10 parcels that you find interesting to come back to at a later time.
+* **Access Bounds** - Filter and add boundaries to your parcels based on zipcodes, Census tracts and congressional districts.
+* **Top Owners** - Get a quick insight into the top property owners in your location.
