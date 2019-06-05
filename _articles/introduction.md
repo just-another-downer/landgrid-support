@@ -7,7 +7,7 @@ published: true
 ---
 
 
-### Welcome to landgrid.com!
+### Welcome to the Landgrid Mapping Platform !
 
 **Overview**
 
@@ -16,7 +16,7 @@ Landgrid Pro is your personal platform for working with property information. Wi
 Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
 
 **Are you ready to get started?**
-  *  The first thing you’ll want to do is create a project.
+  * The first thing you’ll want to do is create a project.
   * Then, you might want to import data or create a property survey.
   * Once you add data to your map, you can query your data and style your map.
 
