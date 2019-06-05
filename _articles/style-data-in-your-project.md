@@ -5,6 +5,8 @@ published: true
 intro: Use Styles to color code parcels
 title: Style Data in Your Project
 ---
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+
 If you want to create a parcel map color coded based on data in your account (either survey data or imported data) you can do so by creating Styles rules. Styles rules will apply to your entire Project. You can change your Styles at any time.
 
 Styles rules are matched to parcels sequentially based on the top to bottom order in your Project's Styles area. That means if you create a set of Styles rules that includes two color codes, both of which match parcels on your Project, the parcels will be highlighted ONLY by the color rule you defined first. Any parcel with imported data not covered by a Styles rule will show up in the "default" color, which you can also designate.
