@@ -15,4 +15,6 @@ To bookmark a property, first click on it in the map. The selected property will
 
 To view your bookmarks, first click "My Profile" in the dropdown menu found in the top right of the screen next to your name. Once here, click on the "Bookmarks" button toward the top of the page, and all of your bookmarked properties will be listed.
 
+Free users are limited to bookmark up to 10 parcels only.
+
 **Note:** In order to **delete** a bookmark, you will need to navigate to the bookmarked property and click the bookmark tab icon next to the address a second time.
