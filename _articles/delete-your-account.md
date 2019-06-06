@@ -11,7 +11,7 @@ We will be sad to see you go, but if you’ve completed your project then it mig
 
 **How to Cancel Your Paid Subscription:**
 
-To cancel your subscription and close your account, click on “Billing” which is  located in the dropdown menu in the top left by your group name. Locate the red “Close this account” button in the bottom right corner and click it. A prompt will ask you to confirm by typing in the name of your account: type it in the box, making sure this exactly matches the account name as shown, including capitalization and punctuation. Press the "OK" button underneath.
+To cancel your subscription and close your account, click on “Billing” which is  located in the dropdown menu in the top left by your group name. Locate the red “Close this account” button in the bottom right corner and click it. A prompt will ask you to confirm by typing in "CANCEL": type it in the box. Press the "OK" button underneath.
 
 When you delete your account, you will temporarily lose access to it, but that does not mean that everything is gone permanently! You can reactivate your account any time you want. From your homepage, navigate to your billing page and enter new credit card information. Then click “Save and Use” to access all your old maps and data.
 
