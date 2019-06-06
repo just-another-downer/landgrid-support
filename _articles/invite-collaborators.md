@@ -5,7 +5,7 @@ published: true
 intro: Inviting or Removing Collaborators from your Group
 title: Invite/Remove Collaborators
 ---
-_This feature is only available with a paid landgrid.com account of Team or higher. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+_This feature is only available with a paid landgrid.com account of Team or higher. [Click here to upgrade your account](https://landgrid.com/plans)._
 
 If you signed up for a Team account, you can have up to 25 people in your landgrid.com account at once. Enterprise customers can invite an unlimited number of people to their account.
 

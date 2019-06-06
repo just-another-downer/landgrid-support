@@ -5,7 +5,7 @@ published: true
 intro: Export data in a variety of formats
 title: Export Data
 ---
-_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
 **About Data Exporting**
 
@@ -15,7 +15,7 @@ Landgrid.com allows you to export any data you have uploaded or surveyed from yo
 
 **How to Export Data**
 
-Click “Export” in your project’s left hand sidebar and choose the format which you’d like to download your data in. Currently, the supported formats are CSV, XLS, SHP, and KML. Your download will include all the data you’ve collected and the associated parcel data. 
+Click “Export” in your project’s left hand sidebar and choose the format which you’d like to download your data in. Currently, the supported formats are CSV, XLS, SHP, and KML. Your download will include all the data you’ve collected and the associated parcel data.
 
 **Looking for Bulk Parcel Data?**
 

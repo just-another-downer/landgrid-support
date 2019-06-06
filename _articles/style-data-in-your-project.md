@@ -5,7 +5,7 @@ published: true
 intro: Use Styles to color code parcels
 title: Style Data in Your Project
 ---
-_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
 If you want to create a parcel map color coded based on data in your account (either survey data or imported data) you can do so by creating Styles rules. Styles rules will apply to your entire Project. You can change your Styles at any time.
 
@@ -18,7 +18,7 @@ For example:
 
 Say you have a parcel with the address 555 Fake Street that has two data fields:
 
-Condition: Good  
+Condition: Good
 Occupancy: Vacant
 
 If you go to my Styles area and set Condition = Good to color parcels in Green, and then set another rule to color Occupancy = Vacant parcels in Red, then my 555 Fake Street parcel will ONLY color in Green -- it matches both rules, but the Condition rule is set first, so that's the color that will be applied.

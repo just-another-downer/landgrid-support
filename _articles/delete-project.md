@@ -5,7 +5,7 @@ published: true
 intro: Delete a Project you no longer want
 title: Delete a Project
 ---
-_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://thelandgrid.com/plans)._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
 If things start to get crowded and you want to delete a Project, no problem! It's easy.
 
