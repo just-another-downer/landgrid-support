@@ -15,7 +15,7 @@ intro: >-
 
 If you’re reading this, you should have gained access to Landgrid Free account (if you haven’t yet, go [here](https://landgrid.com/users/sign_in)). With a Langrid Free account, your options are more limited than with a paid account – you can surf 143 million parcels uninterrupted, draw focus areas and bookmark up to 10 parcels.
 
-Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of Landgrid platform's great features, upgrade your account now for just $10/month.
+Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of Landgrid platform's great features, upgrade your account now for just $10/month, [here](https://landgrid.com/plans)).
 
 **Here’s all you can do with your free account:**
  
