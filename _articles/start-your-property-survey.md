@@ -3,7 +3,7 @@ weight: 2
 category: Surveying
 published: true
 intro: Surveying Property with landgrid.com and the Loveland Next app
-title: Start Your Property Survey with paid landgrid.com Accounts
+title: Start Your Property Survey with paid Landgrid Accounts
 Title: Start Your Property Survey with Site Control Pro
 ---
 **Introduction**  
