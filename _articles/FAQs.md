@@ -6,7 +6,7 @@ intro: 'Quick answers to any questions about our products, services and company'
 ---
 ## FAQ's - Landgrid's Knowledge Base
 
-Please find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.
+Find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.
 
 **Loveland Technologies - The Company**
 
