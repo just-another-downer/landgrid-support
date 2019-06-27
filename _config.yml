@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The Land Grid Support
+title: Landgrid Support
 email: help@makeloveland.com
 description: > # this means to ignore newlines until "baseurl:"
   Help and support for the LOVELAND tools, including Site Control
@@ -61,8 +61,8 @@ prose:
           options:
             - name: "Getting Started"
               value: "Getting Started"
-            - name: "Maps"
-              value: "Maps"
+            - name: "Projects"
+              value: "Projects"
             - name: "Your Account"
               value: "Your Account"
             - name: "Adding Data"

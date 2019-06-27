@@ -2,16 +2,17 @@
 weight: 2
 category: Surveying
 published: true
-intro: Where to keep track of your data activity in real time
+intro: Track your data in real time
 title: The Live Feed
 ---
 **About the Feed**  
-The Feed tab a Land Grid project keeps track of all the data activity in your account in real time. When you import data or survey properties, all the information will populate in your Feed, live.
+The Feed tab in a landgrid.com Project keeps track of all the data activity in your account in real time. When you import data or survey properties, all the information will populate in your Feed, live.
 
-The Feed behaves like many other elements of the Land Grid -- if you drop down into a neighborhood, for example, the Feed will reflect only the activity for properties in that area.
+The Feed behaves like many other landgrid.com elements - if you drop down into a neighborhood, for example, the Feed will reflect only the activity for properties in that area.
 
 You can click any address in the Feed to see details of that property or survey.
 
-It may look like nothing is happening in the gif below, but keep an eye out and you'll see a couple surveys pop up there, showing you what it's like to see surveys coming through in real time :-)
+If you have Quality Control enabled, you will also be able to approve or flag posts from the Feed.
 
-![x8GZa1kYaA.gif]({{site.baseurl}}/img/x8GZa1kYaA.gif)
+![Feed.PNG]({{site.baseurl}}/img/Feed.PNG)
+

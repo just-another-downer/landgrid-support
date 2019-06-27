@@ -2,25 +2,23 @@
 weight: 5
 category: Your Account
 published: true
-intro: How to delete you account
-title: Delete Your Account
+intro: How to cancel your account
+title: Cancelling Your Account
 ---
-We will be sad to see you go, but if you’ve completed your project then it might be time to delete your account.
+We will be sad to see you go, but if you’ve completed your project then it might be time to cancel your membership and close the account.
 
-**WARNING:** When you delete your account, your credit card will stop being charged and you will no longer be able to access the maps you have made. If you want to have access any of your data once your account is closed, **export it before you delete the account**. If you have invited collaborators or shared your projects with another Land Grid account, these individuals will no longer be able to access your account or projects. Similarly, your projects will no longer be accessible publicly, neither via link nor embedded.
+**WARNING:** When you close your account, your credit card will stop being charged and you will no longer be able to access the maps you have made. If you want to have access any of your data once your account is closed, **export it before you delete the account**. If you have invited collaborators or shared your projects with another landgrid.com account, these individuals will no longer be able to access your account or projects. Similarly, your projects will no longer be accessible publicly, neither via link nor embedded.
 
-**How To Delete Your Personal Account:**  
-To delete your account, click on “Edit Account” which is located in the dropdown menu in the top right by your account name. A prompt will pop-up which warns you that you are about to delete your account and asks you if you are really sure. To confirm, click “OK”.
+**How to Cancel Your Paid Subscription:**
 
-![5dDnwtLMLM.gif]({{site.baseurl}}/img/5dDnwtLMLM.gif)
+To cancel your subscription and close your account, click on “Billing” which is  located in the dropdown menu in the top left by your group name. Locate the red “Close this account” button in the bottom right corner and click it. A prompt will ask you to confirm by typing in "CANCEL": type it in the box. Press the "OK" button underneath.
 
-Once your account is deleted, your homepage (www.your-account-name.sitecontrol.us) should look like this:
+When you delete your account, you will temporarily lose access to it, but that does not mean that everything is gone permanently! You can reactivate your account any time you want. From your homepage, navigate to your billing page and enter new credit card information. Then click “Save and Use” to access all your old maps and data.
 
-![gXTUPqt.png]({{site.baseurl}}/img/gXTUPqt.png)
-
-**How to Delete Your Group Account:**
-
-To delete your group account, click on “Group Preferences” which is  located in the dropdown menu in the top left by your group name. A prompt will pop-up which warns you that you are about to delete your account and asks you if you are really sure. To confirm, click “OK”.
+![Close_Account_img.jpg]({{site.baseurl}}/img/Close_Account_img.jpg)
 
 
-When you delete your account, you will temporarily loose access to it, but that does not mean that everything is gone permanently! You can reactivate your account any time you want. From your homepage, navigate to your billing page (under Account Settings) and enter new credit card information. Then click “Save and Use” to access all your old maps and data.
+**How To Delete a Group:**  
+Click on “Edit Account” which is located in "My Profile" (found by navigating to the top right of the screen by your account name). A prompt will pop-up which warns you that you are about to delete your group and asks you if you are really sure. To confirm, click “OK”.
+
+![Capture.PNG]({{site.baseurl}}/img/Capture.PNG)

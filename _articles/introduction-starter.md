@@ -2,33 +2,28 @@
 weight: 2
 category: Getting Started
 published: true
-title: Introduction to the Land Grid - Free Account
+title: Introduction to your Landgrid Free account
 intro: >-
-  Site Control Starter lets you create a map and explore our property mapping
-  software for free
+  A Landgrid Free account lets you try out our property mapping software, for
+  free.
 ---
-Introduction to the Land Grid – Free Account
 
-**### Welcome to the Land Grid!**
+
+### Welcome to landgrid.com!
 
 **Overview**
 
-If you’re reading this, you should have gained access to a free Land Grid account (if you haven’t yet, go to the main page, enter your info and click “Create Account”). With a free Land Grid account, your options are more limited than with a paid account – still, you can import property data, conduct a survey in the field with your mobile device, and map your survey results as they come streaming into your account in real-time. 
+If you’re reading this, you should have gained access to Landgrid Free account (if you haven’t yet, go [here](https://landgrid.com/users/sign_in)). With a Langrid Free account, your options are more limited than with a paid account – you can surf 143 million parcels uninterrupted, draw focus areas and bookmark up to 10 parcels.
 
-Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of Site Control’s great features, upgrade your account now for just $10/month.
+Some of the guides on this support page do not apply to users with a free account. If you would like to have access to ALL of Landgrid platform's great features, upgrade your account now for just $10/month, [here](https://landgrid.com/plans)).
 
-Once you have data imported, Land Grid maps are easy to style so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our Filter function help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
-
-**Are you ready to get started?**
-•	The first thing you’ll want to do is create a project.
-•	Then, you might want to import data or start a property survey.
-•	Once you add data to your map, you can filter your data and style your map.
-
-**Need some inspiration?**
-
-Check out what other people have accomplished with Site Control at makeloveland.com/reports. Projects include:
-•	Creating an inventory of every single property in the city of Cleveland
-•	Collecting a years’ worth of data on every single structure fire in Detroit
-•	Mapping lead contamination in Flint, MI
-•	Evaluating tornado damage in Portland, MI
-
+**Here’s all you can do with your free account:**
+ 
+* **Uninterrupted nationwide parcel viewer** - Look up parcels all over and get deeper insights into your neighborhood.
+* **Draw Focus Area** - Create a custom boundary on the map by drawing a focus area.
+* **Filter Maps** - Drill down further by filtering the parcels by various attributes. With your free, you will not be able to save your filters.
+* **Style Maps** - Color code the parcel map to highlight key attributes that you are interested in. With your free account, you can create up to 2 style rules.
+* **Bookmark Parcels** - Bookmark upto 10 parcels that you find interesting to come back to at a later time.
+* **Map Layers** - Switch and toggle between satellite and other base layers for an immersive parcel viewing experience.
+* **Access Bounds** - Filter and add boundaries to your parcels based on zipcodes, Census tracts and congressional districts.
+* **Top Owners** - Get a quick insight into the top property owners in your location.

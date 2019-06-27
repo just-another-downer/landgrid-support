@@ -18,6 +18,8 @@
 
 6.  You edit the metadata by clicking the icon that looks like a table (several
     stacked lines) on the right-hand side of the screen.
+    
+7.  Click "publish" in the top bar if it's not already published
 
 There are three important pieces of metadata:
 

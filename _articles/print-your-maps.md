@@ -2,11 +2,15 @@
 weight: 5
 category: Maps
 published: true
-intro: Take a screenshot of your map in order to print it
-title: Print Your Maps
+intro: Printing the map you've made in your Project
+title: Print your map
 ---
-At the moment, there is no direct way to print a map from your Site Control account. The best way to capture a static picture of your map is to take a screenshot on your computer.
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
-We are working on a new feature that will make printing maps from Site Control a breeze. Stay tuned for updates!
+_Note: the "Save Image" function is the first step in a larger attempt to provide users ways to print and export their maps. Stay tuned for a refined tool and other updates!_
 
-If you are simply looking for a way to share your map with others, you can [check out this article](https://sitecontrol.us/support/Share-a-Map) to learn how.
+On the toolbar in the upper left of the map, you'll see an icon of a camera with "Save Image" underneath. Click this button, and a .PNG image will download. 
+
+**Note: Currenly, only the map (parcels, color coding etc) itself is captured in the image.**
+
+PS If you are looking for a way to share your Project with others digitally, you can [check out this article](https://support.landgrid.com/articles/share-a-map) to learn how.

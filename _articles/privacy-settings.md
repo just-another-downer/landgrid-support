@@ -2,9 +2,9 @@
 title: Privacy Settings on the Land Grid
 category: Maps
 weight: 3
-intro: Your Site Control maps are private by default
+intro: Your landgrid.com Projects are private by default
 published: true
 ---
-_This feature is only available with a Team, Enterprise, or Unlimited Land Grid account. [Click here to upgrade your account](https://sitecontrol.us/plans#p=level1)._
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
-By default, your Land Grid projects are only accessible by members of your Land Grid account. If you would like a map to be publicly accessible by anyone with the map's URL, please refer to the [Share a Map](https://sitecontrol.us/support/Share-a-Map) entry for instructions.
+By default, landgrid.com Projects are only accessible by members of your landgrid.com account. If you would like a map to be publicly accessible by anyone with the map's URL, please refer to our "Share Your Project" entry.

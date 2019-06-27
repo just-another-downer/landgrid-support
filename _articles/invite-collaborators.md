@@ -2,15 +2,16 @@
 weight: 1
 category: Your Account
 published: true
-intro: How to invite collaborators to your map
-title: Invite Collaborators
+intro: Inviting or Removing Collaborators from your Group
+title: Invite/Remove Collaborators
 ---
-_This feature is only available with a Pro or Enterprise or Unlimited Land Grid accounts. [Click here to upgrade your account](https://sitecontrol.us/plans#p=level1)._
+_This feature is only available with a paid landgrid.com account of Team or higher. [Click here to upgrade your account](https://landgrid.com/plans)._
 
-If you signed up for a Pro Account, you can have up to 25 people in your Land Grid account at once. 
+If you signed up for a Team account, you can have up to 25 people in your landgrid.com account at once. Enterprise customers can invite an unlimited number of people to their account.
 
-For Pro Accounts, just follow the process below to invite additional people to your account. If you need help setting permissions levels for new members, you can read about that in [User Permissions](https://loveland.github.io/support/articles/user-permissions/).
+Navigate to "Members", found under your group's dropdown menu in the top left corner. Click the "Invite a Member" button on the right hand side of the page. If you need help setting permissions levels for new members, you can read about that in [User Permissions](https://support.landgrid.com/articles/user-permissions/).
 
-To **uninvite** a collaborator, select "Remove from Group" from the User Permissions dropdown list.
+![User_Permissions.png]({{site.baseurl}}/img/User_Permissions.png)
 
-![aH73B4lXnp.gif]({{site.baseurl}}/img/aH73B4lXnp.gif)
+
+To **uninvite** a collaborator, click on that member's Role on the "Members" page (to the right of their name). This will bring up a series of options, one of which is "Remove from Group".
