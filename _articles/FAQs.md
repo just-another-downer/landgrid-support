@@ -3,6 +3,7 @@ weight: 0
 category: Getting Started
 published: true
 intro: 'Quick answers to any questions about our products, services and company'
+title: FAQs
 ---
 ## FAQ's - Landgrid's Knowledge Base
 
