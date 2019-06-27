@@ -39,6 +39,11 @@ prose:
   ignore: ["_fonts", ".gitignore"]
   metadata:
     _articles:
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          help: "Title of this support page"
       - name: "intro"
         field:
           label: "Intro"
