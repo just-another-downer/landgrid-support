@@ -7,9 +7,10 @@ title: FAQs
 ---
 ## FAQ's - Landgrid's Knowledge Base
 
-Find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.
-
-
+Find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.   
+ 
+ 
+ 
 
 
 **Loveland Technologies - The Company**
@@ -119,5 +120,100 @@ If lack of coverage for a specific county is a dealbreaker for you, please reach
 
 **Q:** Do I need to put in credit card information for my free account?
 
-**A:** No. You don’t need to out in your credit card information to create your free account. Simply sign up and be on your way to creating your very first landgrid map. 
+**A:** No. You don’t need to out in your credit card information to create your free account. Simply sign up and be on your way to creating your very first landgrid map.    
 
+
+
+**Q:** Is there a time limit on the free account?
+
+**A:** No. There is no time limit on your free account. It’s free forever. However, there are limits on features and functonality for a free account.  
+
+
+
+**Q:** What is the difference between a free and pro account?
+
+**A:** A free account is designed to provide users the ability to view parcel information that we have and to get a taste of the offerings that we provide with a Pro account. In many cases, this translates to having the ability to use and test our tools like bookmarking, filtering, styling, etc. 
+
+Our Pro however comes packed with a ton of features and functionality including being able to create maps & surveys as well as importing & exporting your data. Upgrading to Pro would give you expanded powers and the ability to use these tools in an unlimited way. For more specifics, please [visit](https://landgrid.com/plans)
+
+
+
+**Q:** What happened to your Team account subscription?
+
+**A:** In an effort to simplify our available offerings, it’s been merged into a broader Enterprise subscription category. You can still get the same offer (ie up to 25 users, unlimited projects, limited support, $100/mo) as an Enterprise subscription.
+
+
+
+**Q:** My needs don’t exactly match your subscription tiers from what I see on your website. I however need a map viewer to achieve my goals.
+
+**A:** Great! Send us an email at enterprise@landgrid.com outlining what you’re trying to do, and we can take it from there.
+
+
+
+**Q:** How do I convert from a free account to Pro?
+
+**A:** Lots of ways! Visit our [plans](https://landgrid.com/plans)page or click on one of the prompts while you’re navigating around the map with your free account (for example on the top right dropdown menu).You can also upgrade from your Dashboard after you sign into your free account.
+
+
+
+**Q:** How do I know if your Enterprise account will fit our complex needs?
+
+**A:** Get in touch with someone from our friendly team! Emailing enterprise@landgrid.com is always a good start. We can work with you to create a custom Enterprise account tailored to you or your organization; whether you need a custom platform or just a one-time spreadsheet imported, we can work together to assemble a quote that fits you just right.
+
+
+
+**Q:** Are your prices fixed?
+
+**A:** For any account beyond a standard Pro subscription, we create a custom quote - so in that sense, the pricing is flexible. We are more than happy to work with you to create a scope of work to fit within your budget.    
+
+
+
+
+**Landgrid Mapping Platform - FAQ's**    
+
+
+
+**Q:** Is GIS experience necessary to use your Land Grid mapping platform?
+
+**A:** No, although prior experience can be a bonus. We try to make our tools as easy-to-use as possible.
+
+
+
+**Q:** Is GIS experience necessary to use your Land Grid mapping platform?
+
+**A:** No, although prior experience can be a bonus. We try to make our tools as easy-to-use as possible.
+
+
+
+**Q:** Can we customize the platform to our needs?
+
+**A:** Yes - but this would fall under a custom project for us. Contact enterprise@landgrid.com to get started; we’ll happily work with you to provide a quote.
+
+
+
+**Q:** How does the backout function work?
+
+**A:** It’s probably helpful to think of the back out function as changing the geographies that you’re looking at. For example, if you’re looking at a nationwide map, you could click on the state of New Jersey - the map will adjust to show you outline of New Jersey, plus the counties within New Jersey. Clicking on the back out button at this point will zoom you out to the nationwide map again. If you’re looking at somewhere on the city level, clicking the back out button would take you to the county that contains the city, then the state, and then the nationwide map.
+
+
+
+**Q:** I don’t see my exact address on your map. 
+
+**A:** Try using the map to navigate to your address instead. Because the site works on the parcel level, some addresses - especially when there is more than one address on a parcel, as in the case of an apartment building, duplex, etc. - do not show on the map. For example, a two-unit building (123 and 125 Main St.) may have 123 Main Street as its address in our system, so searching 125 Main Street may not work very well.
+
+
+
+
+**Landgrid Mobile App - FAQ's**    
+
+
+
+**Q:** I see two Loveland apps in the app store. Which one should I use for conducting my survey?
+
+**A:** The red ‘Loveland app’ is the older of the two, and we are in the process of phasing it out. While both apps work, we recommend the blue Loveland Next app in most cases (with the possible exception of if you’re using an old device for surveying, in which case the red Loveland app may work better for you).
+
+
+
+**Q:** Is the Loveland Next App meant for property surveying alone?
+
+**A:** No. The mobile app is a great tool to look up parcels on the go. 
