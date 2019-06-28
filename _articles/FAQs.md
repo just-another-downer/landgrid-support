@@ -8,17 +8,14 @@ title: FAQs
 ## FAQ's - Landgrid's Knowledge Base
 
 Find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.   
- 
- 
- 
 
 
-**Loveland Technologies - The Company**
+### Loveland Technologies - The Company
 
 **Q:** Are Loveland/makeloveland, landgrid.com & sitecontrol the same?
 
 **A:** Loveland Technologies is the parent company, and landgrid.com is our website and platform.
-Makeloveland was the old site and Sitecontrol was the older mapping platform. Now, post re-branding, all our products and solutions fall under landgrid.com.
+Makeloveland was the old site and Site Control was the older mapping platform. Now, post re-branding, all our products and solutions fall under landgrid.com.
 
 
 **Q:** What are your current offerings?
@@ -44,13 +41,11 @@ You can learn more about them [here](https://landgrid.com/plans)
 **A:** This is usually due to the amount of information that the counties are making digitally available; we can’t provide data that we don’t have ourselves!
 
 
-
-
-**Parcel Data - FAQ's**
+### Parcel Data FAQs
 
 **Q:** How frequently do you update your data?
 
-**A:** We try to refresh the data as and when possible. However, this varies by county. Check out our parcelverse & CSV to see specifics on the data attributes and the parcel age [here](https://landgrid.com/parcelverse#b=counties&s=/us)
+**A:** We try to refresh the data as and when possible. However, this varies by county. Check out our Parcelverse & CSV to see specifics on the data attributes and the parcel age [here](https://landgrid.com/parcelverse#b=counties&s=/us)
 
 
 **Q:** How do I know when you have added new data & parcels to your dataset?
@@ -77,7 +72,7 @@ If lack of coverage for a specific county is a dealbreaker for you, please reach
 
 
 
-**Landgrid Data - Bulk Parcel Data Licensing FAQ's**
+### Landgrid Data - Bulk Parcel Data Licensing FAQs
 
 **Q:** Our data licensing needs vary from time to time. Can we approach Loveland for our varying needs?
 
@@ -113,9 +108,7 @@ If lack of coverage for a specific county is a dealbreaker for you, please reach
 
 
 
-
-
-**Landgrid Free & Pro - FAQ's**
+### Landgrid Free & Pro FAQs
 
 
 **Q:** Do I need to put in credit card information for my free account?
@@ -169,7 +162,7 @@ Our Pro however comes packed with a ton of features and functionality including 
 
 
 
-**Landgrid Mapping Platform - FAQ's**    
+### Landgrid Mapping Platform FAQs
 
 
 
@@ -204,8 +197,7 @@ Our Pro however comes packed with a ton of features and functionality including 
 
 
 
-**Landgrid Mobile App - FAQ's**    
-
+### Landgrid Mobile App FAQs
 
 
 **Q:** I see two Loveland apps in the app store. Which one should I use for conducting my survey?
@@ -213,7 +205,6 @@ Our Pro however comes packed with a ton of features and functionality including 
 **A:** The red ‘Loveland app’ is the older of the two, and we are in the process of phasing it out. While both apps work, we recommend the blue Loveland Next app in most cases (with the possible exception of if you’re using an old device for surveying, in which case the red Loveland app may work better for you).
 
 
-
 **Q:** Is the Loveland Next App meant for property surveying alone?
 
-**A:** No. The mobile app is a great tool to look up parcels on the go. 
+**A:** No. The mobile app is a great tool to look up parcels on the go.
