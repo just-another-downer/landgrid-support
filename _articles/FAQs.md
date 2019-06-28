@@ -5,7 +5,7 @@ published: true
 intro: 'Quick answers to any questions about our products, services and company'
 title: FAQs
 ---
-## FAQ's - Landgrid's Knowledge Base
+## Landgrid's Knowledge Base
 
 Find quick answers to any questions and doubts you may have about our products, services and company. We are always updating our FAQ's to make it as comprehensive as possible.   
 
