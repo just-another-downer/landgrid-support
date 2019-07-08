@@ -26,6 +26,9 @@ Surveyors CANNOT log in to a landgrid.com account except for via the app on a mo
 **Billing Contact:**
 If you'd like to pass the payment reins to someone else in your account, you can set them as the "Billing Contact." This will give them access to change payment settings.
 
+**Super Manager:**
+Through our [Landgrid Enterprise](https://landgrid.com/enterprise) plans, you can create sub-groups. Each sub-group has its own projects, members, managers, and data. Supermanagers are able to create and manage all of your sub-groups. 
+
 **Note:** To remove a member from your group, follow the same procedure as outlined above and select “Remove from Group” from the dropdown list.
 
 **Note:** You can change permissions settings at any time.
