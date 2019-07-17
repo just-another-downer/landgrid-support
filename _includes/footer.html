@@ -1,26 +1,174 @@
-<footer class="container">
-  <div class="col-md-12">
-    <ul class="contact-list">
-      <span><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
-      {% if site.facebook_username %}
-      <span>
-        {% include icon-facebook.html username=site.facebook_username %}
-      </span>
-      {% endif %}
-      {% if site.twitter_username %}
-      <span>
-        {% include icon-twitter.html username=site.twitter_username %}
-      </span>
-      {% endif %}
-      {% if site.github_username %}
-      <span>
-        {% include icon-github.html username=site.github_username %}
-      </span>
-      {% endif %}
-    </ul>
-  </div>
+<footer>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h4>Loveland Technologies</h4>
+<div>
+<a href="mailto:team@landgrid.com">
+<i class="fas fa-envelope"></i>
+team@landgrid.com
+</a>
+</div>
+<div>
+<a href="#">
+<i class="fas fa-phone-square"></i>
+313-649-LAND
+</a>
+</div>
+<div>
+<i class="fas fa-home"></i>
+407 E Fort St, Suite 100
+</div>
+<div>
+<i class="fas"></i>
+Detroit, MI 48226
+</div>
+</div>
+<div class="col-md-2">
+<div>
+<h4>Solutions</h4>
+<div>
+<a href="https://landgrid.com/enterprise">Landgrid Enterprise</a>
+</div>
+<div>
+<a href="https://landgrid.com/parcels">Landgrid Data</a>
+</div>
+<div>
+<a href="https://landgrid.com/plans">Plans &amp; Pricing</a>
+</div>
+</div>
+</div>
+<div class="col-md-2">
+<div>
+<h4>About</h4>
+</div>
+<div>
+<a href="https://landgrid.com/company">Company</a>
+</div>
+<div>
+<a href="https://landgrid.com/press">Press</a>
+</div>
+</div>
+<div class="col-md-2">
+<div>
+<h4>Resources</h4>
+</div>
+<div>
+<a href="https://landgrid.com/blog">Blog</a>
+</div>
+<div>
+<a href="https://landgrid.com/reports">Reports</a>
+</div>
+<div>
+<a href="https://landgrid.com/parcelverse">Parcelverse</a>
+</div>
+<div>
+<a href="https://landgrid.com/apps">Mobile Apps</a>
+</div>
+</div>
+<div class="col-md-2">
+<div>
+<h4>Support</h4>
+</div>
+<div>
+<a href="https://support.landgrid.com">
+Guidebook
+</a>
+</div>
+<div>
+<a href="mailto:help@landgrid.com">
+<i class="fas fa-envelope"></i>
+help@landgrid.com
+</a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div>
+<form id="newsletter-form" action="/signups.json" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="03SGRw3kCaFcBsPvXZuiazwL+LGBwns66k/qoXrxzT9SqFllsDpBp0nETGnqU1UW4PJlWjgKq4v1aadJnYrXTw==">
+Sign up for our email newsletter:
+</form>
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div>
+<div class="input-group">
+<input type="hidden" name="list" id="list" value="newsletter">
+<input type="text" name="email" id="email" value="matth@makeloveland.com" placeholder="Your email address" class="form-control">
+<a class="btn btn-primary input-group-addon submit" href="#">
+<i class="fas fa-check"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="social">
+<a href="https://facebook.com/makeloveland">
+<i class="fab fa-facebook-square"></i>
+Facebook
+</a>
+</div>
+</div>
+<div class="col-md-2">
+<div class="social">
+<a href="https://twitter.com/makeloveland">
+<i class="fab fa-twitter"></i>
+Twitter
+</a>
+</div>
+</div>
+<div class="col-md-2">
+<div class="social">
+<a href="https://instagram.com/makeloveland">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+</div>
+</div>
+<div class="col-md-2">
+<div class="social">
+<a href="https://vimeo.com/makeloveland">
+<i class="fab fa-vimeo-square"></i>
+Vimeo
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+  $(document).ready(function() {
+    $('#newsletter-form a.submit').click(function(e) {
+      $(this).closest('form').submit();
+      return false;
+    });
+      
+    $('#newsletter-form').submit(function() {
+      // Hijack the submit event to make it ajaxy
+      var url = $(this).attr('action'), email = $('input[name=email]', this).val();
+      if(email.length < 4) {
+        return false;
+      }
+      var o = { signup: {
+        email: email,
+        list: 'newsletter'
+      } };
+      $.post(url, o, function(resp) {
+        $('#newsletter-form').html(resp.message);
+      }).fail(function() {
+        $('#newsletter-form').html("Sorry, we couldn't save your signup right now!");
+      });
+      return false;
+    });
+  
+  });
+</script>
 </footer>
-<img src="{{ '/img/support.jpg' | prepend: site.baseurl }}" width="100%">
 
 <script type="text/javascript">
   $(function() {
