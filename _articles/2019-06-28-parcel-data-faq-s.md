@@ -23,7 +23,7 @@ A current, detailed list of every County in the US and what data fields we have 
 
 The main way we make county data much easier to work with is by standardizing the column names of the raw data provided by each county. We do not standardize the values in most columns, most we keep those exactly as provided by the county, but we do make sure that every county in our system is converted to a standard table schema, with consistent column names across the nationwide dataset. Please see “What is the Landgrid Standard Schema?” question below.
 
-In addition, we further standardize the parcel address fields using the US Postal Service database of addresses. For details on address specific standardization please see the "" question below. 
+In addition, we further standardize the parcel address fields using the US Postal Service database of addresses. For details on address specific standardization please see the "How do you standardize and normalize addresses?" question below. 
 
 **What is the Landgrid Standard Schema?**
 
