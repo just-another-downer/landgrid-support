@@ -2,7 +2,7 @@
 weight: 0
 category: Getting Started
 published: true
-title: Parcel Data - FAQ's
+title: FAQ's - Parcel Data
 ---
 
 ## Frequently Asked Questions (FAQ) About Landgrid Parcel Data
