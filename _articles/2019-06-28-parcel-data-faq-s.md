@@ -29,9 +29,9 @@ In addition, we further standardize the parcel address fields using the US Posta
 
 We standardize column names for easy access across counties in our nationwide dataset in to our Standard Schema for tables.
 
-Our initial Standard Schema, (v1 or 1.0), was 4 columns standardized: parcel geometry, parcel id, owner, situs address. Those 4 fields are standardized across 100% our nationwide dataset.
+Our initial Standard Schema was 4 columns standardized: parcel geometry, parcel id, owner, situs address. Those 4 fields are standardized across 100% our nationwide dataset.
 
-We are currently at version 3 (v3 or 3.0) of our Standard Schema and it standardizes the column names for 80 county provided data columns, and 20 Landgrid provided data columns. This schema is applied to approximately 60% of our dataset at this time (July 2019) and should be rolled out to rest of our dataset in the next 6 - 12 months. A data dictionary for both of these schemas is available: [https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424)
+We are currently at version 3 of our Standard Schema and it standardizes the column names for 80 county provided data columns, and 20 Landgrid provided data columns. This schema is applied to approximately 60% of our dataset at this time (July 2019) and should be rolled out to rest of our dataset in the next 6 - 12 months. A data dictionary for both of these schemas is available: [https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424)
 
 **When was your data last updated?**
 
