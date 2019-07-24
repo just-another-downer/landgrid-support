@@ -7,7 +7,7 @@ title: Using the API
 ---
 #### Basics
 
-Thanks for your interest in our Parcel API! This tool is still in beta, so please direct feedback, bugs and questions to **team@makeloveland.com**. To begin with, all requests will be to the `https://landgrid.com` domain, with the paths described below per-request.
+Thank you for your interest in our Parcel API! This tool is now out of beta, so please direct feedback, bugs and questions to **help@landgrid.com**. To begin with, all requests will be to the `https://landgrid.com` domain, with the paths described below per-request.
 
 #### Authentication and tokens
 
