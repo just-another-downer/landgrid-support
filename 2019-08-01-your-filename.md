@@ -31,6 +31,8 @@ Example: 159 MB
 
 1. Click on the Settings Icon
 
+![settings.png]({{site.baseurl}}/img/settings.png)
+
 
 
 2. Click System at the bottom of the Settings Panel.
