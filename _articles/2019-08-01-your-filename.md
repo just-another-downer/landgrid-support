@@ -1,7 +1,7 @@
 ---
 weight: 0
 category: Getting Started
-published: false
+published: true
 title: Reporting-Android-App-Errors.md
 ---
 ## Instructions for reporting Android App Errors
