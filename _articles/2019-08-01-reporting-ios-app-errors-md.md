@@ -1,7 +1,7 @@
 ---
 weight: 0
 category: Getting Started
-published: false
+published: true
 title: reporting-ios-app-errors.md
 ---
 ## Instructions for reporting iOS App Errors
@@ -118,4 +118,3 @@ Here's a template you can use to submit your bug.
 - iPhone Model Number:
 - App Version Number:
 - App Size:
-
