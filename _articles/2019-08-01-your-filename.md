@@ -2,7 +2,7 @@
 weight: 0
 category: Getting Started
 published: false
-title: ''
+title: Reporting-Android-App-Errors.md
 ---
 ## Instructions for reporting Android App Errors
 
@@ -35,30 +35,68 @@ Example: 159 MB
 **Get Android Version + Model Number**
 
 
-1. Click on the Settings Icon
+1. Click on the **Settings Icon**
 
 ![settings.png]({{site.baseurl}}/img/settings.png)
 
 
+2. Click **System** at the bottom of the Settings Panel.
 
-2. Click System at the bottom of the Settings Panel.
-
-
-3. Click About Phone
+![model_1.jpeg]({{site.baseurl}}/img/model_1.jpeg)
 
 
-4. Write down the Version Number
+3. Click **About Phone**
+
+![model_2.jpeg]({{site.baseurl}}/img/model_2.jpeg)
 
 
-5. Click Model & Hardware which is also on on the About Phone screen.
+4. Write down the **Version Number**
+![model_3.jpeg]({{site.baseurl}}/img/model_3.jpeg)
+
+5. Click **Model & Hardware** which is also on on the About Phone screen.
+
+![model_4.jpeg]({{site.baseurl}}/img/model_4.jpeg)
+
+6. Write down the **Model Number**
+
+![model_5.jpeg]({{site.baseurl}}/img/model_5.jpeg)
 
 
-6. Write down the Model Number
 
 
+**Get Loveland Next App Version**
+
+1. Click on the **Settings Icon**
+![settings.png]({{site.baseurl}}/img/settings.png)
+
+2. 2. Click **Apps & Notifications**
+![app_1.jpeg]({{site.baseurl}}/img/app_1.jpeg)
 
 
+3. Click **Loveland Next** (You may need to click 'See all apps' and find the icon there if you haven't used the app recently)
+![app_2.jpeg]({{site.baseurl}}/img/app_2.jpeg)
+
+4. Click **Storage**
+![app_3.jpeg]({{site.baseurl}}/img/app_3.jpeg)
 
 
+5. Write down the number underneath 'Loveland Next' This is the **Loveland App Version Number**
+![app_4.jpeg]({{site.baseurl}}/img/app_4.jpeg)
 
-You can learn more about them [here](https://landgrid.com/plans)
+
+5. Write down the **Total Space Used.**
+![app_5.jpeg]({{site.baseurl}}/img/app_5.jpeg)
+
+
+**Submit Your Bug**
+
+Here's a template you can use to submit your bug.
+
+- What Happened:
+- Date and Time:
+- Android Version Number:
+- Model Number:
+- Loveland App:
+- Version Number:
+- Total Space Used:
+
