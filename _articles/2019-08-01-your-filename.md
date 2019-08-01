@@ -2,7 +2,7 @@
 weight: 0
 category: Getting Started
 published: true
-title: Reporting-Android-App-Errors.md
+title: reporting-android-app-errors.md
 ---
 ## Instructions for reporting Android App Errors
 
@@ -99,4 +99,3 @@ Here's a template you can use to submit your bug.
 - Loveland App:
 - Version Number:
 - Total Space Used:
-
