@@ -53,17 +53,4 @@ Example: 159 MB
 
 
 
-### Loveland Technologies - The Company
-
-**Q:** Are Loveland/makeloveland, landgrid.com & sitecontrol the same?
-
-**A:** Loveland Technologies is the parent company, and landgrid.com is our website and platform.
-Makeloveland was the old site and Site Control was the older mapping platform. Now, post re-branding, all our products and solutions fall under landgrid.com.
-
-
-**Q:** What are your current offerings?
-
-**A:** We offer a suite of tools and products under 2 main categories. 
-1. SaaS (Individual & Organization Tiers) - Landgrid mapping & surveying platform
-2. DaaS - Bulk parcel data licenses if you’d like to purchase our data for use in your app or mapping software.
 You can learn more about them [here](https://landgrid.com/plans)
