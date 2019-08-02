@@ -10,7 +10,7 @@ You can quickly and easily save properties with landgrid.com to look at later; w
 
 To bookmark a property, first click on it in the map. The selected property will be highlighted in purple; a sidebar opens with any base data that we have on the property, as well as its address. At the top right corner of this sidebar is a white cross on a blue background; click this, and you'll have bookmarked your first property!
 
-![Bookmark.PNG]({{site.baseurl}}/Bookmark.PNG)
+![Bookmark.PNG]({{site.baseurl}}/img/Bookmark.PNG)
 
 
 To view your bookmarks, first click "My Profile" in the dropdown menu found in the top right of the screen next to your name. Once here, click on the "Bookmarks" button toward the top of the page, and all of your bookmarked properties will be listed.

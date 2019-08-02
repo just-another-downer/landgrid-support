@@ -1,10 +1,10 @@
 ---
 weight: 0
-category: Getting Started
+category: Surveying
 published: true
-title: reporting-android-app-errors.md
+title: Reporting Android App Errors
 ---
-## Instructions for reporting Android App Errors
+## Instructions for Reporting Android App Errors
 
 In order to track down the bug you experienced in our error logs, we need to know a few key bits of info:
 

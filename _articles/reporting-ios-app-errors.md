@@ -1,10 +1,10 @@
 ---
 weight: 0
-category: Getting Started
+category: Surveying
 published: true
-title: reporting-ios-app-errors.md
+title: Reporting iOS App Errors
 ---
-## Instructions for reporting iOS App Errors
+## Instructions for Reporting iOS App Errors
 
 In order to track down the bug you experienced in our error logs, we need to know a few key bits of info:
 
