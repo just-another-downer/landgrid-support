@@ -4,7 +4,6 @@ category: Surveying
 published: true
 title: Reporting iOS App Errors
 ---
-## Instructions for Reporting iOS App Errors
 
 In order to track down the bug you experienced in our error logs, we need to know a few key bits of info:
 

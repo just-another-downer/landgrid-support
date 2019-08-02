@@ -4,7 +4,6 @@ category: Surveying
 published: true
 title: Reporting Android App Errors
 ---
-## Instructions for Reporting Android App Errors
 
 In order to track down the bug you experienced in our error logs, we need to know a few key bits of info:
 
