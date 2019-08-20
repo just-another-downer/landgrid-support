@@ -19,17 +19,13 @@ Example: A1901
 4. Loveland App Version Number
 Example: 1.14
 
-5. Loveland App Size 
-Example: 159 MB
-
 
 **Note that:**
 
 - The Model Number will never change, so you'll only need to get it once if you can associate it     with a single Surveyor or device.
 - The iPhone Version will change occasionally.
 - The Date+Time and Loveland Version Number is needed for every bug.
-- App Size is useful for us to know if your phone is running out of space.
-- Below is the process for getting the iPhone Version Number, the Model Number, the Loveland App     Version Number, and the App Size.
+- Below is the process for getting the iPhone Version Number, the Model Number, wnd the Loveland App Version Number.
 
 
 **Get iPhone/iOS Version + Model Number**
@@ -69,42 +65,13 @@ Example: 159 MB
 **Get Loveland Next App Version**
 
 
-1. Click on the **Settings Icon**
+1. Open the Loveland App and Log in.
 
+2. Navigate to Profile
 
-![ios_app_1.png]({{site.baseurl}}/img/ios_app_1.png)
+![profile_icon.png]({{site.baseurl}}/img/profile_icon.png)
 
-
-2. Click **Storage & iCloud Usage**
-
-
-![ios_app_2.png]({{site.baseurl}}/img/ios_app_2.png)
-
-
-3. Click **Manage Storage**
-
-
-![ios_app_3.png]({{site.baseurl}}/img/ios_app_3.png)
-
-
-4. Click **Loveland Next** (You may have to scroll down)
-
-
-![ios_app_4.png]({{site.baseurl}}/img/ios_app_4.png)
-
-
-5. Write down the **number underneath 'Loveland Next'** This is the Loveland App Version Number
-
-
-![ios_app_5.png]({{site.baseurl}}/img/ios_app_5.png)
-
-
-6. Write down the **App Size.**
-
-
-![ios_app_6.png]({{site.baseurl}}/img/ios_app_6.png)
-
-
+3. Write down the **Landgrid Version Number** at the bottom of the screen. Example: 1.15.0
 
 
 **Submit Your Bug**
@@ -116,4 +83,3 @@ Here's a template you can use to submit your bug.
 - iPhone Version Number:
 - iPhone Model Number:
 - App Version Number:
-- App Size:
