@@ -7,7 +7,7 @@ title: Start Your Property Survey with paid Landgrid Accounts
 Title: Start Your Property Survey with Site Control Pro
 ---
 **Introduction**  
-landgrid.com users with paid accounts can create custom surveys and go into their cities and neighborhoods equipped with the LOVELAND App to take pictures and answer questions about property. The data and photography collected is attached to the parcels surveyed and saved privately in your landgrid.com account, where you can use it to build maps and make decisions supported by the latest information collected on the ground.
+landgrid.com users with paid accounts can create custom surveys and go into their cities and neighborhoods equipped with the Landgrid App to take pictures and answer questions about property. The data and photography collected is attached to the parcels surveyed and saved privately in your landgrid.com account, where you can use it to build maps and make decisions supported by the latest information collected on the ground.
 
 Here's how to get started with your very own property survey:
 
@@ -22,12 +22,12 @@ When you're finished setting up your survey, **be sure to click "Save Survey"**
 
 
 **Step 3:**   
-If you haven't already, now's the time to download the LOVELAND Next App on your surveying device. A smart phone tablet, etc will work. The LOVELAND Next App is available for iOS and Android devices:    
+If you haven't already, now's the time to download the Landgrid App on your surveying device. A smart phone tablet, etc will work. The Landgrid App is available for iOS and Android devices:    
 * **[Download for iOS](https://itunes.apple.com/us/app/loveland-next/id1338927298)**
 * **[Download for Android](https://play.google.com/store/apps/details?id=com.loveland.pr)**   
     
 **Step 4:**   
-When you're ready to start surveying property, open up the LOVELAND App on your smartphone and log in using your landgrid.com credentials.    
+When you're ready to start surveying property, open up the Landgrid App on your smartphone and log in using your landgrid.com credentials.    
 
      
 **Step 5:**   
