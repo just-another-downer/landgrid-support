@@ -7,77 +7,124 @@ title: Reporting Android App Errors
 
 In order to track down the bug you experienced in our error logs, we need to know a few key bits of info:
 
-1. The exact Date + Time the error last occurred.
-Example: 7/22 4:52pm
+1) The exact Date + Time the error last occurred.
 
-2. Android Version Number
-Example: Android 9
+<small>Example: 7/22 4:52pm</small>
 
-3. Model Number 
-Example: XT1900-1
+2) Android Version Number
 
-4. Loveland App Version Number
-Example: 1.14
+<small>Example: Android 9</small>
+
+3) Model Number 
+
+<small>Example: XT1900-1</small>
+
+4) Landgrid App Version Number
+
+<small>Example: 1.14</small>
 
 
 **Note that:**
 
 - The Model Number will never change, so you'll only need to get it once if you can associate it with a single Surveyor or device.
 - The Android Version will change occasionally.
-- The Date+Time and Loveland Version Number is needed for every bug.
-- Below is the process for getting the Android Version Number, the Model Number, and the Loveland App Version Number.
+- The Date+Time and Landgrid Version Number is needed for every bug.
+- Below is the process for getting the Android Version Number, the Model Number, and the Landgrid App Version Number.
 
-**Get Android Version + Model Number**
+<br><br>
 
+----
 
-1. Click on the **Settings Icon**
+<br><br>
 
-![settings.png]({{site.baseurl}}/img/settings.png)
-
-
-2. Click **System** at the bottom of the Settings Panel.
-
-![model_1.jpeg]({{site.baseurl}}/img/model_1.jpeg)
+### Get Android Version + Model Number
 
 
-3. Click **About Phone**
+1) Click on the **Settings Icon**
 
-![model_2.jpeg]({{site.baseurl}}/img/model_2.jpeg)
+<center>
 
+<img src="{{site.baseurl}}/img/settings.png">
+<br><br>
 
-4. Write down the **Version Number**
-![model_3.jpeg]({{site.baseurl}}/img/model_3.jpeg)
-
-5. Click **Model & Hardware** which is also on on the About Phone screen.
-
-![model_4.jpeg]({{site.baseurl}}/img/model_4.jpeg)
-
-6. Write down the **Model Number**
-
-![model_5.jpeg]({{site.baseurl}}/img/model_5.jpeg)
+</center>
 
 
+2) Click **System** at the bottom of the Settings Panel.
 
-**Get Loveland Next App Version**
+<center>
 
+<img src="{{site.baseurl}}/img/model_1.jpeg">
+<br><br>
 
-1. Open the Loveland App and Log in.
-
-2. Navigate to Profile
-
-![profile_icon.png]({{site.baseurl}}/img/profile_icon.png)
-
-3. Write down the **Landgrid Version Number** at the bottom of the screen. Example: 1.15.0
+</center>
 
 
-**Submit Your Bug**
+3) Click **About Phone**
+
+<center>
+
+<img src="{{site.baseurl}}/img/model_2.jpeg">
+<br><br>
+
+</center>
+
+
+4) Write down the **Version Number**
+
+<center>
+
+<img src="{{site.baseurl}}/img/model_3.jpeg">
+<br><br>
+
+</center>
+
+5) Click **Model & Hardware** which is also on on the About Phone screen.
+
+<center>
+
+<img src="{{site.baseurl}}/img/model_4.jpeg">
+<br><br>
+
+</center>
+
+6) Write down the **Model Number**
+
+<center>
+
+<img src="{{site.baseurl}}/img/model_5.jpeg">
+
+</center>
+
+<br><br>
+
+----
+
+<br><br>
+
+### Get Landgrid App Version
+
+
+1) Open the Landgrid App and Log in.
+
+2) Navigate to Profile <img src="{{site.baseurl}}/img/profile_icon.png">
+
+3) Write down the **Landgrid Version Number** at the bottom of the screen. Example: 1.15.0
+
+<br><br>
+
+----
+
+<br><br>
+
+### Submit Your Bug
 
 Here's a template you can use to submit your bug.
 
-- What Happened:
-- Date and Time:
-- Android Version Number:
-- Model Number:
-- Loveland App:
-- Version Number:
-- Total Space Used:
+```
+What Happened:
+Date and Time:
+Android Version Number:
+Model Number:
+Landgrid App Version Number:
+```
