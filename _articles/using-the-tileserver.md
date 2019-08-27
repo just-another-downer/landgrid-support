@@ -46,57 +46,81 @@ L.tileLayer(
 #### Mapbox GL JS vector example
 
 ```
-mapboxgl.accessToken = 'pk.';
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/light-v9',
-  zoom: 15,
-  center: [-83.139981, 42.398763],
-  showTileBoundaries: true
-});
-map.showTileBoundaries = true;
-
-map.on('load', function () {
-  // Create a parcel layer
-  var parcelCreate = $.ajax({
-    url: url + '/api/v1/parcels?format=mvt&token=',
-    type: 'GET',
-    contentType: 'application/json',
-    dataType: 'json'
-  });
-  parcelCreate.fail(function(jqXHR, textStatus, errorThrown) {
-    console.log('Error getting parcel layer', jqXHR, textStatus, errorThrown);
-  });
-
-  $.when(parcelCreate).then(setup);
-
-  function setup(layerData) {
-    var data = layerData;
-    console.log('Got parcel layer', layerData);
-
-    // Register the parcel source using the tile URL we just got
-    map.addSource(data.id, {
-      type: 'vector',
-      tiles: data.tiles
-    });
-
-    // Add basic parcel outlines
-    map.addLayer({
-      'id': 'parcels',
-      'type': 'line',
-      'source': data.id,
-      'source-layer': data.id,
-      'minzoom': 13,
-      'maxzoom': 20,
-      layout: {
-        visibility: 'visible'
-      },
-      'paint': {
-        'line-color': '#649d8d'
+<html>
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body, #map {
+        height: 100vh;
+        width: 100vw;
       }
-    });
-  });
-});
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <script>
+      var url = 'https://tiles.makeloveland.com'
+      mapboxgl.accessToken = 'pk.eyJ1IjoibG92ZWxhbmQiLCJhIjoibHFTSURFNCJ9.titsQDMlSIud_r60hOlmeA'; // Insert your Mapbox token here
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v9',
+        zoom: 15,
+        center: [-83.139981, 42.398763],
+        showTileBoundaries: true
+      });
+      map.showTileBoundaries = true;
+
+      map.on('load', function () {
+        // Create a parcel layer
+        var parcelCreate = $.ajax({
+          url: url + '/api/v1/parcels?format=mvt&token=',
+          type: 'GET',
+          contentType: 'application/json',
+          dataType: 'json'
+        });
+        parcelCreate.fail(function(jqXHR, textStatus, errorThrown) {
+          console.log('Error getting parcel layer', jqXHR, textStatus, errorThrown);
+        });
+
+        $.when(parcelCreate).then(setup);
+
+        function setup(layerData) {
+          var data = layerData;
+          console.log('Got parcel layer', layerData);
+
+          // Register the parcel source using the tile URL we just got
+          map.addSource(data.id, {
+            type: 'vector',
+            tiles: data.tiles
+          });
+
+          // Add basic parcel outlines
+          map.addLayer({
+            'id': 'parcels',
+            'type': 'line',
+            'source': data.id,
+            'source-layer': data.id,
+            'minzoom': 13,
+            'maxzoom': 20,
+            layout: {
+              visibility: 'visible'
+            },
+            'paint': {
+              'line-color': '#649d8d'
+            }
+          });
+        };
+      });
+    </script>
+  </body>
+</html>
 ```
 
 ### Custom layers
