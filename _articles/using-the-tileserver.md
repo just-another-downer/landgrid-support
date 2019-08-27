@@ -67,7 +67,7 @@ L.tileLayer(
 
     <script>
       var url = 'https://tiles.makeloveland.com'
-      mapboxgl.accessToken = 'pk.eyJ1IjoibG92ZWxhbmQiLCJhIjoibHFTSURFNCJ9.titsQDMlSIud_r60hOlmeA'; // Insert your Mapbox token here
+      mapboxgl.accessToken = 'pk.'; // Insert your Mapbox token here
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v9',
