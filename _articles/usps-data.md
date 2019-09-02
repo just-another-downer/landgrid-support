@@ -24,11 +24,13 @@ Looking up parcels got even better now. With our premium USPS fields, you can qu
 ![Screen Shot 2019-08-28 at 10.52.48 PM.png]({{site.baseurl}}/img/Screen Shot 2019-08-28 at 10.52.48 PM.png)
 
 
-
 **Filter & Style:**
 
 You will be able to filter & style USPS residential & vacancy fields to get deeper insights into your location. Find out how many parcels are vacant in your focus area or neighborhood!
 All you have to do is go to the filter function, enter Y or N into the ‘USPS Vacancy’ field, and you will be able to see the associated parcels visualize on the map. You can also do the same thing from the Style tab, if you want to color code beyond Filter’s default purple.
+
+![Screen Shot 2019-08-28 at 10.15.25 PM.png]({{site.baseurl}}/img/Screen Shot 2019-08-28 at 10.15.25 PM.png)
+
 
 **Export USPS Data:**
 
