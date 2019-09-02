@@ -61,3 +61,6 @@ In the slightly smaller dropdown box below this one, click the dropdown and sele
 7. Tap ‘Choose a Survey’ and select the Project that you’ve just created. You may need to refresh this page before it shows up.
 
 8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2.
+
+![Image from iOS (5).png]({{site.baseurl}}/img/Image from iOS (5).png)
+
