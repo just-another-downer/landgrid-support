@@ -1,7 +1,7 @@
 ---
 weight: 0
 category: Getting Started
-published: false
+published: true
 title: USPS Data on the Landgrid Platform & App
 ---
 _This feature is only available with a Landgrid Pro and/or Enterprise (Includes Team)account. [Click here to upgrade your account](https://landgrid.com/plans)._
@@ -50,10 +50,4 @@ In the slightly smaller dropdown box below this one, click the dropdown and sele
 
 7. Tap ‘Choose a Survey’ and select the Project that you’ve just created. You may need to refresh this page before it shows up.
 
-8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2. 
-
-
-
-
-
-
+8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2.
