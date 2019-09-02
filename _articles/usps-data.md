@@ -21,6 +21,9 @@ The overview panel on the map UI will give you a quick snapshot into your locati
 
 Looking up parcels got even better now. With our premium USPS fields, you can quickly look up parcels of interest and find their residential & vacancy status in a matter of minutes.
 
+![Screen Shot 2019-08-28 at 10.52.48 PM.png]({{site.baseurl}}/img/Screen Shot 2019-08-28 at 10.52.48 PM.png)
+
+
 
 **Filter & Style:**
 
