@@ -14,6 +14,9 @@ If you’re a Pro or Enterprise member of landgrid.com you now have an easy way 
 
 The overview panel on the map UI will give you a quick snapshot into your location’s vacancy status based on the USPS data attached to the parcels in the area.
 
+![USPS Pie Chart.png]({{site.baseurl}}/img/USPS Pie Chart.png)
+
+
 **Parcel Lookup:**
 
 Looking up parcels got even better now. With our premium USPS fields, you can quickly look up parcels of interest and find their residential & vacancy status in a matter of minutes.
