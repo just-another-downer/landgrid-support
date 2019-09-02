@@ -38,6 +38,8 @@ Enterprise customers can export up to 50,000 rows of USPS data in CSV (spreadshe
 
 **CSV exports of the USPS columns are not available for Pro customers.**
 
+![Screen Shot 2019-08-28 at 10.27.47 PM.png]({{site.baseurl}}/img/Screen Shot 2019-08-28 at 10.27.47 PM.png)
+
 
 **Load and View USPS Data on the Landgrid App:**
 
