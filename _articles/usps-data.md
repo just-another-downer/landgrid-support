@@ -48,7 +48,13 @@ For those of you who work on tracking and addressing vacant properties in your c
 1. From the website, create a new Project. You’ll use this Project to visualize the USPS data, and once you’re collecting survey data, that will be attached to this Project as well.
 
 2. Under Style tab, click “Add a Rule”. In the first box, click the dropdown menu and navigate to ‘usps_vacancy’.
+
+![Style_Field.jpg]({{site.baseurl}}/img/Style_Field.jpg)
+
 In the slightly smaller dropdown box below this one, click the dropdown and select ‘Y’. To the right of that box is the color that will represent vacancy - click and use the color picker to choose the one you want.
+
+![Capture (6).JPG]({{site.baseurl}}/img/Capture (6).JPG)
+
 
 3. Click ‘Apply’. Properties marked as USPS vacant should visualize on the map. Click ‘Save’ on the sidebar to save your project as it is currently.
 
@@ -63,4 +69,3 @@ In the slightly smaller dropdown box below this one, click the dropdown and sele
 8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2.
 
 ![Image from iOS (5).png]({{site.baseurl}}/img/Image from iOS (5).png)
-
