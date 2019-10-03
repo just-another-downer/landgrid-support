@@ -13,7 +13,7 @@ With landgrid.com, you can import data from CSVs and Excel spreadsheets to visua
 
 Below is a step-by-step guide to importing data from a CSV or Excel spreadsheet:
 
-1. Click on the project you’d like to upload data to. From the left sidebar, click the “Import Data” button.
+1. Click on the [project](https://support.landgrid.com/articles/new-project/) you’d like to upload data to. From the left sidebar, click the “Import Data” button.
 2. Click “Select a File” and navigate to the desired dataset’s location. 
 3. Click “Import”. 
 4. Once the data preview appears, select the column that contains the Parcel ID (we’ll try to guess, but make sure it’s correct)
