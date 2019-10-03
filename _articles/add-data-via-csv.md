@@ -3,7 +3,7 @@ weight: 1
 category: Adding Data
 published: true
 intro: How to add data to your Project from a CSV or Excel file
-title: Add Data via spreadsheet
+title: Add data from a spreadsheet
 ---
 _This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
 
