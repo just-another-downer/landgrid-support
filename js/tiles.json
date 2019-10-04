@@ -3,7 +3,6 @@
    "name":"Loveland",
    "capabilities":"TilesOnly",
    "type":"indexedVector",
-   "tileMap":"/tilemap",
    "tiles":[
       "https://tiles.makeloveland.com/api/v1/parcels/{z}/{x}/{y}.mvt?token=sFDNpzJka3k4HDrSWSZbMKmiZUxysBprybVpxf2N3e7QwcUGhe6Gg3bf16h53Tny"
    ],
