@@ -112,6 +112,6 @@ All of these requests return a JSON response on success, an array of GeoJSON fea
 **Notes on properties:**
   * `headline`: a human-friendly display name for the parcel. If no address is available, it falls back to the parcel number.
   * `path`: The parcel's unique identifier as described above in "Place & Parcel Paths"
-  * `fields`: Columns from the parcel table. These include [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) wherever fields are available, plus additional columns varying by the particular county & data available. Null / empty values are not included.
+  * `fields`: Columns from the parcel table. These include [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) wherever fields are available, plus additional columns varying by the particular county & data available.
   * `field_labels`: Human-friendly labels for each key in `fields`.
   * `context`: A bit of info about the city or county where this parcel is found, including a `path` one can use as `context` for further searches.
