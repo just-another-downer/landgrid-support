@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>VectorTileLayer from JSON - 4.12</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.12/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.12/"></script>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/layers/VectorTileLayer"
+      ], function(Map, MapView, VectorTileLayer) {
+
+        var demoLovelandAPIToken = 'sFDNpzJka3k4HDrSWSZbMKmiZUxysBprybVpxf2N3e7QwcUGhe6Gg3bf16h53Tny';
+
+        var map = new Map({
+          basemap: "hybrid"
+        });
+
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [-105.052643,40.398857],
+          zoom: 15
+        });
+
+        // load a new vector tile layer from JSON object
+        var vtlLayer = new VectorTileLayer({
+          style: {
+            "layers": [
+              {
+                "id": "parcels",
+                "type": "fill",
+                "source": "loveland",
+                "source-layer": "parcels",
+                "layout": {
+                  "line-cap": "round",
+                  "line-join": "round"
+                },
+                "paint": {
+                  "fill-color": "#f71000",
+                }
+              },
+            ],
+            "version": 8,
+            "sources": {
+              "loveland": {
+                "type": "vector",
+                "url": "https://tiles.makeloveland.com:11217/api/v1/parcels/vector/esri?token=" + demoLovelandAPIToken
+              }
+            },
+          }
+        });
+        map.add(vtlLayer);
+
+        // TODO: There should be a way to get data from the feature on the map directly
+        // like one of these examples. Can you contact ESRI to see if click handlers work 
+        // on vector layers? https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#on
+        vtlLayer.on('click', function(event) {
+          console
+          .log("Clicked on parcel layer", event);
+        })
+        view.on('click', function(event) {
+          console.log("Clicked on map", event);
+          var screenPoint = event.screenPoint;
+          view.hitTest(screenPoint)
+            .then(function(response){
+               console.log("hitTest response", response.results);
+            });
+        });
+
+        // A sample function for getting parcel details on click from the Loveland API
+        function getParcelDetails(lat, lng) {
+          $.get('https://makeloveland.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + lng + '&lat=' + lat)
+          .then(function(results){
+            console.log("Got resuts from Loveland API: ", results);
+            alert("You clicked on parcel id", results[0].properties.fields.parcelnumb);
+          });
+        }
+        view.on('click', function(event) {
+          var point = view.toMap({ x: event.x, y: event.y });
+          var lat = point.latitude;
+          var lng = point.longitude;
+          getParcelDetails(lat, lng);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv" class="esri-widget">
+    </div>
+  </body>
+</html>
