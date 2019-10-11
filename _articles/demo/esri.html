@@ -80,7 +80,7 @@
         map.add(vtlLayer);
 
         // TODO: There should be a way to get data from the feature on the map directly
-        // like one of these examples. Can you contact ESRI to see if click handlers work 
+        // like one of these examples. Can you contact ESRI to see if click handlers work
         // on vector layers? https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#on
         vtlLayer.on('click', function(event) {
           console
@@ -98,9 +98,9 @@
         // A sample function for getting parcel details on click from the Loveland API
         function getParcelDetails(lat, lng) {
           $.get('https://makeloveland.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + lng + '&lat=' + lat)
-          .then(function(results){
-            console.log("Got resuts from Loveland API: ", results);
-            alert("You clicked on parcel id", results[0].properties.fields.parcelnumb);
+          .then(function(data){
+            console.log("Got resuts from Loveland API: ", data);
+            alert("You clicked on parcel id " + data.results[0].properties.fields.parcelnumb);
           });
         }
         view.on('click', function(event) {
