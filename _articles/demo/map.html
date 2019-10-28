@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>Loveland + Mapbox API Demo</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+          display: flex;
+          flex: 1;
+          height: 100vh;
+          width: 100vw;
+        }
+        .map {
+          flex: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="map" id="map"></div>
+    </div>
+
+    <script>
+      var miami = [-80.225978, 25.769534];
+      var startMapAt = miami;
+
+      var demoLovelandAPIToken = 'c27AysfpscYH24v-K8EC1xwEa9V-Nh5RoXqaees_zXf99i-FC1YYs66YYHqea_dx';
+
+      // Your Mapbox key
+      mapboxgl.accessToken = 'pk.eyJ1IjoibG92ZWxhbmQiLCJhIjoiY2p2em1nanh4MDF2NTQ4bzFtZDV2MWxodCJ9.uVbt6B0SFnbUhNnACULLUA';
+      if (!mapboxgl.accessToken || mapboxgl.accessToken === '') {
+        console.error("Please enter your mapbox API token")
+      }
+
+      // Set up a map with the Mapbox Streets baselayer
+      var map1 = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v10',
+          center: startMapAt,
+          zoom: 16
+      });
+
+
+      map1.on('load', function() {
+        // Load Loveland's parcel data
+        loadParcels(map1);
+      });
+
+      // A sample function for getting parcel details from the Loveland API
+      function getParcelDetails(latlng) {
+        $.get('https://landgrid.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + latlng.lng + '&lat=' + latlng.lat)
+        .then(function(results){
+          console.log("Got resuts from Loveland API: ", results);
+        });
+      }
+
+      // Load Loveland's parcel data on the map
+      function loadParcels(map) {
+        // Get parcel metadata
+        var parcelCreate = $.ajax({
+          url: 'https://tiles.makeloveland.com/api/v1/parcels?format=mvt&token=' + demoLovelandAPIToken,
+          type: 'GET',
+          contentType: 'application/json',
+          dataType: 'json'
+        });
+        parcelCreate.fail(function(jqXHR, textStatus, errorThrown) {
+          console.log('Error getting parcel layer', jqXHR, textStatus, errorThrown);
+        });
+
+        $.when(parcelCreate).then(setup);
+
+        var selectedParcels = {
+          type: 'FeatureCollection',
+          features: []
+        }
+
+        // Add the parcel data to the map
+        function setup(layerData) {
+          var data = layerData;
+
+          // Register a Mapbox GL source using the tile URL we just got
+          map.addSource(data.id, {
+            type: 'vector',
+            tiles: data.tiles
+          });
+
+          // Add parcel outlines to the map with basic styles
+          map.addLayer({
+            'id': 'parcels',
+            'type': 'line',
+            'source': data.id,
+            'source-layer': data.id,
+            'minzoom': 13,
+            'maxzoom': 20,
+            layout: {
+              visibility: 'visible'
+            },
+            'paint': {
+              'line-color': 'hsl(203, 41%, 39%)'
+            }
+          });
+
+          // Make an invisible fill layer so the shapes are more clickable
+          map.addLayer({
+            'id': 'parcel-touchable',
+            'type': 'fill',
+            'source': data.id,
+            'source-layer': data.id,
+            'minzoom': 10,
+            'maxzoom': 20,
+            layout: {
+              visibility: 'visible'
+            },
+            'paint': {
+              'fill-opacity': 0
+            }
+          });
+
+          // Add a geojson layer to track selected parcels
+          map.addSource('selected', { type: 'geojson', data: selectedParcels });
+          map.addLayer({
+            "id": "selected",
+            "type": "line",
+            "source": "selected",
+            "paint": {
+            "line-color": "#fdcb00",
+            "line-width": 3
+            }
+          });
+
+          // Handle clicks on the map
+          map.on('click', function(e) {
+            // Look up more details on this parcel from the Loveland API
+            getParcelDetails(e.lngLat);
+
+            // Add the parcel to a list of selected parcels
+            var features = map.queryRenderedFeatures(e.point, { layers: ['parcel-touchable'] });
+            selectedParcels.features = selectedParcels.features.concat(features);
+            map.getSource('selected').setData(selectedParcels);
+          })
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
