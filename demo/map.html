@@ -32,7 +32,7 @@
     <script>
       var miami = [-80.225978, 25.769534];
       var chicago = [-87.632382,41.883718];
-      var startMapAt = chicago;
+      var startMapAt = miami;
 
       var demoLovelandAPIToken = 'c27AysfpscYH24v-K8EC1xwEa9V-Nh5RoXqaees_zXf99i-FC1YYs66YYHqea_dx';
 
@@ -56,13 +56,6 @@
         loadParcels(map1);
       });
 
-      // A sample function for getting parcel details from the Loveland API
-      function getParcelDetails(latlng) {
-        $.get('https://landgrid.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + latlng.lng + '&lat=' + latlng.lat)
-        .then(function(results){
-          console.log("Got resuts from Loveland API: ", results);
-        });
-      }
 
       // Load Loveland's parcel data on the map
       function loadParcels(map) {
@@ -78,11 +71,6 @@
         });
 
         $.when(parcelCreate).then(setup);
-
-        var selectedParcels = {
-          type: 'FeatureCollection',
-          features: []
-        }
 
         // Add the parcel data to the map
         function setup(layerData) {
@@ -106,7 +94,7 @@
               visibility: 'visible'
             },
             'paint': {
-              'line-color': 'hsl(203, 41%, 39%)'
+              'line-color': '#3B6D8C'
             }
           });
 
@@ -116,7 +104,7 @@
             'type': 'fill',
             'source': data.id,
             'source-layer': data.id,
-            'minzoom': 13,
+            'minzoom': 14,
             'maxzoom': 20,
             layout: {
               visibility: 'visible'
@@ -126,20 +114,49 @@
             }
           });
 
-          map.addSource('raster-parcels', {
-            type: 'raster',
-            tiles: ["https://tiles.makeloveland.com/api/v1/parcels/{z}/{x}/{y}.png"],
-            tileSize: 256
-          })
-          map.addLayer({
-            id: "raster-parcels",
-            type: "raster",
-            source: "raster-parcels",
-            minzoom: 0,
-            maxzoom: 13
-          })
+          // Transition to raster parcels at a far zoom level.
+          // Create a raster layer with custom styles
+          // See these resources for building custom styles: 
+          // https://carto.com/help/tutorials/getting-started-with-cartocss/
+          // https://carto.com/developers/styling/cartocss/
+          var createRasterLayer = $.ajax({
+            url: 'https://tiles.makeloveland.com/api/v1/sources?token=' + demoLovelandAPIToken,
+            type: 'POST',
+            contentType: 'application/json',
+            dataType: 'json',
+            data: JSON.stringify({
+              query: {
+                parcel: true
+              },
+              styles: "#loveland { line-color: #3B6D8C; line-width: 0.25;  [zoom >= 14] { line-opacity: 0.5; } } "
+            })
+          });
+          createRasterLayer.fail(function(jqXHR, textStatus, errorThrown) {
+            console.log('Error getting raster layer', jqXHR, textStatus, errorThrown);
+          });
 
-          // Add a geojson layer to track selected parcels
+          $.when(createRasterLayer).then(function(rasterLayerData) {
+            map.addSource('raster-parcels', {
+              type: 'raster',
+              tiles: rasterLayerData.tiles,
+              tileSize: 256
+            })
+            map.addLayer({
+              id: "raster-parcels",
+              type: "raster",
+              source: "raster-parcels",
+              minzoom: 0,
+              maxzoom: 14
+            })
+          });
+
+          // Create a GeoJSON FeatureCollection to track the parcels we have selected
+          var selectedParcels = {
+            type: 'FeatureCollection',
+            features: []
+          }
+
+          // Add a geojson layer to show those selected parcels
           map.addSource('selected', { type: 'geojson', data: selectedParcels });
           map.addLayer({
             "id": "selected",
@@ -151,20 +168,28 @@
             }
           });
 
+          // A sample function for getting parcel details from the Loveland API
+          function getParcelDetails(latlng) {
+            $.get('https://landgrid.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + latlng.lng + '&lat=' + latlng.lat)
+            .then(function(data){
+              console.log("Got resuts from Loveland API: ", data);
+              var parcelGeoJSON = data && data.results && data.results[0]
+
+              // Highlight the clicked parcel on the map
+              if (parcelGeoJSON) {
+                selectedParcels.features = selectedParcels.features.concat(parcelGeoJSON);
+                map.getSource('selected').setData(selectedParcels);
+              }
+            });
+          }
+
           // Handle clicks on the map
           map.on('click', function(e) {
             // Look up more details on this parcel from the Loveland API
             getParcelDetails(e.lngLat);
-
-            // Add the parcel to a list of selected parcels
-            var features = map.queryRenderedFeatures(e.point, { layers: ['parcel-touchable'] });
-            selectedParcels.features = selectedParcels.features.concat(features);
-            map.getSource('selected').setData(selectedParcels);
           })
         }
       }
-
-
     </script>
   </body>
 </html>
