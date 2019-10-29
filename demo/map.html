@@ -116,7 +116,7 @@
             'type': 'fill',
             'source': data.id,
             'source-layer': data.id,
-            'minzoom': 10,
+            'minzoom': 13,
             'maxzoom': 20,
             layout: {
               visibility: 'visible'
@@ -125,6 +125,19 @@
               'fill-opacity': 0
             }
           });
+
+          map.addSource('raster-parcels', {
+            type: 'raster',
+            tiles: ["https://tiles.makeloveland.com/api/v1/parcels/{z}/{x}/{y}.png"],
+            tileSize: 256
+          })
+          map.addLayer({
+            id: "raster-parcels",
+            type: "raster",
+            source: "raster-parcels",
+            minzoom: 0,
+            maxzoom: 13
+          })
 
           // Add a geojson layer to track selected parcels
           map.addSource('selected', { type: 'geojson', data: selectedParcels });
