@@ -30,166 +30,169 @@
     </div>
 
     <script>
-      var miami = [-80.225978, 25.769534];
-      var chicago = [-87.632382,41.883718];
-      var startMapAt = miami;
+      $(document).ready(function() {
+        var miami = [-80.225978, 25.769534];
+        var chicago = [-87.632382,41.883718];
+        var startMapAt = miami;
 
-      var demoLovelandAPIToken = 'c27AysfpscYH24v-K8EC1xwEa9V-Nh5RoXqaees_zXf99i-FC1YYs66YYHqea_dx';
+        var demoLovelandAPIToken = 'c27AysfpscYH24v-K8EC1xwEa9V-Nh5RoXqaees_zXf99i-FC1YYs66YYHqea_dx';
 
-      // Your Mapbox key
-      mapboxgl.accessToken = 'pk.eyJ1IjoibG92ZWxhbmQiLCJhIjoiY2syYzdvdHM2Mml2eTNicGVvMTdyemVzeCJ9.JX4wvVPHg-nIDcwySDUDcQ';
-      if (!mapboxgl.accessToken || mapboxgl.accessToken === '') {
-        console.error("Please enter your mapbox API token")
-      }
+        // Your Mapbox key
+        mapboxgl.accessToken = 'pk.eyJ1IjoibG92ZWxhbmQiLCJhIjoiY2syYzdvdHM2Mml2eTNicGVvMTdyemVzeCJ9.JX4wvVPHg-nIDcwySDUDcQ';
+        if (!mapboxgl.accessToken || mapboxgl.accessToken === '') {
+          console.error("Please enter your mapbox API token")
+        }
 
-      // Set up a map with the Mapbox Streets baselayer
-      var map1 = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v10',
-          center: startMapAt,
-          zoom: 16
-      });
-
-
-      map1.on('load', function() {
-        // Load Loveland's parcel data
-        loadParcels(map1);
-      });
-
-
-      // Load Loveland's parcel data on the map
-      function loadParcels(map) {
-        // Get parcel metadata
-        var parcelCreate = $.ajax({
-          url: 'https://tiles.makeloveland.com/api/v1/parcels?format=mvt&token=' + demoLovelandAPIToken,
-          type: 'GET',
-          contentType: 'application/json',
-          dataType: 'json'
-        });
-        parcelCreate.fail(function(jqXHR, textStatus, errorThrown) {
-          console.log('Error getting parcel layer', jqXHR, textStatus, errorThrown);
+        // Set up a map with the Mapbox Streets baselayer
+        var map1 = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10',
+            center: startMapAt,
+            zoom: 16
         });
 
-        $.when(parcelCreate).then(setup);
 
-        // Add the parcel data to the map
-        function setup(layerData) {
-          var data = layerData;
+        map1.on('load', function() {
+          // Load Loveland's parcel data
+          loadParcels(map1);
+        });
 
-          // Register a Mapbox GL source using the tile URL we just got
-          map.addSource(data.id, {
-            type: 'vector',
-            tiles: data.tiles
-          });
 
-          // Add parcel outlines to the map with basic styles
-          map.addLayer({
-            'id': 'parcels',
-            'type': 'line',
-            'source': data.id,
-            'source-layer': data.id,
-            'minzoom': 15,
-            'maxzoom': 22,
-            layout: {
-              visibility: 'visible'
-            },
-            'paint': {
-              'line-color': '#3B6D8C'
-            }
-          });
-
-          // Make an invisible fill layer so the shapes are more clickable
-          map.addLayer({
-            'id': 'parcel-touchable',
-            'type': 'fill',
-            'source': data.id,
-            'source-layer': data.id,
-            'minzoom': 15,
-            'maxzoom': 22,
-            layout: {
-              visibility: 'visible'
-            },
-            'paint': {
-              'fill-opacity': 0
-            }
-          });
-
-          // Transition to raster parcels at a far zoom level.
-          // Create a raster layer with custom styles
-          // See these resources for building custom styles: 
-          // https://carto.com/help/tutorials/getting-started-with-cartocss/
-          // https://carto.com/developers/styling/cartocss/
-          var createRasterLayer = $.ajax({
-            url: 'https://tiles.makeloveland.com/api/v1/sources?token=' + demoLovelandAPIToken,
-            type: 'POST',
+        // Load Loveland's parcel data on the map
+        function loadParcels(map) {
+          // Get parcel metadata
+          var parcelCreate = $.ajax({
+            url: 'https://tiles.makeloveland.com/api/v1/parcels?format=mvt&token=' + demoLovelandAPIToken,
+            type: 'GET',
             contentType: 'application/json',
-            dataType: 'json',
-            data: JSON.stringify({
-              query: {
-                parcel: true
-              },
-              styles: "#loveland { line-color: #3B6D8C; line-width: 0.25;  [zoom >= 14] { line-opacity: 0.5; } } "
-            })
+            dataType: 'json'
           });
-          createRasterLayer.fail(function(jqXHR, textStatus, errorThrown) {
-            console.log('Error getting raster layer', jqXHR, textStatus, errorThrown);
+          parcelCreate.fail(function(jqXHR, textStatus, errorThrown) {
+            console.log('Error getting parcel layer', jqXHR, textStatus, errorThrown);
           });
 
-          $.when(createRasterLayer).then(function(rasterLayerData) {
-            map.addSource('raster-parcels', {
-              type: 'raster',
-              tiles: rasterLayerData.tiles,
-              tileSize: 256
-            })
-            map.addLayer({
-              id: "raster-parcels",
-              type: "raster",
-              source: "raster-parcels",
-              minzoom: 0,
-              maxzoom: 15
-            })
-          });
+          $.when(parcelCreate).then(setup);
 
-          // Create a GeoJSON FeatureCollection to track the parcels we have selected
-          var selectedParcels = {
-            type: 'FeatureCollection',
-            features: []
-          }
+          // Add the parcel data to the map
+          function setup(layerData) {
+            var data = layerData;
 
-          // Add a geojson layer to show those selected parcels
-          map.addSource('selected', { type: 'geojson', data: selectedParcels });
-          map.addLayer({
-            "id": "selected",
-            "type": "line",
-            "source": "selected",
-            "paint": {
-            "line-color": "#fdcb00",
-            "line-width": 3
+            // Register a Mapbox GL source using the tile URL we just got
+            map.addSource(data.id, {
+              type: 'vector',
+              tiles: data.tiles
+            });
+
+            // Add parcel outlines to the map with basic styles
+            // map.addLayer({
+            //   'id': 'parcels',
+            //   'type': 'line',
+            //   'source': data.id,
+            //   'source-layer': data.id,
+            //   'minzoom': 15,
+            //   'maxzoom': 22,
+            //   layout: {
+            //     visibility: 'visible'
+            //   },
+            //   'paint': {
+            //     'line-color': '#3B6D8C'
+            //   }
+            // });
+  // 
+            // // Make an invisible fill layer so the shapes are more clickable
+            // map.addLayer({
+            //   'id': 'parcel-touchable',
+            //   'type': 'fill',
+            //   'source': data.id,
+            //   'source-layer': data.id,
+            //   'minzoom': 15,
+            //   'maxzoom': 22,
+            //   layout: {
+            //     visibility: 'visible'
+            //   },
+            //   'paint': {
+            //     'fill-opacity': 0
+            //   }
+            // });
+
+            // Transition to raster parcels at a far zoom level.
+            // Create a raster layer with custom styles
+            // See these resources for building custom styles: 
+            // https://carto.com/help/tutorials/getting-started-with-cartocss/
+            // https://carto.com/developers/styling/cartocss/
+            var createRasterLayer = $.ajax({
+              url: 'https://tiles.makeloveland.com/api/v1/sources?token=' + demoLovelandAPIToken,
+              type: 'POST',
+              contentType: 'application/json',
+              dataType: 'json',
+              data: JSON.stringify({
+                query: {
+                  parcel: true
+                },
+                styles: "#loveland { line-color: 'red'; line-width: 1;  [zoom >= 14] { line-opacity: 1; } [zoom <= 14] { line-opacity: 0.5; line-width: 0.5 } } "
+              })
+            });
+            createRasterLayer.fail(function(jqXHR, textStatus, errorThrown) {
+              console.log('Error getting raster layer', jqXHR, textStatus, errorThrown);
+            });
+
+            $.when(createRasterLayer).then(function(rasterLayerData) {
+              map.addSource('raster-parcels', {
+                type: 'raster',
+                tiles: rasterLayerData.tiles,
+                tileSize: 256
+              })
+              map.addLayer({
+                id: "raster-parcels",
+                type: "raster",
+                source: "raster-parcels",
+                minzoom: 0,
+                maxzoom: 20
+              })
+            });
+
+            // Create a GeoJSON FeatureCollection to track the parcels we have selected
+            var selectedParcels = {
+              type: 'FeatureCollection',
+              features: []
             }
-          });
 
-          // A sample function for getting parcel details from the Loveland API
-          function getParcelDetails(latlng) {
-            $.get('https://landgrid.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + latlng.lng + '&lat=' + latlng.lat)
-            .then(function(data){
-              console.log("Got resuts from Loveland API: ", data);
-              var parcelGeoJSON = data && data.results && data.results[0]
-
-              // Highlight the clicked parcel on the map
-              if (parcelGeoJSON) {
-                selectedParcels.features = selectedParcels.features.concat(parcelGeoJSON);
-                map.getSource('selected').setData(selectedParcels);
+            // Add a geojson layer to show those selected parcels
+            map.addSource('selected', { type: 'geojson', data: selectedParcels });
+            map.addLayer({
+              "id": "selected",
+              "type": "line",
+              "source": "selected",
+              "paint": {
+              "line-color": "#fdcb00",
+              "line-width": 3
               }
             });
-          }
 
-          // Handle clicks on the map
-          map.on('click', function(e) {
-            // Look up more details on this parcel from the Loveland API
-            getParcelDetails(e.lngLat);
-          })
+            // A sample function for getting parcel details from the Loveland API
+            function getParcelDetails(latlng) {
+              $.get('https://landgrid.com/api/v1/search.json?token=' + demoLovelandAPIToken + '&lon=' + latlng.lng + '&lat=' + latlng.lat)
+              .then(function(data){
+                console.log("Got resuts from Loveland API: ", data);
+                var parcelGeoJSON = data && data.results && data.results[0]
+
+                // Highlight the clicked parcel on the map
+                if (parcelGeoJSON) {
+                  selectedParcels.features = selectedParcels.features.concat(parcelGeoJSON);
+                  map.getSource('selected').setData(selectedParcels);
+                }
+              });
+            }
+
+            // Handle clicks on the map
+            map.on('click', function(e) {
+              // Look up more details on this parcel from the Loveland API
+              getParcelDetails(e.lngLat);
+            })
+          }
         }
-      }
+      })
+
 
 
     </script>
