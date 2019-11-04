@@ -35,7 +35,7 @@ By choosing this option, anyone with the link is able to view this Project; it w
 
 ### Option 2: Share by Embedding Your Map
 
-If you have a website, blog, news story, or other web page you’d like to embed a landgrid.com Project, well cool! Simply copy the embed code for the project (HOW/WHERE) and insert using the HTML editor (or whatever the appropriate format is given the platform you’re publishing with).
+If you have a website, blog, news story, or other web page and you’d like to embed an accompanying landgrid.com Project, well cool! Simply copy the embed code for the project ('Share' button on left hand side, set map settings to "public") and insert using the HTML editor (or whatever the appropriate format is given the platform you’re publishing with).
 
 Your embedded map will show things from the project like parcel color coding, commenting, your survey feed and data. Nothing will be editable by people interacting with the embedded map.
 
