@@ -15,10 +15,10 @@ If you are able to invite collaborators, you can also customize the permissions 
 Here are the definitions of the various permissions levels:
 
 **Manager:**
-Full permission to edit data, create and delete projects, survey properties. Full access to the account, except for billing. You can have multiple managers.
+Full permission to edit data, create and delete projects, and survey properties. Full access to the account, including updating billing. You can have multiple managers.
 
 **Member:**
-Members can see all projects and all data in a Land Grid account. They can survey properties. However, they cannot edit any data or make any modifications to the settings or content of a landgrid.com account. Essentially, they have "read-only" access.
+Members can see all projects and all data in a Landgrid account. They can: survey properties, edit (QC) survey responses, draw focus areas, upload datasets from spreadsheets, and export datasets. However, they cannot: create, modify, or delete projects; add or remove users in the account; or change billing and other account settings.
 
 **Surveyor:**
 Surveyors CANNOT log in to a landgrid.com account except for via the app on a mobile device. The account created when you invite someone as a Surveyor ONLY allows them to contribute to a landgrid.com account by surveying properties with the LOVELAND App. This is ideal if you have a hired workforce of surveyors who you want collecting property data in the field, but not modifying data once it's in your landgrid.com account.
