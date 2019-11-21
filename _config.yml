@@ -15,7 +15,9 @@ url: "https://support.landgrid.com" # the base hostname & protocol for your site
 twitter_username: makeloveland
 facebook_username: makeloveland
 # github_username:  loveland
+sections: [Platform, Parcel Data]
 category-list: [Getting Started, Maps, Your Account, Adding Data, Managing Data, Surveying]
+data-categories: [Overview]
 
 # We're treating pages in a special way
 # See https://jekyllrb.com/docs/collections/

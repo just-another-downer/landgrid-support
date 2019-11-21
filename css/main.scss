@@ -20,6 +20,7 @@ $background-color: #fdfdfd;
 $brand-color:      hsl(203, 61%, 29%);
 $eggplant:         hsl(304.3, 20%, 40%);
 $eggplant-dark-t:  hsla(304.3, 20%, 40%, 0.9);
+$contrast-back:    hsl(30, 69.2%, 94.9%);
 
 $ll:               $eggplant;
 $link-color:       #1f628c;
@@ -27,6 +28,8 @@ $link-color:       #1f628c;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+
 
 // Width of the content area
 $content-width:    800px;

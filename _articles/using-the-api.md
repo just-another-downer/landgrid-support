@@ -1,10 +1,12 @@
 ---
 weight: 1
-category: Developer Notes
+section: Parcel Data
+category: Overview
 published: true
 intro: How developers can plug in to the Loveland parcel API
 title: Using the API
 ---
+
 #### Basics
 
 Thank you for your interest in our Parcel API! This tool is now out of beta, so please direct feedback, bugs and questions to **help@landgrid.com**. To begin with, all requests will be to the `https://landgrid.com` domain, with the paths described below per-request.
@@ -17,10 +19,9 @@ All requests to the API must include a `token` parameter. If you have a Loveland
 
 Most API requests can take an optional `context` parameter that will narrow down the search to a specific area. These `context` values are in the form of paths.
 
-At Loveland we use place *pathnames* to specify administrative boundaries and uniquely describe a geographic region. This includes the country, state, county, and county subdivision. For example, `/us/mi/wayne/detroit` for Detroit or `/us/oh/hamilton` for Hamilton County, OH. If you're not sure what to use for your requests, browsing on [landgrid.com](https://landgrid.com/us) to the desired place and copying the path out of the URL is a good way to get started.
+At Loveland we use place _pathnames_ to specify administrative boundaries and uniquely describe a geographic region. This includes the country, state, county, and county subdivision. For example, `/us/mi/wayne/detroit` for Detroit or `/us/oh/hamilton` for Hamilton County, OH. If you're not sure what to use for your requests, browsing on [landgrid.com](https://landgrid.com/us) to the desired place and copying the path out of the URL is a good way to get started.
 
-*Parcel paths* are similar, and include an integer ID at the end. For example, `/us/mi/wayne/detroit/555`. These uniquely identify a parcel in our database in a simple, human-readable format.
-
+_Parcel paths_ are similar, and include an integer ID at the end. For example, `/us/mi/wayne/detroit/555`. These uniquely identify a parcel in our database in a simple, human-readable format.
 
 ## Parcel search
 
@@ -28,36 +29,40 @@ At Loveland we use place *pathnames* to specify administrative boundaries and un
 
 `GET /api/v1/search.json?lat=<y>&lon=<x>&token=<token>`
 
-We recommend using lat-long search for most lookups. Because parcels may span several addresses, using a third-party geocoder (eg [Mapbox Places](https://www.mapbox.com/search/)) to identify a point for an address and then searching for the parcel at that poing can be more accurate than straight address search. 
+We recommend using lat-long search for most lookups. Because parcels may span several addresses, using a third-party geocoder (eg [Mapbox Places](https://www.mapbox.com/search/)) to identify a point for an address and then searching for the parcel at that poing can be more accurate than straight address search.
 
 **Request parameters:**
-* `lat`: Latitude (y-coord) in decimal degrees, WGS84 (EPSG 4326) projection.
-* `lon`: Longitude (x-coord), same.
+
+- `lat`: Latitude (y-coord) in decimal degrees, WGS84 (EPSG 4326) projection.
+- `lon`: Longitude (x-coord), same.
 
 ### By address
 
 `GET /api/v1/search.json?query=<address>&context=<path>&token=<token>`
 
 **Request parameters:**
-* `query`: The address to look up
-* `context` (optional): See notes on `context` parameter above
-* `strict` (optional): Set `strict=1` to only return results in the `context`.
+
+- `query`: The address to look up
+- `context` (optional): See notes on `context` parameter above
+- `strict` (optional): Set `strict=1` to only return results in the `context`.
 
 ### By parcel number
 
 `GET /api/v1/search.json?parcelnumb=<pin>&token=<token>`
 
 **Request parameters:**
-* `parcelnumb`: The assessor's parcel number to look up.
-* `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
-* `strict` (optional): Set `strict=1` to only return results in the `context`.
+
+- `parcelnumb`: The assessor's parcel number to look up.
+- `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
+- `strict` (optional): Set `strict=1` to only return results in the `context`.
 
 ## Parcel details
 
 `GET /api/v1/parcel.json?path=<path>&token=<token>`
 
 **Request parameters:**
-* `path`: The canonical path of the parcel in the Loveland system. For example, `/us/mi/wayne/detroit/555`. See "Parcel Paths" above for more details.
+
+- `path`: The canonical path of the parcel in the Loveland system. For example, `/us/mi/wayne/detroit/555`. See "Parcel Paths" above for more details.
 
 **Response:**
 A single GeoJSON Feature for the requested parcel (rather than an array of results).
@@ -110,8 +115,9 @@ All of these requests return a JSON response on success, an array of GeoJSON fea
     }
 
 **Notes on properties:**
-  * `headline`: a human-friendly display name for the parcel. If no address is available, it falls back to the parcel number.
-  * `path`: The parcel's unique identifier as described above in "Place & Parcel Paths"
-  * `fields`: Columns from the parcel table. These include [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) wherever fields are available, plus additional columns varying by the particular county & data available.
-  * `field_labels`: Human-friendly labels for each key in `fields`.
-  * `context`: A bit of info about the city or county where this parcel is found, including a `path` one can use as `context` for further searches.
+
+- `headline`: a human-friendly display name for the parcel. If no address is available, it falls back to the parcel number.
+- `path`: The parcel's unique identifier as described above in "Place & Parcel Paths"
+- `fields`: Columns from the parcel table. These include [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) wherever fields are available, plus additional columns varying by the particular county & data available.
+- `field_labels`: Human-friendly labels for each key in `fields`.
+- `context`: A bit of info about the city or county where this parcel is found, including a `path` one can use as `context` for further searches.
