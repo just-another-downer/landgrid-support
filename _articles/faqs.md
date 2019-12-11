@@ -4,6 +4,7 @@ category: Getting Started
 published: true
 intro: 'Quick answers to any questions about our products, services and company'
 title: FAQs - Landgrid Mapping Platform
+permalink: /articles/FAQs
 ---
 ## Landgrid's Knowledge Base
 
