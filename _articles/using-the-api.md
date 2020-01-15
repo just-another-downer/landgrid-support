@@ -17,6 +17,8 @@ All requests to the API must include a `token` parameter. If you have a Loveland
 
 Most API requests can take an optional `context` parameter that will narrow down the search to a specific area. These `context` values are in the form of paths.
 
+The `context` parameter is most important to provide when doing searches that can have results from many different parts of the US. Specifically address or parcel number searches. The `context` parameter should not be provided when doing latitude and longitude based searches.
+
 At Loveland we use place *pathnames* to specify administrative boundaries and uniquely describe a geographic region. This includes the country, state, county, and county subdivision. For example, `/us/mi/wayne/detroit` for Detroit or `/us/oh/hamilton` for Hamilton County, OH. If you're not sure what to use for your requests, browsing on [landgrid.com](https://landgrid.com/us) to the desired place and copying the path out of the URL is a good way to get started.
 
 *Parcel paths* are similar, and include an integer ID at the end. For example, `/us/mi/wayne/detroit/555`. These uniquely identify a parcel in our database in a simple, human-readable format.
@@ -43,6 +45,9 @@ We recommend using lat-long search for most lookups. Because parcels may span se
 * `context` (optional): See notes on `context` parameter above
 * `strict` (optional): Set `strict=1` to only return results in the `context`.
 
+**Response:**
+An array of parcels sorted by descending relevance rank. An empty results set with no error means no parcels could be matched.
+
 ### By parcel number
 
 `GET /api/v1/search.json?parcelnumb=<pin>&token=<token>`
@@ -64,7 +69,7 @@ A single GeoJSON Feature for the requested parcel (rather than an array of resul
 
 ## Response Format
 
-All of these requests return a JSON response on success, an array of GeoJSON features representing the matched parcels. These include polygon geometries and `properties`. Our standard fields are documented in the [Loveland Parcel Schema](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) (some additional undocumented fields may be included in the `properties`). Here's an example response payload:
+All of these requests return a JSON response on success, an array of GeoJSON features representing the matched parcels. These include polygon geometries and `properties`. Our standard fields are documented in the [Loveland Parcel Schema](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) (some additional undocumented fields may be included in the `properties`). An empty results set with no error means no parcels could be matched. Here's an example response payload with results:
 
     {
       results: [
