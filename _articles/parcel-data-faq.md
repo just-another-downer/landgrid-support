@@ -53,6 +53,15 @@ Parcel addresses are then passed through a USPS address verification system whic
 
 The original County provided raw address data is always retained unaltered and included on the parcel record.
 
+**How do you determine the Loveland Building Count value (ll_bldg_count)?**
+
+We work with [Gateway Spatial](https://gatewayspatial.com/), a data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
+
+We then process that footprint data set with our parcel shapes data set to determine how many buildings are on the parcel.
+
+Combining two large data sets, each of which is a combination of a few thousand smaller data sets, to derive a value is always a challenge and we do our best to be as accurate as possible, but some things to keep in mind when working with the building count data:
+1. Each county determines what buildings to track in their GIS system. These are considered by the county to be the significant structures on the parcel. Some counties will include every structure regardless of size, some will only track houses and garages for example.
+1. Much like county parcel data, counties refresh footprint data on their own individual schedules, and less frequently than parcel data in our experience. We do not yet have a way to track the 'last_refresh' date of the building footprint data by county.
 
 ## API Access
 
