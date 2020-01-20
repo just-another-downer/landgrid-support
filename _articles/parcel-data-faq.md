@@ -35,7 +35,7 @@ We are currently at version 3 of our Standard Schema and it standardizes the col
 
 **When was your data last updated?**
 
-Our initial nationwide dataset was collected in the 2015-2016 time frame and we still have some data from that time period. However, approximately 57% of our data has been refreshed in the last year (as of July 2019), and we expect to have the remainder updated in the next 12 months, with an increasing frequency of updates after that.
+Our initial nationwide dataset was collected in the 2015-2016 time frame and we still have some data from that time period. However, approximately 82% of our data has been refreshed in the last year (as of January 15, 2020), and we expect to have the remainder updated in the next 6 months, with an increasing frequency of updates after that.
 
 We make every effort to update our data at least yearly, with major metro areas being updated twice a year. Going forward, we will be increasing the frequency of data updates to better match the individual County update schedules.
 
