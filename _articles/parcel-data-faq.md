@@ -43,15 +43,15 @@ A detailed listing of every County in the US and the date we last refreshed dire
 
 **How do you provide data updates?**
 
-We organize things on a county by county basis using the county's FIPS code (`geoid` in our standard schema columns). We add or refresh 20-300 counties every month with data from the county source.
+All bulk data is provided via SFTP as zip files of each county in the format of your choice (GeoPKG, CSV, GeoJSON, etc), using a pull model. We organize things on a county by county basis using the county's FIPS code (`geoid` in our standard schema columns). We add or refresh 20-300 counties every month with data from the county source.
 
-Each month we replace the existing county file in a client's download directory with the refreshed county files.
+Each month we replace the existing county zip file in a client's download directory with the refreshed county files.
 
 We send out an email each month listing the counties that were refreshed, as well as an updated listing of all the counties and their `last_refresh` date, which is the last date we updated the data directly from the source.
 
 We also provide a CSV file of our VERSE table that lists the `last_refresh` date for each county.
 
-On each parcel we provide a 'll_uuid' number that permanently and uniquely identifies each parcel across data refreshes and updates. The 'll_uuid' can be used to match any locally stored parcels with updated parcels in the county file.
+On each parcel we provide a `'ll_uuid` number that permanently and uniquely identifies each parcel across data refreshes and updates. The `ll_uuid` can be used to match any locally stored parcels with updated parcels in the county file.
 
 We also make improvements to the data that does not come directly from the county, like standardizing addresses, cleaning out non-standard characters, adding additional data attributes, etc. We generally re-export our full dataset quarterly to reflect those changes. Improvements we make to data does NOT affect the `last_refresh` of a county, that is always the date we last pulled data directly from the source. Notices of full dataset exports are also included in the monthly email update sent to all clients.
 
