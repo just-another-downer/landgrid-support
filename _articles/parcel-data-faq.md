@@ -55,13 +55,34 @@ The original County provided raw address data is always retained unaltered and i
 
 **How do you determine the Loveland Building Count value (ll_bldg_count)?**
 
-We work with [Gateway Spatial](https://gatewayspatial.com/), a data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
+We work with [Gateway Spatial](https://gatewayspatial.com/sample-page/), a data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
 
 We then process that footprint data set with our parcel shapes data set to determine how many buildings are on the parcel.
 
 Combining two large data sets, each of which is a combination of a few thousand smaller data sets, to derive a value is always a challenge and we do our best to be as accurate as possible, but some things to keep in mind when working with the building count data:
 1. Each county determines what buildings to track in their GIS system. These are considered by the county to be the significant structures on the parcel. Some counties will include every structure regardless of size, some will only track houses and garages for example.
 1. Much like county parcel data, counties refresh footprint data on their own individual schedules, and less frequently than parcel data in our experience. We do not yet have a way to track the 'last_refresh' date of the building footprint data by county.
+
+**How do you calculate the parcel acres, parcel square feet, and building square feet (ll_gisacre, ll_gissqft, ll_bldg_footprint_sqft)?**
+
+We projected each parcel and building footprint into its UTM Zone SRS, calculated the area in meters and converted that to acres and sqft. This should provide a relatively uniform and consistent value across the US.
+
+**How do you load all of these files into a database?**
+We generally work in a GNU/Linux environment using the command line. Our internal workflow makes use of the OSGeo Foundation libraries and tools including GDAL/OGR and PostGIS for PostgreSQL. The OSGeo project also provides an MS Windows 10 installer for using the tools on a Windows machine named OSGeo4Win.
+
+The `ogr2ogr` command line tool is the best way to import data into a PostgreSQL/PostGIS or MS SQL Server database.
+
+Below is a typical command line to cycle through a set of GeoDB files and append them to a table in PostgreSQL:
+~~~~
+for gdb in /path_to_files/*.gdb ; 
+do echo "$gdb" ; 
+  ogr2ogr -f "PostgreSQL" PG:"dbname=dbname" $gdb -progress --config PG_USE_COPY YES -nln public_schema.target_table_name -append ; 
+done
+~~~~
+Using ogr2ogr to load parcel data into a MS SQL Server works the same way. Parcel data should use the 'geometry' data type in MS SQL Server. A good example of how to do that is [this blog post by Alastair Aitchison](https://alastaira.wordpress.com/ogr2ogr-patterns-for-sql-server/). They also cover installing the OSGeo4Win environment. 
+
+The main item of the command line options are the database connection options. You will have to make sure the user name and password are available and that the client can actually connect to the database and has all the needed permissions. For PostgreSQL on GNU/Linux, there are standard PG_* environmental variables and the .pgpass file for storing credentials that will work with the ogr2ogr commands so they do not have to be included in the command line.
+
 
 ## API Access
 
