@@ -66,6 +66,8 @@ Parcel addresses are then passed through a USPS address verification system whic
 
 The original County provided raw address data is always retained unaltered and included on the parcel record.
 
+## Buildings and area calculations
+
 **How do you determine the Loveland Building Count value (`ll_bldg_count`)?**
 
 We work with [Gateway Spatial](https://gatewayspatial.com/sample-page/), a data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
@@ -79,6 +81,8 @@ Combining two large data sets, each of which is a combination of a few thousand 
 **How do you calculate the parcel acres, parcel square feet, and building square feet (`ll_gisacre`, `ll_gissqft`, `ll_bldg_footprint_sqft`)?**
 
 We projected each parcel and building footprint into its UTM Zone SRS, calculated the area in meters and converted that to acres and sqft. This should provide a relatively uniform and consistent value across the US.
+
+## Loading bulk data
 
 **How do you load all of these files into a database?**
 We generally work in a GNU/Linux environment using the command line. Our internal workflow makes use of the OSGeo Foundation libraries and tools including GDAL/OGR and PostGIS for PostgreSQL. The OSGeo project also provides an MS Windows 10 installer for using the tools on a Windows machine named OSGeo4Win.
