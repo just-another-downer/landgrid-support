@@ -15,7 +15,9 @@ After you’ve made an account (congrats!), the next thing you’ll probably wan
 
 While logged in to your landgrid.com account, go to the top right of the page. Click on your username, and you’ll see a dropdown menu. Click “My Profile”, which will bring you to your home page. This is where you’ll be able to view all the Projects associated with your account.
 
-**To create a new project,** simply click the “New Project” button above the ‘Projects’ header.
+**To create a new project,** simply click the “New Project” button above the ‘Projects’ header. 
+
+NOTE: Pro users are limited to 5 Projects at any one time. If you reach your cap, you can repurpose existing maps or delete one to free up space.
 
 Then, give your Project a name and specify the location you'll be working in. The location can be a city, county, neighborhood, or zip code. As you type your Project’s location, options will appear in a drop-down below the text bar. Select one of those options to be sure your location is in the correct format. If no options appear under the text bar, check your spelling and make sure that the area you chose is part of Loveland’s national parcel dataset.
 
