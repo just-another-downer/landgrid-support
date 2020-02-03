@@ -9,7 +9,7 @@ _This feature is only available with a Landgrid Pro, Team, or Enterprise account
 
 If you want to create a parcel map color coded based on data in your account (either survey data or imported data) you can do so by creating Styles rules. Styles rules will apply to your entire Project. You can change your Styles at any time.
 
-Styles rules are matched to parcels sequentially based on the top to bottom order in your Project's Styles area. That means if you create a set of Styles rules that includes two color codes, both of which match parcels on your Project, the parcels will be highlighted ONLY by the color rule you defined first. Any parcel with imported data not covered by a Styles rule will show up in the "default" color, which you can also designate.
+Style rules are matched to parcels sequentially based on the top to bottom order in your Project's Style area. That means if you create a set of Style rules that includes two color codes, both of which match parcels on your Project, the parcels will be highlighted ONLY by the color rule you defined first. Any parcel with imported data not covered by a Style rule will show up in the "default" color, which you can also designate.
 
 ![Style_img.jpg]({{site.baseurl}}/img/Style_img.jpg)
 
@@ -21,7 +21,7 @@ Say you have a parcel with the address 555 Fake Street that has two data fields:
 Condition: Good
 Occupancy: Vacant
 
-If you go to my Styles area and set Condition = Good to color parcels in Green, and then set another rule to color Occupancy = Vacant parcels in Red, then my 555 Fake Street parcel will ONLY color in Green -- it matches both rules, but the Condition rule is set first, so that's the color that will be applied.
+If you go to the Style tab and set Condition = Good to color parcels in Green, and then set another rule to color Occupancy = Vacant parcels in Red, then the 555 Fake Street parcel will ONLY color in Green -- it matches both rules, but the Condition rule is set first, so that's the color that will be applied.
 
 A legend on the left hand sidebar (under "Overview") will explain your style rules, pulling information from your spreadsheet and the rules you set. If you plan to share your Project (See "Share Your Project"), you may want to check that your column headers and cell contents are easily comprehensible before importing the data.
 
