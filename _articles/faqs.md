@@ -29,7 +29,7 @@ You can learn more about them [here](https://landgrid.com/plans)
 
 **Q:** What happened to Site Control?
 
-**A:** Site Control still exists but we are in the process of phasing it out. Makeloveland.com doesn't exist anymore and visitors are automatically rouated to landgrid.com. We really wanted to unite the two sites into one, and add additional functionality - it made more sense to build a new and improved site with better usability for our customers. This is the origin of landgrid.com!
+**A:** Site Control was phased out in late 2019 once we were confident that landgrid.com was stable and had all features and functions Site Control had. Makeloveland.com doesn't exist anymore and visitors are automatically rouated to landgrid.com. We really wanted to unite the two sites into one, and add additional functionality - it made more sense to build a new and improved site with better usability for our customers. This is the origin of landgrid.com!
 
 
 **Q:** Who owns data that I import to your site?
@@ -59,15 +59,9 @@ You can learn more about them [here](https://landgrid.com/plans)
 
 **Q:** What is the difference between a free and pro account?
 
-**A:** A free account is designed to provide users the ability to view parcel information that we have and to get a taste of the offerings that we provide with a Pro account. In many cases, this translates to having the ability to use and test our tools like bookmarking, filtering, styling, etc. 
+**A:** A free account is designed to provide users the ability to view parcel information that we have and to get a taste of the offerings that we provide with a Pro account. However, a free account does not provide access to most of the tools and features that Pro accounts and above have access to.
 
-Our Pro however comes packed with a ton of features and functionality including being able to create maps & surveys as well as importing & exporting your data. Upgrading to Pro would give you expanded powers and the ability to use these tools in an unlimited way. For more specifics, please [visit](https://landgrid.com/plans)
-
-
-
-**Q:** What happened to your Team account subscription?
-
-**A:** In an effort to simplify our available offerings, it’s been merged into a broader Enterprise subscription category. You can still get the same offer (ie up to 25 users, unlimited projects, limited support, $100/mo) as an Enterprise subscription.
+Pro, meanwhile, comes packed with a ton of features and functionality including being able to create maps & surveys as well as importing & exporting your data. Upgrading to Pro would give you expanded powers and the ability to use these tools in an unlimited way. For more specifics, please [visit](https://landgrid.com/plans)
 
 
 
@@ -134,11 +128,6 @@ Our Pro however comes packed with a ton of features and functionality including 
 ### Landgrid Mobile App FAQs
 
 
-**Q:** I see two Loveland apps in the app store. Which one should I use for conducting my survey?
-
-**A:** The red ‘Loveland app’ is the older of the two, and we are in the process of phasing it out. While both apps work, we recommend the blue Loveland Next app in most cases (with the possible exception of if you’re using an old device for surveying, in which case the red Loveland app may work better for you).
-
-
 **Q:** Is the Loveland Next App meant for property surveying alone?
 
-**A:** No. The mobile app is a great tool to look up parcels on the go.
+**A:** No. The mobile app is a great tool to look up parcels on the go. You can also use the app to collect data of any kind - we have partners who've done resident door-knocking surveys, and others who use the tool to document their property management activities.
