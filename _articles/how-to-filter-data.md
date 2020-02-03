@@ -5,6 +5,10 @@ published: true
 intro: Filtering data helps you analyze and understand it
 title: How to Filter Data
 ---
+
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
+
+
 **About Filter**
 Landgrid.com gives you powerful tools to explore and understand the data you bring to your account. One of these tools is Filter – a search/query interface that allows you to select multiple criteria from data in LOVELAND’s database as well as datasets and survey data you bring to your account.
 
