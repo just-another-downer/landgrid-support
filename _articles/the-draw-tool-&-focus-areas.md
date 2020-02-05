@@ -5,11 +5,12 @@ published: true
 intro: Draw your own focus areas
 title: The Draw Tool & Focus Areas
 ---
+_This feature is only available with a Landgrid Pro, Team, or Enterprise account. [Click here to upgrade your account](https://landgrid.com/plans)._
+
 **About the Draw Tool and Focus Areas:**  
 The draw tool lets you draw your own "Focus Areas" and save them as shapes that you can return to later. When you draw a Focus Area with the draw tool, you will limit the data you see in the Overview panel, the Feed, and the List to only the data in your drawn area. If you run a Filter, you will only search data from within the Focus Area's boundaries.
 
 **Using the Draw Tool**
-
 The Draw Tool itself is found on the toolbar on the top left of the map area. Clicking it brings up the Draw tools; click on the map to start drawing. Finish the shape by "closing it", ie clicking on the first point.
 
 

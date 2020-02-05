@@ -13,6 +13,8 @@ published: true
 
 Landgrid Pro is your personal platform for working with property information. With landgrid.com, you can import property data, create multiple projects, build custom property surveys, invite collaborators, conduct customizable surveys in the field with your mobile device, and map your survey results as they come streaming into your account in real-time.
 
+**Note: Pro accounts are designed to be single-user. To this end, you'll find that you can only log in to your Pro account on two devices at a time. If you'd like to work with friends or colleagues on a project, please consider one of our multi-user account types. For more information, email us at enterprise@landgrid.com!**
+
 Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
 
 **Are you ready to get started?**
@@ -30,5 +32,6 @@ Projects using our software include:
   * Collecting a years’ worth of data on every single structure fire in Detroit
   * Mapping lead contamination in water samples in Flint, MI
   * Evaluating tornado damage in Portland, MI
+  * Interviewing residents in Dallas, TX
 
 If you want to make custom property maps and surveys but you don’t have a paid landgrid.com account yet, [**sign up today**](https://landgrid.com/plans)!
