@@ -80,6 +80,12 @@ do echo "$gdb" ;
 done
 ~~~~
 
+Dealing with custom columns at scale is best accomplished by ignoring them during import. One approach is to use the `-sql` option with `ogr2ogr` to restrict what columns you load to all of, or a sub-set of, the columns in our standard schema. We use this same method for exporting and it causes one thing to watch out for: The layer name to use in the sql, where a table name would normally go, is literally the exact string `sql_statement`
+
+~~~
+ogr2ogr -f 'PostgreSQL' PG:'dbname=dbname' st_county.gpkg -sql 'select wkb_geometry,geoid,etc from sql_statement' -nln st_county_imported
+~~~
+
 Using ogr2ogr to load parcel data into a MS SQL Server works the same way. Parcel data should use the `geometry` data type in MS SQL Server. A good example of how to do that is [this blog post by Alastair Aitchison](https://alastaira.wordpress.com/ogr2ogr-patterns-for-sql-server/). They also cover installing the [OSGeo4Win](https://trac.osgeo.org/osgeo4w/) environment. 
 
 The main item of the command line options are the database connection options. You will have to make sure the user name and password are available and that the client can actually connect to the database and has all the needed permissions. For PostgreSQL on GNU/Linux, there are standard PG_* environmental variables and the .pgpass file for storing credentials that will work with the ogr2ogr commands so they do not have to be included in the command line.
@@ -128,4 +134,3 @@ Both of the clients listed below are multi protocol and also support connecting 
 Windows users can use [WinSCP](https://winscp.net/), which also supports [scripting](https://winscp.net/eng/docs/guide_automation) and [.NET](https://winscp.net/eng/docs/library)/[PowerShell integration](https://winscp.net/eng/docs/library_powershell).
 
 MacOS users can use [CyberDuck](https://cyberduck.io/)
-
