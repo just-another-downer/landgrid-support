@@ -116,3 +116,16 @@ We provide two different APIs for working with our data. Please remember, all AP
 Tile Map Service (TMS) Layer - This is an interactive, vecotr rendering of our dataset, for use in web or desktop applications where using the parcel shapes overlaid on other layers is useful. Landgrid’s TMS layer is in Mapbox Vector Tile (.mvt) format. [https://docs.mapbox.com/vector-tiles/reference/](https://docs.mapbox.com/vector-tiles/reference/)
 
 RESTful API - This is a typical stateless, client/server based API that supports retrieving parcel shape and meta data using lat / lon coordinates, among other options. Please see [https://support.landgrid.com/articles/using-the-api/](https://support.landgrid.com/articles/using-the-api/) for a complete reference to the API.
+
+## Miscellaneous
+
+**How do I download data from you?**
+
+We use the "Secure File Transfer Protocol", also called SFTP. This is supported in most traditional FTP clients and SSH client software.
+
+Both of the clients listed below are multi protocol and also support connecting to services like S3.
+
+Windows users can use [WinSCP](https://winscp.net/), which also supports [scripting](https://winscp.net/eng/docs/guide_automation) and [.NET](https://winscp.net/eng/docs/library)/[PowerShell integration](https://winscp.net/eng/docs/library_powershell).
+
+MacOS users can use [CyberDuck](https://cyberduck.io/)
+
