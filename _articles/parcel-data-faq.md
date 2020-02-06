@@ -140,7 +140,7 @@ MacOS users can use [CyberDuck](https://cyberduck.io/)
 
 **What is LBCS?**
 
-LBCS stands for "Land Based Classification Standards". [https://www.planning.org/lbcs/standards/]
+LBCS stands for "Land Based Classification Standards". [https://www.planning.org/lbcs/standards/](https://www.planning.org/lbcs/standards/)
 
 - Our parcel data often includes at least one of the following attributes: usecode, usedesc (use description), zoning or zoning_description for many parcels in our dataset. However, while most of those values are not standardized, the values are often recognizable enough to allow converting to a standardized classification system.
 
@@ -149,7 +149,7 @@ We are using the The American Planning Association's Land Based Classification S
 
 - LBCS provides for 5 different “Dimensions”, we are focused on the Function and Activity dimensions as that most often is what use or zoning codes describe. In our county tables, we will put the values in one of those two lbcs_* columns. 
 
-- The other Dimension columns we do not have plans to convert at this time. The full list of LBCS Function and Activity codes are here: [https://www.planning.org/lbcs/standards/function/]
+- The other Dimension columns we do not have plans to convert at this time. The full list of LBCS Function and Activity codes are here: [https://www.planning.org/lbcs/standards/function/](https://www.planning.org/lbcs/standards/function/)
 
 
 **What makes an LBCS code different from a zoning code/land use code/zoning district?**
@@ -174,7 +174,7 @@ For example, a parcel with an LBCS Activity code of "4100" ("School or library a
 
 - LBCS uses 4-digit codes, like "1000" or "9900" or "4312", to describe a parcel. Each digit is more specific than the previous one. For example, an LBCS Activity code of "4300" means "Activities associated with utilities (water, sewer, power, etc.)"; "4310" means "Water-supply-related activities"; and "4312" means "Water purification and filtration activities".
 
-[https://www.planning.org/lbcs/standards/activity/]
+[https://www.planning.org/lbcs/standards/activity/](https://www.planning.org/lbcs/standards/activity/)
 
 - Huge structural change: convert `lbcs` columns to plain text so they can include both the code and a brief description
 
