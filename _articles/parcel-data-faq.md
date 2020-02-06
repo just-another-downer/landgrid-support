@@ -134,3 +134,74 @@ Both of the clients listed below are multi protocol and also support connecting 
 Windows users can use [WinSCP](https://winscp.net/), which also supports [scripting](https://winscp.net/eng/docs/guide_automation) and [.NET](https://winscp.net/eng/docs/library)/[PowerShell integration](https://winscp.net/eng/docs/library_powershell).
 
 MacOS users can use [CyberDuck](https://cyberduck.io/)
+
+
+## LBCS - Usecode Classification
+
+**What is LBCS?
+
+LBCS stands for "Land Based Classification Standards". [https://www.planning.org/lbcs/standards/]
+
+- Our parcel data often includes at least one of the following attributes: usecode, usedesc (use description), zoning or zoning_description for many parcels in our dataset. However, while most of those values are not standardized, the values are often recognizable enough to allow converting to a standardized classification system.
+
+- Where possible we are standardizing the existing values provided by the county in one or more of those attributes and putting that standardized value into our `lbcs_*` attribute columns. 
+We are using the The American Planning Association's Land Based Classification Standards (LBCS) to classify land use based on the values in one or more of those specified fields.
+
+- LBCS provides for 5 different “Dimensions”, we are focused on the Function and Activity dimensions as that most often is what use or zoning codes describe. In our county tables, we will put the values in one of those two lbcs_* columns. 
+
+- The other Dimension columns we do not have plans to convert at this time. The full list of LBCS Function and Activity codes are here: [https://www.planning.org/lbcs/standards/function/]
+
+
+**What makes an LBCS code different from a zoning code/land use code/zoning district?
+
+- LBCS is a method of standardizing land use codes across the entire dataset. Individual counties and cities often use unique codes that only make sense to them. We convert these highly local codes to a standardized system across all places in our dataset.
+
+- LBCS codes tend to generalize zoning codes. Where a zoning code might be very specific as to what size lot a residential area might have, the LBCS code will just reflect that the parcel's function is for residential use or reflect that residential activity occurs on the parcel.
+
+
+**What is the difference between LBCS Activity and LBCS Function?
+
+- Activity and Function are two of the five LBCS "dimensions" (Activity, Function, Structure Type, Site Development Character, and Ownership). We focus on providing LBCS codes for these dimensions because they are the most broadly useful tools for determining a parcel's use and the most straightforward to map from an existing use or zoning code.
+
+- Activity describes the actual human activities that take place on the parcel. "Activity refers to the actual use of land based on its observable characteristics. It describes what actually takes place in physical or observable terms (e.g., farming, shopping, manufacturing, vehicular movement, etc.)."
+
+- Function describes the broader function the parcel serves. For example, a parcel that is used as a parking lot for a school would be classified with an LBCS Function code for schools, not for vehicular parking. (From the LBCS website: "... Two parcels are said to be in the same functional category if they belong to the same establishment, even if one is an office building and the other is a factory.")
+
+For example, a parcel with an LBCS Activity code of "4100" ("School or library activities") and an LBCS Function code of "6121" ("Elementary") most likely means the parcel is used by an elementary school.
+
+
+**How do I "read" a LBCS code?
+
+- LBCS uses 4-digit codes, like "1000" or "9900" or "4312", to describe a parcel. Each digit is more specific than the previous one. For example, an LBCS Activity code of "4300" means "Activities associated with utilities (water, sewer, power, etc.)"; "4310" means "Water-supply-related activities"; and "4312" means "Water purification and filtration activities".
+
+[https://www.planning.org/lbcs/standards/activity/]
+
+- Huge structural change: convert `lbcs` columns to plain text so they can include both the code and a brief description
+
+This means users won't have to cross-reference a code on the Landgrid site with the code index on the LBCS site
+Also means the common "0000" function code isn't formatted as "0"
+Alternately: add columns like "lbcs_activitydesc" and "lbcs_functiondesc"
+
+
+**Why is LBCS classification useful to me/my organization?
+
+- These codes give insight into how parcels are used. They're useful in a similar way to how local use codes or zoning codes can be useful: they can tell you what function a property serves and/or what activity typically happens on the property. 
+
+- This is information that might not be apparent from any of the parcel's other data. Standardizing these codes using LBCS lets you know that, for example, a property with a "301" zoning code is actually a residential parcel, because the LBCS Function code is 1000.
+
+
+**How does Loveland determine the LBCS code for a parcel?
+
+- Because systems for land use classification and zoning vary so widely from place to place, we convert each place's usecode or zoning code (where they exist) to the closest corresponding LBCS code by hand.
+
+- Where possible, if a county provides a detailed `usecode` attribute, and we can locate a usecode key, we will maintain the detailed use codes as much as possible when converting to LBCS codes.
+
+- We focus on covering the most populous places first that provide a usecode or zoning code attribute, but always welcome input on priority counties for clients.
+
+
+
+
+
+
+
+
