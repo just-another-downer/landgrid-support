@@ -176,8 +176,6 @@ For example, a parcel with an LBCS Activity code of "4100" ("School or library a
 
 [https://www.planning.org/lbcs/standards/activity/](https://www.planning.org/lbcs/standards/activity/)
 
-- Huge structural change: convert `lbcs` columns to plain text so they can include both the code and a brief description
-
 This means users won't have to cross-reference a code on the Landgrid site with the code index on the LBCS site
 Also means the common "0000" function code isn't formatted as "0"
 Alternately: add columns like "lbcs_activitydesc" and "lbcs_functiondesc"
