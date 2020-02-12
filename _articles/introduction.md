@@ -25,7 +25,7 @@ Bookmarks - 100
 Focus Areas - 10
 Datasets - 5
 Projects - 5
-Downloads - No ability to download USPS Vacancy or Building Count data.
+Downloads - No USPS Vacancy or Building Count data.
 
 **Are you ready to get started?**
   * The first thing you’ll want to do is create a project.
