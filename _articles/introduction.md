@@ -17,6 +17,16 @@ Landgrid Pro is your personal platform for working with property information. Wi
 
 Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
 
+**Feature Caps**
+There are caps on some of our features in Pro - if you find yourself running into these regularly, please consider contacting team@landgrid.com and upgrading to a $250/mo. Team account, where you can have 10 users, expanded download permissions, and unlimited bookmarks, focus areas, datasets, and projects. 
+
+Users - 1
+Bookmarks - 100
+Focus Areas - 10
+Datasets - 5
+Projects - 5
+Downloads - No ability to download USPS Vacancy or Building Count data.
+
 **Are you ready to get started?**
   * The first thing you’ll want to do is create a project.
   * Then, you might want to import data or create a property survey.
