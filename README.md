@@ -56,3 +56,7 @@ Templates are in the root directory. The generated site is in `/_site`.
 
 Edit these in `_config.yml`. You'll need to edit the `category-list` up top and
 the prose config at the bottom of the file.
+
+## Updating the schema 
+
+The schema lives at `_data/schema.yml`

@@ -383,3 +383,22 @@ footer {
   }
 
 }
+
+table {
+   thead, tr {
+     border-bottom: 1px solid #eee;
+   }
+
+   tbody td { 
+     padding: 1rem 0;
+     padding-right: 2rem;
+     line-height: 1;
+     vertical-align: top;
+   }
+
+   .code { 
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-style: normal;
+    font-size: 1.5rem;
+   }
+}
