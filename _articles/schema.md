@@ -3,7 +3,7 @@ weight: 0
 category: Getting Started
 published: true
 intro: 
-title: Loveland Parcel Schema
+title: The Loveland Parcel Schema
 permalink: /articles/schema
 layout: wider_content
 ---
@@ -18,9 +18,9 @@ layout: wider_content
     </tr>
   </thead>
   <tbody>
-  {% for field in site.data.schema %}
+  {% for field in site.data.schema.schema %}
     <tr>
-      <td class="code">{{field[0]}}</td>
+      <td class="code"><a name="{{field[0]}}">{{field[0]}}</a></td>
       <td class="code">{{field[1].type}}</td>
       <td>{{field[1].examples | join: ", " }}</td>
       <td>{{field[1].human}}</td>
