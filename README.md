@@ -43,13 +43,15 @@ Make sure to load the schema submodule:
 git submodule update --init
 ```
 
-You might want to set up git to automatically recurse commands to submodules:
+You might want to configure git to automatically recurse commands to submodules:
 
 ```
 git config --global submodule.recurse true
 ```
 
-You'll need jekyll, a ruby gem:
+If you do that, `git pull` will automatically pull subrepository changes. 
+
+You'll need Ruby, and jekyll, a ruby gem:
 
 `gem install jekyll`
 
