@@ -37,7 +37,21 @@ Controls which section of the site
 
 ## Prereqs
 
-You'll need jekyll:
+Make sure to load the schema submodule: 
+
+```
+git submodule update --init
+```
+
+You might want to configure git to automatically recurse commands to submodules:
+
+```
+git config --global submodule.recurse true
+```
+
+If you do that, `git pull` will automatically pull subrepository changes. 
+
+You'll need Ruby, and jekyll, a ruby gem:
 
 `gem install jekyll`
 
@@ -56,3 +70,7 @@ Templates are in the root directory. The generated site is in `/_site`.
 
 Edit these in `_config.yml`. You'll need to edit the `category-list` up top and
 the prose config at the bottom of the file.
+
+## Updating the schema 
+
+The schema lives at `_data/schema.yml`
