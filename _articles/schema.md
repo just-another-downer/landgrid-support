@@ -8,6 +8,8 @@ permalink: /articles/schema
 layout: wider_content
 ---
 
+We clean and convert all parcel data we recieve into this standard schema. Some counties may include additional fields. Wherever possible, we include those in our exports, but we do not have a key available for those fields. 
+
 <table>
   <thead>
     <tr>
