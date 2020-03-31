@@ -31,6 +31,11 @@ We standardize column names for easy access across counties in our nationwide da
 
 We are currently at version 5 of our Standard Schema and it standardizes the column names for approximately 80 county provided data columns, and 25 Landgrid provided data columns. This schema is applied to 100% of our dataset. A data dictionary is available: [https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424)
 
+**Why do Shapefile attribute names not match the Landgrid Standard Schema column names?**
+
+Some of our standard schema column names are longer than the Esri Shapefile format allows and the column names in your attribute table will be truncated to the first 10 characters of the Landgrid Standard Schema column names.
+
+
 **When was your data last updated?**
 
 Approximately 82% of our data has been refreshed in the last year (as of January 15, 2020), and we are working to have the remainder updated as soon as possible, with an increasing frequency of updates after that.
@@ -195,11 +200,3 @@ Alternately: add columns like "lbcs_activitydesc" and "lbcs_functiondesc"
 - Where possible, if a county provides a detailed `usecode` attribute, and we can locate a usecode key, we will maintain the detailed use codes as much as possible when converting to LBCS codes.
 
 - We focus on covering the most populous places first that provide a usecode or zoning code attribute, but always welcome input on priority counties for clients.
-
-
-
-
-
-
-
-
