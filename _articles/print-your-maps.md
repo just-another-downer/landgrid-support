@@ -15,7 +15,7 @@ On the toolbar in the upper left of the map, you'll see an icon of a printer. Cl
 
 **Save Image:** a .PNG image will download of just the map extent as shown on your screen. 
 
-**Print a Specific Parcel's Info** You can print a specific properties' information by clicking the parcel, then 'Actions' at the top right, then 'Print Parcel'. The resulting PDF will look something like the following:
+**Print a Specific Parcel's Info:** You can print a specific properties' information by clicking the parcel, then 'Actions' at the top right, then 'Print Parcel'. The resulting PDF will look something like the following:
 ![Print_Parcel_Details.jpg]({{site.baseurl}}/img/Print_Parcel_Details.jpg)
 
 
