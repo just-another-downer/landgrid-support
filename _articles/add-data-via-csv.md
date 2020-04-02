@@ -9,7 +9,7 @@ _This feature is only available with a Landgrid Pro, Team, or Enterprise account
 
 With landgrid.com, you can import data from CSVs and Excel spreadsheets to visualize, query, and work with the data on a parcel map.
 
-**NOTE** Uploading data works best if source datasets contain a column with Parcel IDs so we can match precisely. It is possible to match with latitude/longitude or by address, but the margin of error may be higher.
+**NOTE** Uploading data works best if source datasets contain a column with Parcel IDs so we can match precisely. It is possible to match with latitude/longitude or by address, but the margin of error may be higher. To watch a more detailed video on imports or troubleshooting, [follow this link.](https://youtu.be/oflHslYfcGo)
 
 Below is a step-by-step guide to importing data from a CSV or Excel spreadsheet:
 
