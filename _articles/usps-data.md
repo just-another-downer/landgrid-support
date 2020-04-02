@@ -9,7 +9,8 @@ _This feature is only available with a Landgrid Pro and/or Enterprise (Includes 
 **USPS Data - How to**
 
 If you’re a Pro or Enterprise member of landgrid.com you now have an easy way to see all residential parcels, nationwide, as well as an indicator of vacancy across all parcels that have structures. Read more about this dataset, and its potential limitations, [here.](https://landgrid.com/pages/vacancy)
-For a tutorial video on USPS, [click here.](https://youtu.be/Srt1qVSQ1Cg)
+
+For a visual overview of our USPS data, [click here.](https://youtu.be/Srt1qVSQ1Cg)
 
 **Overview Panel:**
 
