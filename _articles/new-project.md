@@ -16,6 +16,8 @@ After you’ve made an account (congrats!), the next thing you’ll probably wan
 While logged in to your landgrid.com account, go to the top right of the page. Click on your username, and you’ll see a dropdown menu. Click “My Profile”, which will bring you to your home page. This is where you’ll be able to view all the Projects associated with your account.
 
 **To create a new project,** simply click the “New Project” button above the ‘Projects’ header. 
+![New_Project__1.jpg]({{site.baseurl}}/img/New_Project__1.jpg)
+
 
 NOTE: Pro users are limited to 5 Projects at any one time. If you reach your cap, you can repurpose existing maps or delete one to free up space.
 
