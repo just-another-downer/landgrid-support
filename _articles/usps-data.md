@@ -9,6 +9,7 @@ _This feature is only available with a Landgrid Pro and/or Enterprise (Includes 
 **USPS Data - How to**
 
 If you’re a Pro or Enterprise member of landgrid.com you now have an easy way to see all residential parcels, nationwide, as well as an indicator of vacancy across all parcels that have structures. Read more about this dataset, and its potential limitations, [here.](https://landgrid.com/pages/vacancy)
+For a tutorial video on USPS, [click here.](https://youtu.be/Srt1qVSQ1Cg)
 
 **Overview Panel:**
 
@@ -64,4 +65,3 @@ In the slightly smaller dropdown box below this one, click the dropdown and sele
 7. Tap ‘Choose a Survey’ and select the Project that you’ve just created. You may need to refresh this page before it shows up.
 
 8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2.
-
