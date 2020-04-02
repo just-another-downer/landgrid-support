@@ -8,7 +8,7 @@ _This feature is only available with a Landgrid Pro and/or Enterprise (Includes 
 
 **USPS Data - How to**
 
-If you’re a Pro or Enterprise member of landgrid.com you now have an easy way to see all residential parcels, nationwide, as well as an indicator of vacancy across all parcels that have structures. Read more about this dataset, and its potential limitations, Here.
+If you’re a Pro or Enterprise member of landgrid.com you now have an easy way to see all residential parcels, nationwide, as well as an indicator of vacancy across all parcels that have structures. Read more about this dataset, and its potential limitations, [here.](https://landgrid.com/pages/vacancy)
 
 **Overview Panel:**
 
@@ -53,12 +53,9 @@ For those of you who work on tracking and addressing vacant properties in your c
 
 In the slightly smaller dropdown box below this one, click the dropdown and select ‘Y’. To the right of that box is the color that will represent vacancy - click and use the color picker to choose the one you want.
 
-![Capture (6).JPG]({{site.baseurl}}/img/Capture (6).JPG)
-
-
 3. Click ‘Apply’. Properties marked as USPS vacant should visualize on the map. Click ‘Save’ on the sidebar to save your project as it is currently.
 
-4. On the left hand sidebar, click ‘Survey’, then ‘Editor’. This is where you can create your survey questions - see our Guidebook page (https://support.landgrid.com/articles/start-your-property-survey/) for more on this. If you are mostly just interested in viewing properties and/or checking if they really do look vacant, all you may need is one question, something like “Does this property look vacant?” with answers “yes” and “no”.
+4. On the left hand sidebar, click ‘Survey’, then ‘Editor’. This is where you can create your survey questions - see our [Guidebook page](https://support.landgrid.com/articles/start-your-property-survey/) for more on this. If you are mostly just interested in viewing properties and/or checking if they really do look vacant, all you may need is one question, something like “Does this property look vacant?” with answers “yes” and “no”.
 
 5. When your survey is how you want it, click ‘save’ at the bottom of the survey editor. This will save your questions - then click ‘Save’ on the sidebar to make sure that the Project as a whole is saved correctly.
 
@@ -68,4 +65,3 @@ In the slightly smaller dropdown box below this one, click the dropdown and sele
 
 8. Voila! You should now be able to see the properties marked ‘USPS Vacant’ showing up on your map in the color you chose back in Step 2.
 
-![Image from iOS (5).png]({{site.baseurl}}/img/Image from iOS (5).png)
