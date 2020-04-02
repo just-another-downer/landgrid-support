@@ -14,3 +14,5 @@ While working in the Project whose name you'd like to change, click the gear ico
 A drawer will pop out, where you will see a selection of Project settings. Change the name to whatever you desire, then press "Save Project" to make changes permanent.
 
 You can also write a description in the box below the title. Descriptions can be useful when you want to do something like embed your map in a web page -- your description will be a part of the embed, giving people an introduction to your map.
+
+![Project_Settings.jpg]({{site.baseurl}}/img/Project_Settings.jpg)
