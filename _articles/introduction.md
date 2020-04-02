@@ -15,7 +15,7 @@ Landgrid Pro is your personal platform for working with property information. Wi
 
 **Note: Pro accounts are designed to be single-user. To this end, you'll find that you can only log in to your Pro account on two devices at a time. If you'd like to work with friends or colleagues on a project, please consider one of our multi-user account types. For more information, email us at enterprise@landgrid.com!**
 
-Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data.
+Our maps are easy to style, share, and embed, so you can create beautiful interactive web maps without writing a single line of code. User-friendly tools like our data list view and our query builder help make complicated information digestible, so you can make well-informed planning and land use decisions while spending less time wrestling with parcel data. You may be interested in viewing our [tutorial videos](https://landgrid.com/pages/tutorial-videos) as you get started, which provide more detail in a visual format.
 
 **Feature Caps**
 There are caps on some of our features in Pro - if you find yourself running into these regularly, please consider contacting team@landgrid.com and upgrading to a $250/mo. Team account, where you can have 10 users, expanded download permissions, and unlimited bookmarks, focus areas, datasets, and projects. 
