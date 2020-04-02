@@ -6,7 +6,7 @@ intro: Save any property and quickly access it from your profile page
 title: Bookmark a Property
 ---
 
-You can quickly and easily save properties with landgrid.com to look at later; we call them bookmarks. You have access to bookmarks with any paid landgrid.com account. To watch a video on bookmarking, [click here!](https://youtu.be/uz-T-F9ld84)
+You can quickly and easily save properties with landgrid.com to look at later; we call them bookmarks. You have access to bookmarks with any paid landgrid.com account.
 
 To bookmark a property, first click on it in the map. The selected property will be highlighted in purple; a sidebar opens with any base data that we have on the property, including its address. At the top right corner of this sidebar is a purple button labeled 'Actions'; click this, then 'Add Bookmark', and you'll have bookmarked your first property!
 
