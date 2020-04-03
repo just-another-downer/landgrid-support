@@ -97,6 +97,12 @@ ogr2ogr -f 'PostgreSQL' PG:'dbname=dbname' st_county.gpkg -sql 'select wkb_geome
 
 Using ogr2ogr to load parcel data into a MS SQL Server works the same way. Parcel data should use the `geometry` data type in MS SQL Server. A good example of how to do that is [this blog post by Alastair Aitchison](https://alastaira.wordpress.com/ogr2ogr-patterns-for-sql-server/). They also cover installing the [OSGeo4Win](https://trac.osgeo.org/osgeo4w/) environment. 
 
+An example osgeo4w shell command to load a folder full of geopackages looks like this:
+
+~~~
+for /R %G in (*.gpkg) do ogr2ogr -progress -f "MSSQLSpatial" "MSSQL:server=localhost;database=alabama;trusted_connection=yes" %G -nln "%~nG"
+~~~
+
 The main item of the command line options are the database connection options. You will have to make sure the user name and password are available and that the client can actually connect to the database and has all the needed permissions. For PostgreSQL on GNU/Linux, there are standard PG_* environmental variables and the .pgpass file for storing credentials that will work with the ogr2ogr commands so they do not have to be included in the command line.
 
 ## Building Data
