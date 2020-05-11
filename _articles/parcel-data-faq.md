@@ -42,7 +42,7 @@ Some of our standard schema column names are longer than the Esri Shapefile form
 
 **When was your data last updated?**
 
-Approximately 82% of our data has been refreshed in the last year (as of January 15, 2020), and we are working to have the remainder updated as soon as possible, with an increasing frequency of updates after that.
+Approximately 84% of our data has been refreshed in the last year (as of May 9, 2020), and we are working to have the remainder updated as soon as possible, with an increasing frequency of updates after that.
 
 We make every effort to update our data at least yearly, with major metro areas being updated twice a year. Going forward, we will be increasing the frequency of data updates to better match the individual County update schedules.
 
