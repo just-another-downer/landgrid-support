@@ -37,14 +37,16 @@ Every county has our standard schema columns, so any code or process can rely on
 
 **How can I explore the custom columns for each county?**
 
-We work with all of our counties in a PostgreSQL database, each county in its own table. That makes managing the custom columns from each county much easier. Most database servers provide a way to search the column names of the tables in a database. For example, in Postgres you would do it this way:
+We work with all of our counties in a [PostgreSQL](https://www.postgresql.org/) database, each county in its own table. That makes managing the custom columns from each county much easier. Most database servers provide a way to search the column names of the tables in a database. For example, in Postgres you would do it this way:
 
 ~~~
 SELECT table_name, column_name FROM information_schema.columns 
-	WHERE table_schema = 'public' and 
-    		column_name ~ 'juri'
+	WHERE table_schema = public and 
+    		column_name ~ juri
 order BY table_name, column_name;
 ~~~
+
+Also, directly browsing the data on a place-by-place process of areas or regions you are interested in can be very useful. [DBeaver](https://dbeaver.io/) is a cross platform, multi vendor database client that can render geographic data.
 
 **Why do Shapefile attribute names not match the Landgrid Standard Schema column names?**
 
