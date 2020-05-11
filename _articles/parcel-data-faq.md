@@ -35,6 +35,17 @@ We are currently at version 5 of our Standard Schema and it standardizes the col
 
 Every county has our standard schema columns, so any code or process can rely on those columns (also called attributes in GIS software) being present. However, most counties also provide attributes that do not map in to one of our standard schema columns, so we keep those attributes and include them on the end of our standard schema columns using whatever name is provided by the county. In many tools you can control what attributes are retained during import or merging, so we suggest folks working across multiple counties just keep the standard schema columns or a sub set of them and leave what we call "custom columns" off entirely to get a uniform set of columns. Going back and reviewing those custom columns can reveal interesting information provided by the counties, but not provided very often in other counties.
 
+**How can I explore the custom columns for each county?**
+
+We work with all of our counties in a PostgreSQL database, each county in its own table. That makes managing the custom columns from each county much easier. Most database servers provide a way to search the column names of the tables in a database. For example, in Postgres you would do it this way:
+
+~~~
+SELECT table_name, column_name FROM information_schema.columns 
+	WHERE table_schema = 'public' and 
+    		column_name ~ 'juri'
+order BY table_name, column_name;
+~~~
+
 **Why do Shapefile attribute names not match the Landgrid Standard Schema column names?**
 
 Some of our standard schema column names are longer than the Esri Shapefile format allows and the column names in your attribute table will be truncated to the first 10 characters of the Landgrid Standard Schema column names.
