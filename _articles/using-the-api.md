@@ -120,3 +120,33 @@ All of these requests return a JSON response on success, an array of GeoJSON fea
   * `fields`: Columns from the parcel table. These include [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) wherever fields are available, plus additional columns varying by the particular county & data available.
   * `field_labels`: Human-friendly labels for each key in `fields`.
   * `context`: A bit of info about the city or county where this parcel is found, including a `path` one can use as `context` for further searches.
+
+
+## Reports
+
+You can report issues with specific parcels or general areas to us using 
+this report endpoint. Reports help us prioritize updates. However, we 
+cannot apply data received to this endpoint directly to our parcel data.
+
+`POST /api/v1/report.json?token=<token>`
+
+**Request parameters:**
+* `path`: A path to a specific parcel or place
+* `ll_uuid` (optional): The ll_uuid of a parcel, if the report is for a specific parcel
+* `comment` (optional): String describing the issue
+* `details` (optional): A hash with details on specific fields. This hash only accepts [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) as keys.
+
+**Example request:**
+
+```
+POST https://landgrid.com/api/v1/report.json?token=YOUR_TOKEN_HERE
+{
+  "path": "/us/al/elmore/eclectic/5",
+  "ll_uuid": "8ba95684-e001-4362-801c-39f30a13bee4",
+  "comment": "Property has a new owner",
+  "details": {
+    "owner": "Johnny Parcel",
+    "saleprice": 200000
+  }
+}
+```
