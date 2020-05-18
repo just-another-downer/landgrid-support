@@ -124,6 +124,8 @@ All of these requests return a JSON response on success, an array of GeoJSON fea
 
 ## Reports
 
+*This is an alpha endpoint and may change before release*
+
 You can report issues with specific parcels or general areas to us using 
 this report endpoint. Reports help us prioritize updates. However, we 
 cannot apply data received to this endpoint directly to our parcel data.
