@@ -128,7 +128,8 @@ All of these requests return a JSON response on success, an array of GeoJSON fea
 
 You can report issues with specific parcels or general areas to us using 
 this report endpoint. Reports help us prioritize updates. However, we 
-cannot apply data received to this endpoint directly to our parcel data.
+cannot apply data received to this endpoint directly to our parcel data or 
+respond individually to specific reports. 
 
 `POST /api/v1/report.json?token=<token>`
 
@@ -137,6 +138,9 @@ cannot apply data received to this endpoint directly to our parcel data.
 * `ll_uuid` (optional): The ll_uuid of a parcel, if the report is for a specific parcel
 * `comment` (optional): String describing the issue
 * `details` (optional): A hash with details on specific fields. This hash only accepts [standard column names](https://docs.google.com/spreadsheets/d/14RcBKyiEGa7q-SR0rFnDHVcovb9uegPJ3sfb3WlNPc0/edit#gid=1010834424) as keys.
+
+**Response:**
+A success message plus the `id` of the new report. 
 
 **Example request:**
 
