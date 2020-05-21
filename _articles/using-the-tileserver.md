@@ -212,7 +212,7 @@ To add a custom styled layer to Leaflet:
 ```
 $.ajax({
   method: 'POST',
-  url: 'https://makeloveland.com/api/v1/sources?token=...',
+  url: 'https://tiles.makeloveland.com/api/v1/sources?token=...',
   contentType: 'application/json; charset=utf-8',
   dataType: 'json',
   data: JSON.stringify({
