@@ -82,9 +82,9 @@ We also make improvements to the data that does not come directly from the count
 Everyone's stack and environment are different, but generally we think the outline of steps is as follows:
 
 1. Pull a copy of our 'verse' table from our SFTP server
-2. Use the `last_refresh` date in our `verse` table to determine which counties you need to update
-3. Use the `filename_stem` field in our `verse` table to pull that county via SFTP from our server
-4. Once you have the file locally, import it into a database (we use PostgreSQL/PostGIS, GDAL and ogr2ogr for this last step internally)
+2. Use the `last_refresh` date in our `verse` table to determine which county or counties you need to update
+3. Use the `filename_stem` field in our `verse` table to pull the needed county or counties via SFTP from our server
+4. Once you have the file(s) locally, import it/them into a database (we use PostgreSQL/PostGIS, GDAL and ogr2ogr for this last step internally)
 
 We do not track changes at any level below the county level, but with our `ll_uuid` it should be possible to determine if you need to update a row in your database if you do not want to replace the whole county.
 
