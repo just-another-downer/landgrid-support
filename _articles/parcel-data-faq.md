@@ -79,7 +79,7 @@ We also make improvements to the data that does not come directly from the count
 
 **How do I keep my data up-to-date?**
 
-We provide our `verse` tracking table as a csv updated monthly. It has every county in the US's state, county name, state+county fips (we call geoid), date we last pulled directly from the source (`last_refresh` column), and a `filename_stem` column that indicates the file name with no format .extension or .zip, just the basename of the file. Note: null in our verse `table_name` column means the county is not in our dataset.
+We provide our `verse` tracking table as a csv updated monthly. It has every county in the US's state, county name, state+county fips (we call `geoid`), date we last pulled directly from the source (`last_refresh` column), and a `filename_stem` column that indicates the file name with no format .extension or .zip, just the basename of the file. Note: null in our verse `table_name` column means the county is not in our dataset.
 
 
 Everyone's stack and environment are different, but generally we think the outline of steps is as follows:
