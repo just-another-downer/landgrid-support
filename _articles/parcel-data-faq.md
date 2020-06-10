@@ -75,7 +75,20 @@ We also provide a CSV file of our VERSE table that lists the `last_refresh` date
 
 On each parcel we provide a `'ll_uuid` number that permanently and uniquely identifies each parcel across data refreshes and updates. The `ll_uuid` can be used to match any locally stored parcels with updated parcels in the county file.
 
-We also make improvements to the data that does not come directly from the county, like standardizing addresses, cleaning out non-standard characters, adding additional data attributes, etc. We generally re-export our full dataset quarterly to reflect those changes. Improvements we make to data does NOT affect the `last_refresh` of a county, that is always the date we last pulled data directly from the source. Notices of full dataset exports are also included in the monthly email update sent to all clients.
+We also make improvements to the data that does not come directly from the county, like standardizing addresses, cleaning out non-standard characters, adding additional data attributes, etc. We generally re-export our full dataset quarterly to reflect those changes. Improvements we make to data does NOT affect the `last_refresh` of a county, that is always the date we last pulled data directly from the county source. Notices of full dataset exports are also included in the monthly email update sent to all clients.
+
+**How do I keep my data up-to-date?**
+
+Everyone's stack and environment are different, but generally we think the outline of steps is as follows:
+
+1. Pull a copy of our 'verse' table from our SFTP server
+2. Use the `last_refresh` date in our `verse` table to determine which counties you need to update
+3. Use the `filename_stem` field in our `verse` table to pull that county via SFTP from our server
+4. Once you have the file locally, import it into a database (we use PostgreSQL/PostGIS, GDAL and ogr2ogr for this last step internally)
+
+We do not track changes at any level below the county level, but with our `ll_uuid` it should be possible to determine if you need to update a row in your database if you do not want to replace the whole county.
+
+That same `ll_uuid` should be used  if you need a permanent, nationwide unique id for a parcel, and to match up with data you might attach to our parcel data in your usage.
 
 
 **How do you standardize and normalize addresses?**
