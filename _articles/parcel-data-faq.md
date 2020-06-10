@@ -84,7 +84,7 @@ We provide our `verse` tracking table as a csv updated monthly. It has every cou
 
 Everyone's stack and environment are different, but generally we think the outline of steps is as follows:
 
-1. Pull a copy of our 'verse' table from our SFTP server
+1. Pull a copy of our `verse` table from our SFTP server
 2. Use the `last_refresh` date in our `verse` table to determine which county or counties you need to update
 3. Use the `filename_stem` field in our `verse` table to pull the needed county or counties via SFTP from our server
 4. Once you have the file(s) locally, import it/them into a database (we use PostgreSQL/PostGIS, GDAL and ogr2ogr for this last step internally)
