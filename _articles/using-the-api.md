@@ -36,6 +36,12 @@ We recommend using lat-long search for most lookups. Because parcels may span se
 * `lat`: Latitude (y-coord) in decimal degrees, WGS84 (EPSG 4326) projection.
 * `lon`: Longitude (x-coord), same.
 
+**To search all parcels in a radius of a point:**
+* `nearest`: Pass `1` to return parcels within a radius instead of an exact match at the lat-long.
+* `radius` (optional): Give a radius in meters to search within. Default 50, maximum 500
+
+`GET /api/v1/search.json?lat=<y>&lon=<x>&nearest=1&radius=<meters>&token=<token>`
+
 ### By address
 
 `GET /api/v1/search.json?query=<address>&context=<path>&token=<token>`
@@ -56,6 +62,15 @@ An array of parcels sorted by descending relevance rank. An empty results set wi
 * `parcelnumb`: The assessor's parcel number to look up.
 * `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
 * `strict` (optional): Set `strict=1` to only return results in the `context`.
+
+### By owner name
+
+`GET /api/v1/search.json?owner=<name>&context=<path>&token=<token>`
+
+**Request parameters:**
+* `owner`: The owner name in "Last, First" format. Also matches by prefix, ie. you can pass just a last name to get any name beginning with that string. (Case insensitive, minimum 4 characters)
+* `context` (optional): To specify what county or municipality to search in, you can provide a path. See description above.
+
 
 ## Parcel details
 
