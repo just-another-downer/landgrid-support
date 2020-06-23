@@ -14,18 +14,21 @@ We clean and convert all parcel data we recieve into this standard schema. Some 
   <thead>
     <tr>
       <th>Field</th>
-      <th>Datatype</th>
-      <th>Examples</th>
       <th>Description</th>
+      <th>Tier</th>
+      <th>Datatype</th>
     </tr>
   </thead>
   <tbody>
   {% for field in site.data.schema.schema %}
     <tr>
       <td class="code"><a name="{{field[0]}}">{{field[0]}}</a></td>
+      <td>
+        {{field[1].human}}
+        {% if field[1].examples %}<p>Examples: {{field[1].examples | join: ", " }}</p>{% endif %}
+      </td>
+      <td>{{field[1].tier}}</td>
       <td class="code">{{field[1].type}}</td>
-      <td>{{field[1].examples | join: ", " }}</td>
-      <td>{{field[1].human}}</td>
     </tr>
   {% endfor %}
   </tbody>
