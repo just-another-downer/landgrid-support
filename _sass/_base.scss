@@ -57,9 +57,15 @@ body {
   flex: 1;
   margin-bottom: 50px;
 
-  a, a:hover {
+  a {
+    color: $text-color;
+  }
+
+  a:link, a:hover, a:active, a:visited {
+    color: $link-color;
     text-decoration: underline;
   }
+
 }
 
 h1,
@@ -394,6 +400,12 @@ table {
      padding-right: 2rem;
      line-height: 1;
      vertical-align: top;
+
+     p {
+       margin-top: 1rem;
+       margin-bottom: 0;
+       font-size: $small-font-size;
+     }
    }
 
    .code { 
