@@ -6,9 +6,9 @@ intro: How developers can use the Loveland tileserver
 title: Using the Tileserver
 ---
 
-The Loveland tile service provides parcel tiles in raster and vector formats for use with web mapping tools like [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) and [Leaflet](https://leafletjs.com/). This service is available to clients with a [nationwide data license](https://makeloveland.com/parcels).
+The Loveland tile service provides parcel tiles in raster and vector formats for use with web mapping tools like [Mapbox GL](https://www.mapbox.com/help/define-mapbox-gl/) and [Leaflet](https://leafletjs.com/). This service is available to clients with a [nationwide data license](https://landgrid.com/parcels).
 
-This tool is still in beta. Please direct feedback, bugs and questions to [team@makeloveland.com](mailto:team@makeloveland.com).
+Please direct feedback, bugs and questions to [team@landgrid.com](mailto:team@landgrid.com).
 
 ## Tileserver API
 
@@ -18,7 +18,7 @@ All requests will be to the `https://tiles.makeloveland.com` domain, with the pa
 
 All requests to the Tileserver API must include a `token` parameter. The same Loveland/Landgrid API Tokens can be used for all of our API's, they are not service specific. So if you have a working Token for any Landgrid API use, that token will work for all our API uses, including our Tileserver API.
 
-Please contact us via [team@makeloveland.com](mailto:team@makeloveland.com) to get an API Token if you do not have one yet.
+Please contact us via [team@landgrid.com](mailto:team@landgrid.com) to get an API Token if you do not have one yet.
 
 ### Standard parcel tiles
 
