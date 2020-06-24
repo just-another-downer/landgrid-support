@@ -162,13 +162,13 @@ This layer requests parcels with a custom line color and additional fields:
 ```
 POST /api/v1/sources?token=
 {
-  query: {
-    parcels: true
+  "query": {
+    "parcels": true
   },
-  fields: {
-    parcel: ['usecode', 'usedesc', 'parval', 'landval']
+  "fields": {
+    "parcel": ["usecode", "usedesc", "parval", "landval"]
   },
-  styles: 'Map { background-color: rgba(0,0,0,0); } #loveland { line-color: #69387a; }'
+  "styles": "Map { background-color: rgba(0,0,0,0); } #loveland { line-color: #69387a; }"
 }
 ```
 
@@ -231,10 +231,10 @@ $.ajax({
   contentType: 'application/json; charset=utf-8',
   dataType: 'json',
   data: JSON.stringify({
-    query: {
-      parcel: true,
+    "query": {
+      "parcel": true,
     },
-    styles: 'Map { background-color: rgba(0,0,0,0); } #loveland { polygon-fill: #FF0000; }',
+    "styles": "Map { background-color: rgba(0,0,0,0); } #loveland { polygon-fill: #FF0000; }",
   }),
 }).done(function(data) {
   console.log('Got layer', data);
