@@ -186,17 +186,25 @@ Always recreate the layer by POSTing your layer definition again.
 
 ```
 {
-  "tilejson":"2.1.0",
-  "id":"e1cd578db8e35949c5c25a479124035a2fa14fbe",
-  "maxZoom":21,
-  "tiles":["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e1cd578db8e35949c5c25a479124035a2fa14fbe/{z}/{x}/{y}.png?token="],
-  "grids":["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e1cd578db8e35949c5c25a479124035a2fa14fbe/{z}/{x}/{y}.json?token="],
-  "vector":["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e1cd578db8e35949c5c25a479124035a2fa14fbe/{z}/{x}/{y}.mvt?token="],
-  "query": {
-    "parcel": true
-  },
-  "fields":{},
-  "styles":"Map { background-color: rgba(0,0,0,0); } #loveland { line-color: #69387a; }"
+    "tilejson": "2.1.0",
+    "id": "e13c4cd22eaf5a751552692075fd04f5c7d741be",
+    "maxZoom": 21,
+    "tiles": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.png?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
+    "grids": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.json?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
+    "vector": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.mvt?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
+    "query": {
+        "parcels": true,
+        "operation": "intersection"
+    },
+    "fields": {
+        "parcel": [
+            "usecode",
+            "usedesc",
+            "parval",
+            "landval"
+        ]
+    },
+    "styles": "Map { background-color: rgba(0,0,0,0); } #loveland { line-color: #69387a; }"
 }
 ```
 
