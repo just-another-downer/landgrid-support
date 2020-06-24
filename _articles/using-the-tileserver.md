@@ -135,6 +135,12 @@ A Layer defines the set of data and, for raster tiles, styles that you get in a 
 
 #### How to create a custom layer
 
+The basic order of operations to create a custom layer is:
+
+1. POST some json to define the styles or custom data for the layer.
+2. Read the response TileJSON to get the new layer's url(s).
+3. Use the urls specified in the response.
+
 To create a custom layer, POST layer definition json (example below) to `/api/v1/sources?token=`. You will get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) response for the layer back with the full url to the custom layer tileset.
 
 ##### Vector or raster tile layers
