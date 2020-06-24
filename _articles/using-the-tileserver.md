@@ -125,29 +125,29 @@ L.tileLayer(
 
 ### Custom layers
 
-Use a Layer to get tiles with custom styles (raster tiles only).
+Use a Layer to get tiles with custom styles and data.
 
-A Layer defines a set of data and styles. Each layer has a unique ID. Each unqiue set of styles defines new layer -- you cannot edit existing layers.
+A Layer defines the set of data and, for raster tiles, styles that you get in a tile. Each layer has a unique ID. Each unqiue set of styles, fields, and queries defines new layer -- you cannot edit existing layers.
 
-### Building layers
+#### How to create a layer
 
-To create a layer, POST a layer definition to `/api/v1/sources?token=`.
+To create a layer, POST a layer definition to `/api/v1/sources?token=`. You will get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) response for the layer back.
 
-#### Vector tiles
+##### Vector tile layers
 
-Pass the `?format='mvt'` parameter to a layer request to get vector-first TileJSON.
+Pass the `?format='mvt'` parameter to a layer request to get vector-first TileJSON. 
 Otherwise, vector tile urls will be included in the tilejson under the non-standard `vector`
 key.
 
-#### Layer definitions
+##### Layer definitions
 
 A layer definition has:
 
 - `query`: Set to `parcels: true` to select parcel data
 - `fields`: Optional, a list of [standard schema columns](/articles/schema) to include. By default, tiles include `address`, `owner`, and `path`
-- `styles`: Optional, a string of [CartoCSS styles](https://carto.com/developers/styling/cartocss/) (see "composing styles" below). We apply a set of default Loveland styles if you don't specify any.
+- `styles`: Optional, a string of [CartoCSS styles](https://carto.com/developers/styling/cartocss/) (see "composing styles" below). We apply a set of default Loveland styles if you don't specify any
 
-#### Sample layer request
+##### Sample layer request
 
 This layer requests parcels with a custom line color and additional fields:
 
@@ -159,14 +159,14 @@ POST /api/v1/sources?token=
   },
   fields: {
     parcel: ['usecode', 'usedesc', 'parval', 'landval']
-  }
-  styles: 'Map{} #loveland { line-color: #69387a; }'
+  },
+  styles: 'Map { background-color: rgba(0,0,0,0); } #loveland { line-color: #69387a; }'
 }
 ```
 
-#### Sample layer response
+##### Sample layer response
 
-You'll get a tilejson response that includes:
+You'll get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) that includes:
 
 - a unique layer ID
 - the tile URL template for use in slippy maps
@@ -192,7 +192,7 @@ Always recreate the layer by POSTing your layer definition.
 }
 ```
 
-#### Composing styles
+##### Composing styles
 
 You can style raster tiles by composing [CartoCSS styles](https://carto.com/developers/styling/cartocss/). Styles should be applied to the `#loveland` layer.
 
@@ -210,9 +210,11 @@ Some sample styles that illustrate styling based on zoom level:
 }
 ```
 
-#### Leaflet raster layer example
+You can change the map's background color with `Map { background-color: rgba(0,0,0,0); }`. That value specifies a transparent background, but you can put in any color.
 
-To add a custom styled layer to Leaflet:
+##### Leaflet raster layer example
+
+This snippet of code creates a custom layer with red parcel polygons and adds it to a leaflet map:
 
 ```
 $.ajax({
@@ -224,7 +226,7 @@ $.ajax({
     query: {
       parcel: true,
     },
-    styles: 'Map { background-color: rgba(0,0,0,0); } #loveland { polygon-fill: #000; }',
+    styles: 'Map { background-color: rgba(0,0,0,0); } #loveland { polygon-fill: #FF0000; }',
   }),
 }).done(function(data) {
   console.log('Got layer', data);
