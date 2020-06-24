@@ -189,9 +189,9 @@ Always recreate the layer by POSTing your layer definition again.
     "tilejson": "2.1.0",
     "id": "e13c4cd22eaf5a751552692075fd04f5c7d741be",
     "maxZoom": 21,
-    "tiles": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.png?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
-    "grids": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.json?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
-    "vector": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.mvt?token=dLj16dw_eKVukZypo5Zvm7u9KrKU84mz2gxQaTa3foshzx16v9c8UuocsfQERzM_"],
+    "tiles": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.png?token="],
+    "grids": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.json?token="],
+    "vector": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.mvt?token="],
     "query": {
         "parcels": true,
         "operation": "intersection"
