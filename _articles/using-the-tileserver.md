@@ -10,24 +10,28 @@ The Loveland tile service provides parcel tiles in raster and vector formats for
 
 This tool is still in beta. Please direct feedback, bugs and questions to [team@makeloveland.com](mailto:team@makeloveland.com).
 
-## API
+## Tileserver API
 
 All requests will be to the `https://tiles.makeloveland.com` domain, with the paths described below per-request.
 
 ### Authentication and tokens
 
-All requests to the API must include a `token` parameter. Please contact us via [team@makeloveland.com](mailto:team@makeloveland.com) to get your API token during the beta.
+All requests to the Tileserver API must include a `token` parameter. The same Loveland/Landgrid API Tokens can be used for all of our API's, they are not service specific. So if you have a working Token for any Landgrid API use, that token will work for all our API uses, including our Tileserver API.
+
+Please contact us via [team@makeloveland.com](mailto:team@makeloveland.com) to get an API Token if you do not have one yet.
 
 ### Standard parcel tiles
 
-A nationwide layer of parcel outlines provided in vector ([MVT](https://www.mapbox.com/vector-tiles/specification/)) and raster (PNG) formats.
+Landgrid provides a styleable, seamless, nationwide layer of parcel outlines in vector ([MVT](https://www.mapbox.com/vector-tiles/specification/)) and raster (PNG) formats.
 
 #### TileJSON
 
-We serve [TileJSON](https://www.mapbox.com/help/define-tilejson/)-formatted metadata for generic parcel tiles:
+We serve [TileJSON](https://www.mapbox.com/help/define-tilejson/)-formatted metadata for generic parcel tiles which is used to get the full url to either our raster or vector tiles:
 
 * Raster tiles: `/api/v1/parcels`
 * Vector tiles: `/api/v1/parcels?format=mvt`
+
+Our TileJSON includes the required "tiles" endpoint array. The url(s) in that key are the layer urls to use in your application. We also include a "grid" endpoint [for UTF grids](https://blog.mapbox.com/how-interactivity-works-with-utfgrid-3b7d437f9ca9) and we put our vector tile endpoint in each response with the key "vector".
 
 #### Tiles
 
@@ -129,15 +133,13 @@ Use a Layer to get tiles with custom styles and data.
 
 A Layer defines the set of data and, for raster tiles, styles that you get in a tile. Each layer has a unique ID. Each unqiue set of styles, fields, and queries defines new layer -- you cannot edit existing layers.
 
-#### How to create a layer
+#### How to create a custom layer
 
-To create a layer, POST a layer definition to `/api/v1/sources?token=`. You will get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) response for the layer back.
+To create a custom layer, POST layer definition json (example below) to `/api/v1/sources?token=`. You will get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) response for the layer back with the full url to the custom layer tileset.
 
-##### Vector tile layers
+##### Vector or raster tile layers
 
-Pass the `?format='mvt'` parameter to a layer request to get vector-first TileJSON. 
-Otherwise, vector tile urls will be included in the tilejson under the non-standard `vector`
-key.
+Custom layer tilesets can be either vector (.mvt) or raster (.png) format. If you pass the `?format='mvt'` parameter to a layer definition POST the "tiles" url will contain a .mvt vector url. If you do not include a `?format=` parameter, our raster .png url will be in the "tiles" key by default.
 
 ##### Layer definitions
 
@@ -147,7 +149,7 @@ A layer definition has:
 - `fields`: Optional, a list of [standard schema columns](/articles/schema) to include. By default, tiles include `address`, `owner`, and `path`
 - `styles`: Optional, a string of [CartoCSS styles](https://carto.com/developers/styling/cartocss/) (see "composing styles" below). We apply a set of default Loveland styles if you don't specify any
 
-##### Sample layer request
+##### Sample layer definition request
 
 This layer requests parcels with a custom line color and additional fields:
 
@@ -164,9 +166,9 @@ POST /api/v1/sources?token=
 }
 ```
 
-##### Sample layer response
+##### Sample layer definition response
 
-You'll get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) that includes:
+You will get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) response that includes:
 
 - a unique layer ID
 - the tile URL template for use in slippy maps
@@ -174,7 +176,7 @@ You'll get a [TileJSON response](https://www.mapbox.com/help/define-tilejson/) t
 
 **Warning**: Do not cache or otherwise store the layer ID or tile path between
 sessions. The layer ID and paths you receive may change at any time.
-Always recreate the layer by POSTing your layer definition.
+Always recreate the layer by POSTing your layer definition again.
 
 ```
 {
@@ -192,9 +194,9 @@ Always recreate the layer by POSTing your layer definition.
 }
 ```
 
-##### Composing styles
+##### Creating styles
 
-You can style raster tiles by composing [CartoCSS styles](https://carto.com/developers/styling/cartocss/). Styles should be applied to the `#loveland` layer.
+You can style raster tiles (.pngs) by writing [CartoCSS styles](https://carto.com/developers/styling/cartocss/). Styles should be applied to the `#loveland` layer.
 
 Some sample styles that illustrate styling based on zoom level:
 
@@ -233,5 +235,3 @@ $.ajax({
   L.tileLayer(data.tiles[0]).addTo(map);
 });
 ```
-
-
