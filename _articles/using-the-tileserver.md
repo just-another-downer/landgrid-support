@@ -151,7 +151,7 @@ Custom layer tilesets can be either vector (.mvt) or raster (.png) format. If yo
 
 A layer definition has:
 
-- `query`: Set to `parcels: true` to select parcel data
+- `query`: Set to `parcel: true` to select parcel data
 - `fields`: Optional, a list of [standard schema columns](/articles/schema) to include. By default, tiles include `address`, `owner`, and `path`
 - `styles`: Optional, a string of [CartoCSS styles](https://carto.com/developers/styling/cartocss/) (see "composing styles" below). We apply a set of default Loveland styles if you don't specify any
 
@@ -163,7 +163,7 @@ This layer requests parcels with a custom line color and additional fields:
 POST /api/v1/sources?token=
 {
   "query": {
-    "parcels": true
+    "parcel": true
   },
   "fields": {
     "parcel": ["usecode", "usedesc", "parval", "landval"]
@@ -193,7 +193,7 @@ Always recreate the layer by POSTing your layer definition again.
     "grids": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.json?token="],
     "vector": ["https://tiles.makeloveland.com/api/v1/sources/parcel/layers/e13c4cd22eaf5a751552692075fd04f5c7d741be/{z}/{x}/{y}.mvt?token="],
     "query": {
-        "parcels": true,
+        "parcel": true,
         "operation": "intersection"
     },
     "fields": {
