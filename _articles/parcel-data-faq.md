@@ -134,6 +134,19 @@ for /R %G in (*.gpkg) do ogr2ogr -progress -f "MSSQLSpatial" "MSSQL:server=local
 
 The main item of the command line options are the database connection options. You will have to make sure the user name and password are available and that the client can actually connect to the database and has all the needed permissions. For PostgreSQL on GNU/Linux, there are standard PG_* environmental variables and the .pgpass file for storing credentials that will work with the ogr2ogr commands so they do not have to be included in the command line.
 
+**Why do some Shapefiles say '2GB_WARN' in the file name?**
+
+The shapefile format itself has a 'soft limit' of 2 gigabytes (GB) data. That means it is just a rule of the format "no data larger than 2GB" with no technical limit preventing more data being encoded as a shapefile. When we export large counties, our tools inform us the resulting shapefile is over that soft limit.
+
+We can confirm that some software handles 2GB and larger shapefiles just fine (OSGeo tools), but some software will just silently ignore attribute data above the 2GB limit (ArcGIS). A sincere  thank you to the Loveland client who did a lot of in depth research and testing on this and shared their results with all of us.
+
+Starting in July 2020 we made the following changes to help flag the counties who's data exceeds the 2GB soft limit. Please double check how you are handling these files.
+
+1. The filenames themselves will indicate the county generated the 2GB warning on export. '2GB_WARN' will be added to the file names so you can know just by checking the name.
+1. We added a column to our 'verse' table, named 'shapefile_size_flag' so you can check against the 'verse' table to see if a place is one that needs a different format than shapefile or generate a list of places you need to pull the alternate format for.
+
+
+
 ## Building Data
 
 **How do you determine the Loveland Building Count value (`ll_bldg_count`)?**
