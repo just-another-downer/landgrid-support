@@ -151,7 +151,7 @@ Starting in July 2020 we made the following changes to help flag the counties wh
 
 **How do you determine the Loveland Building Count value (`ll_bldg_count`)?**
 
-We work with [Gateway Spatial](https://gatewayspatial.com/sample-page/), a data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
+We work with a 3rd pary data firm that collects and curates building footprint data sets directly from counties in the US. They provide one of the most comprehensive, authoritative building footprint nationwide layers available. 
 
 We then process that footprint data set with our parcel shapes data set to determine how many buildings are on the parcel.
 
