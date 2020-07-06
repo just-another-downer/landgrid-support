@@ -127,6 +127,16 @@ L.tileLayer(
 </html>
 ```
 
+#### ArcGISOnline (AGOL) note
+
+ArcGISOnline TiledLayer works with our raster tile layer, but the `{z}/{x}/{y}` of our urls needs to be changed to the literal text string that looks like this: `{level}/{col}/{row}`
+
+You literally leave those `level`, `col`, and `row` words in there instead of the `z,x,y` our TileJson returns in URLs.
+
+```
+AGSWebTiledLayer(urlTemplate: "https://tiles.makeloveland.com/api/v1/parcels/{level}/{col}/{row}.png?token=
+```
+
 ### Custom layers
 
 Use a Layer to get tiles with custom styles and data.
