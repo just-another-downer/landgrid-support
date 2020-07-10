@@ -2,13 +2,12 @@
 weight: 0
 category: Getting Started
 published: true
-intro: 
 title: The Loveland Parcel Schema
 permalink: /articles/schema
 layout: wider_content
 ---
 
-We clean and convert all parcel data we recieve into this standard schema. Some counties may include additional fields. Wherever possible, we include those in our exports, but we do not have a key available for those fields. 
+We clean and convert all parcel data we recieve into this standard schema. Some counties may include additional fields. Wherever possible, we include those in our exports, but we do not have a key available for those fields. Each tier includes all of the fields in any tiers below it.
 
 <table>
   <thead>
