@@ -65,7 +65,7 @@ A detailed listing of every County in the US and the date we last refreshed dire
 
 **How do you provide data updates?**
 
-All bulk data is provided via SFTP as zip files of each county in the format of your choice (GeoPKG, CSV, GeoJSON, etc), using a pull model. We organize things on a county by county basis using the county's FIPS code (`geoid` in our standard schema columns). We add or refresh 20-300 counties every month with data from the county source.
+All bulk data is provided via SFTP as zip files of each county in the format of your choice (GeoJSON, NDGeoJSON, SQL, Shapefile, FileGDB, GeoPackage, KML, CSV), using a pull model. We organize things on a county by county basis using the county's FIPS code (`geoid` in our standard schema columns). We add or refresh 20-300 counties every month with data from the county source.
 
 Each month we replace the existing county zip file in a client's download directory with the refreshed county files.
 
