@@ -7,7 +7,7 @@ title: Cancelling Your Account
 ---
 We will be sad to see you go, but if you’ve completed your project then it might be time to cancel your membership and close the account.
 
-**WARNING:** When you close your account, your credit card will stop being charged and you will no longer be able to access the maps you have made. If you want to have access any of your data once your account is closed, **export it before you delete the account**. If you have invited collaborators or shared your projects with another landgrid.com account, these individuals will no longer be able to access your account or projects. Similarly, your projects will no longer be accessible publicly, neither via link nor embedded.
+**WARNING:** When you close your account, your credit card will stop being charged. You will have access to your account until the end of the billing period, after which you will loas access. If you want to have access any of your data, projects, etc. once your account is closed, **export it before you delete the account**. If you have invited collaborators or shared your projects with another landgrid.com account, these individuals will no longer be able to access your account or projects. Similarly, your projects will no longer be accessible publicly, neither via link nor embedded.
 
 **How to Cancel Your Paid Subscription:**
 
