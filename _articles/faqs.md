@@ -77,15 +77,15 @@ Pro, meanwhile, comes packed with a ton of features and functionality including 
 
 
 
-**Q:** How do I know if your Enterprise account will fit our complex needs?
+**Q:** What should I do if I would like to use Landgrid for something, but it's not something I can do off the shelf (eg custom site, etc)?
 
-**A:** Get in touch with someone from our friendly team! Emailing enterprise@landgrid.com is always a good start. We can work with you to create a custom Enterprise account tailored to you or your organization; whether you need a custom platform or just a one-time spreadsheet imported, we can work together to assemble a quote that fits you just right.
+**A:** Get in touch with someone from our friendly team! Emailing team@landgrid.com is always a good start. We can work with you to create a custom Enterprise account tailored to you or your organization; whether you need a custom platform or just a one-time spreadsheet imported, we can work together to assemble a quote that fits you just right.
 
 
 
 **Q:** Are your prices fixed?
 
-**A:** For any account beyond a standard Pro subscription, we create a custom quote - so in that sense, the pricing is flexible. We are more than happy to work with you to create a scope of work to fit within your budget.    
+**A:** Yes and no. Our single-user Pro plan is fixed, at $10/mo or $100/year; our Team plan allows you to choose how many users you would like, at a fixed per-user price: $20/month/user. For anything larger in scope than those, email us at team@landgrid.com and we'll work with you to scope the project and cost out in detail.
 
 
 
@@ -114,7 +114,7 @@ Pro, meanwhile, comes packed with a ton of features and functionality including 
 
 **Q:** How does the backout function work?
 
-**A:** It’s probably helpful to think of the back out function as changing the geographies that you’re looking at. For example, if you’re looking at a nationwide map, you could click on the state of New Jersey - the map will adjust to show you outline of New Jersey, plus the counties within New Jersey. Clicking on the back out button at this point will zoom you out to the nationwide map again. If you’re looking at somewhere on the city level, clicking the back out button would take you to the county that contains the city, then the state, and then the nationwide map.
+**A:** The back out function is a way of changing the geographic area you're analyzing. One good way to think about this is like Russian nesting dolls - this is how US geography is laid out (nation>states>counties>cities>neigborhoods, etc). Back out will get you back to the next "level". For example, if you’re looking at a nationwide map, you could click on the state of New Jersey - the map will adjust to show you outline of New Jersey, plus the counties within New Jersey. Clicking on the back out button at this point will zoom you out to the nationwide map again. If you’re looking at somewhere on the city level, clicking the back out button would take you to the county that contains the city, then the state, and then the nationwide map.
 
 
 
